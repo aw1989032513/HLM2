@@ -1,0 +1,557 @@
+-target:library
+-out:"Library/BeeAssemblyBuilder/artifacts/19AB.dag/Code.dll"
+-refout:"Library/BeeAssemblyBuilder/artifacts/19AB.dag/Code.ref.dll"
+-define:UNITY_2021_3_5
+-define:UNITY_2021_3
+-define:UNITY_2021
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2017_4_OR_NEWER
+-define:UNITY_2018_1_OR_NEWER
+-define:UNITY_2018_2_OR_NEWER
+-define:UNITY_2018_3_OR_NEWER
+-define:UNITY_2018_4_OR_NEWER
+-define:UNITY_2019_1_OR_NEWER
+-define:UNITY_2019_2_OR_NEWER
+-define:UNITY_2019_3_OR_NEWER
+-define:UNITY_2019_4_OR_NEWER
+-define:UNITY_2020_1_OR_NEWER
+-define:UNITY_2020_2_OR_NEWER
+-define:UNITY_2020_3_OR_NEWER
+-define:UNITY_2021_1_OR_NEWER
+-define:UNITY_2021_2_OR_NEWER
+-define:UNITY_2021_3_OR_NEWER
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:USE_SEARCH_ENGINE_API
+-define:USE_SEARCH_TABLE
+-define:USE_SEARCH_MODULE
+-define:USE_PROPERTY_DATABASE
+-define:USE_SEARCH_EXTENSION_API
+-define:SCENE_TEMPLATE_MODULE
+-define:ENABLE_AR
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_TEXTURE_STREAMING
+-define:ENABLE_VIRTUALTEXTURING
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_MANAGED_JOBS
+-define:ENABLE_MANAGED_TRANSFORM_JOBS
+-define:ENABLE_MANAGED_ANIMATION_JOBS
+-define:ENABLE_MANAGED_AUDIO_JOBS
+-define:ENABLE_MANAGED_UNITYTLS
+-define:INCLUDE_DYNAMIC_GI
+-define:ENABLE_SCRIPTING_GC_WBARRIERS
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_VIDEO
+-define:ENABLE_ACCELERATOR_CLIENT_DEBUGGING
+-define:PLATFORM_STANDALONE
+-define:TEXTCORE_1_0_OR_NEWER
+-define:PLATFORM_STANDALONE_WIN
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_NVIDIA
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+-define:ENABLE_CLUSTER_SYNC
+-define:ENABLE_CLUSTERINPUT
+-define:PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+-define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_4_6
+-define:NET_UNITY_4_8
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_DIRECTOR
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_SPRITES
+-define:ENABLE_TERRAIN
+-define:ENABLE_TILEMAP
+-define:ENABLE_TIMELINE
+-define:ENABLE_LEGACY_INPUT_MANAGER
+-define:NET452
+-r:"Assets/Plugins/CommandLine.dll"
+-r:"Assets/Plugins/ICSharpCode.SharpZipLib.dll"
+-r:"D:/Study/ET6/ET-EUI/Unity/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GIModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreFontEngineModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreTextEngineModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsNativeModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityCurlModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/Microsoft.Win32.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.AppContext.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Buffers.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.Concurrent.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.NonGeneric.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Collections.Specialized.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.Annotations.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.EventBasedAsync.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ComponentModel.TypeConverter.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Console.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Data.Common.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Contracts.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Debug.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.FileVersionInfo.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Process.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.StackTrace.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.TextWriterTraceListener.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.Tools.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Diagnostics.TraceSource.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Drawing.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Dynamic.Runtime.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.Calendars.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Globalization.Extensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.Compression.ZipFile.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.DriveInfo.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.FileSystem.Watcher.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.IsolatedStorage.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.MemoryMappedFiles.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.Pipes.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.IO.UnmanagedMemoryStream.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Expressions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Parallel.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Linq.Queryable.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Memory.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Http.Rtc.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.NameResolution.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.NetworkInformation.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Ping.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Requests.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Security.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.Sockets.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebHeaderCollection.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebSockets.Client.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Net.WebSockets.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ObjectModel.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.DispatchProxy.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.ILGeneration.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Emit.Lightweight.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Extensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Reflection.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.Reader.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.ResourceManager.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Resources.Writer.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.CompilerServices.VisualC.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Extensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Handles.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Numerics.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Formatters.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Json.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Runtime.Serialization.Xml.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Claims.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Algorithms.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Csp.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Encoding.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Cryptography.X509Certificates.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.Principal.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Security.SecureString.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Duplex.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Http.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.NetTcp.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Primitives.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ServiceModel.Security.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.Encoding.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.Encoding.Extensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Text.RegularExpressions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Overlapped.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.Extensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Tasks.Parallel.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Thread.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.ThreadPool.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Threading.Timer.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.ValueTuple.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.ReaderWriter.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XDocument.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XmlDocument.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XmlSerializer.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XPath.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Facades/System.Xml.XPath.XDocument.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/Microsoft.CSharp.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/mscorlib.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.ComponentModel.Composition.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Core.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.DataSetExtensions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Data.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Drawing.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.IO.Compression.FileSystem.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Net.Http.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Numerics.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Numerics.Vectors.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Runtime.Serialization.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
+-r:"D:/Tools/Unity2021.3.5f1/Unity 2021.3.5f1c1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
+-r:"Library/ScriptAssemblies/Unity.Editor.dll"
+-r:"Library/ScriptAssemblies/Unity.Mono.dll"
+-r:"Library/ScriptAssemblies/Unity.Rider.Editor.dll"
+-r:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
+-r:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
+-r:"Library/ScriptAssemblies/Unity.ThirdParty.dll"
+-r:"Library/ScriptAssemblies/Unity.Timeline.dll"
+-r:"Library/ScriptAssemblies/Unity.Timeline.Editor.dll"
+-r:"Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll"
+-r:"Library/ScriptAssemblies/UnityEditor.TestRunner.dll"
+-r:"Library/ScriptAssemblies/UnityEditor.UI.dll"
+-r:"Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
+-r:"Library/ScriptAssemblies/UnityEngine.UI.dll"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Core/Scene/ZoneSceneFlagComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Core/Scene/ZoneSceneManagerComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Account/AccountInfoSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/AI/AI_Attack.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/AI/AI_XunLuo.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/AI/XunLuoPathComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/ConstValue.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Login/EnterMapHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Login/LoginHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Move/M2C_PathfindingResultHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Move/M2C_StopHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Move/MoveComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Move/MoveHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Scene/CurrentScenesComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Scene/M2C_StartSceneChangeHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Scene/SceneChangeHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Scene/SceneFactory.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Session/SessionComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Session/SessionStreamDispatcherClientOuter.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/M2C_CreateMyUnitHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/M2C_CreateUnitsHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/M2C_RemoveUnitsHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/UnitComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/UnitFactory.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/UnitHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Demo/Unit/UnitSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/AI/AIComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/AI/AIDispatcherComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Config/ConfigComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/MessageDispatcherComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/NetKcpComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/NetThreadComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/SessionAcceptTimeoutComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/SessionIdleCheckerComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Message/SessionStreamDispatcherSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Numeric/NumericChangeEvent_NotifyWatcher.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Numeric/NumericWatcher_Hp_ShowUI.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Ping/PingComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Recast/NavmeshComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Hotfix/Module/Recast/PathfindingComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/AppStart_Init.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Config/ConfigComponent_SetConfigLoader_Awake.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Config/ConfigLoader.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Global/GlobalComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Opera/OperaComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Scene/AfterCreateCurrentScene_AddComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Scene/AfterCreateZoneScene_AddComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Scene/SceneChangeComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Scene/SceneChangeStart_AddComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/Common/ESCommonUISystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/Common/ESReuseUISystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgHelper/DlgHelperSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgHelper/Event/DlgHelperEventHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgHelper/Event/SceneChangeFinish_ShowCurrentSceneUI.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgLobby/DlgLobbySystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgLobby/Event/DlgLobbyEventHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgLobby/Event/LoginFinish_CreateLobbyUI.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgLogin/DlgLoginSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgLogin/Event/DlgLoginEventHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgRedDot/DlgRedDotSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/DlgRedDot/Event/DlgRedDotEventHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/UIHelp/SceneChangeFinishEvent_CreateUIHelp.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UI/UIHelp/UIHelpEvent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/CommonUI/ESCommonUIViewSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/CommonUI/ESReuseUIViewSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/DlgHelper/DlgHelperViewComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/DlgLobby/DlgLobbyViewComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/DlgLogin/DlgLoginViewComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIBehaviour/DlgRedDot/DlgRedDotViewComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIItemBehaviour/Item_serverTestViewSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/UIItemBehaviour/Item_testViewSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Unit/AfterUnitCreate_CreateUnitView.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Unit/AnimatorComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Unit/ChangePosition_SyncGameObjectPos.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Unit/ChangeRotation_SyncGameObjectRotation.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Demo/Unit/GameObjectComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/EUIHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/EUIRootHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/IconHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/RedDotComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/RedDotHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/UIBaseWindowSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/UIComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/UIEventComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/EUI/UIPathComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/HotfixView/Module/Resource/GameObjectHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Entity/EntitySceneFactory.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Entity/Game.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Entity/Scene.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Entity/SceneType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/ETCancelationTokenHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Event/EventAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Event/IEvent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/BaseAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/Entity.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/EventSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IAddComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IAwakeSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IDeserializeSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IDestroySystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IdGenerater.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IGetComponentSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ILateUpdateSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ILoadSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ISerializeToEntity.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ISystemType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ITransfer.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/IUpdateSystem.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/NoMemoryCheck.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/Object.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ObjectPool.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ObjectSystemAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Object/ProtoObject.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/ObjectWait.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/PoolHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/ProtobufHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/QueueDictionary.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Scene/SceneHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Scene/ZoneSceneFlagComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Scene/ZoneSceneManagerComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Timer/ITimer.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Timer/TimerAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Timer/TimerComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Core/Timer/TimerType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Account/AccountInfoComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/AI/XunLuoPathComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/EventType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Helper/PositionHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Move/MoveComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Scene/CurrentScenesComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Session/SessionComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/SessionStreamDispatcherType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/TimerType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Unit/PlayerComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Unit/Unit.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Unit/UnitComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/Unit/UnitType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Demo/WaitType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/AIConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/StartMachineConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/StartProcessConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/StartSceneConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/StartZoneConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Config/UnitConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Message/OuterMessage.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Generate/Message/OuterOpcode.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Actor/IActorMessage.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/ActorLocation/ActorResponse.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/ActorLocation/IActorLocationMessage.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/AI/AAIHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/AI/AIComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/AI/AIConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/AI/AIDispatcherComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Config/ConfigAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Config/ConfigComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Config/IConfig.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Config/IConfigLoader.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLock.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLockComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLockQueue.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLockQueueType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLockTimer.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/CoroutineLock/CoroutineLockType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/AMHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/ErrorCode.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/IMessage.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/IMHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/ISessionStreamDispatcher.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/MessageAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/MessageDispatcherComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/MessageHandlerAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/MessagePackHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/MessageSerializeHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/NetKcpComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/NetThreadComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/OpcodeHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/OpcodeRangeDefine.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/OpcodeTypeComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/ResponseTypeAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/Session.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/SessionAcceptTimeoutComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/SessionCallbackComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/SessionIdleCheckerComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/SessionStreamDispatcher.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Message/SessionStreamDispatcherAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Numeric/INumericWatcher.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Numeric/NumericComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Numeric/NumericType.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Numeric/NumericWatcherAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Numeric/NumericWatcherComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Ping/PingComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Recast/NavmeshComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/Recast/PathfindingComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/UnityWebRequest/UnityWebRequestAsync.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/Model/Module/UnityWebRequest/UnityWebRequestRenewalAsync.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Camera/CameraComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Entry.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Global/GlobalComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Opera/OperaComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Resource/ResourcesComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Resource/ResourcesLoaderComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Scene/SceneChangeComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/DlgHelper/DlgHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/DlgLobby/DlgLobby.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/DlgLogin/DlgLogin.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/DlgRedDot/DlgRedDot.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/UIHelp/UIHelpComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/UILoading/UILoadingComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/UILobby/UILobbyComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UI/UILogin/UILoginComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/CommonUI/ESCommonUI.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/CommonUI/ESReuseUI.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/DlgHelper/DlgHelperViewComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/DlgLobby/DlgLobbyViewComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/DlgLogin/DlgLoginViewComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/DlgRedDot/DlgRedDotViewComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIBehaviour/DlgTest/DlgTestViewComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIItemBehaviour/Item_serverTest.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/UIItemBehaviour/Item_test.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Unit/AnimatorComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Demo/Unit/GameObjectComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/AssetPathHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/AUIEventAttribute.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/IAUIEventHandler.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/LayerNames.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/Tools/RedDot/RedDotComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/Tools/UIFindHelper.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/UIBaseWindow.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/UIComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/UIEventComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/UIPathComponent.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/WindowDataDefine.cs"
+"D:/Study/ET6/ET-EUI/Unity/Codes/ModelView/Module/EUI/WindowId.cs"
+-langversion:9.0
+
+
+/optimize-
+/debug:portable
+/nologo
+/RuntimeMetadataVersion:v4.0.30319
+
+/utf8output
+/preferreduilang:en-US
+
+
+/additionalfile:"Library/BeeAssemblyBuilder/artifacts/19AB.dag/Code.AdditionalFile.txt"

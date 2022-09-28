@@ -1,0 +1,127 @@
+2022-09-25 21:05:20.8361 (Scene.cs:33) scene create: Process Process 1590493047601496065 1590493047601496065 0
+2022-09-25 21:05:20.9476 (Program.cs:41) server start........................ 1590493047601496065
+2022-09-25 21:05:21.2942 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-25 21:05:21.3118 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-25 21:05:21.3118 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-25 21:05:21.3118 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-25 21:05:21.3118 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-25 21:05:21.3118 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-25 21:05:34.2763 (Session.cs:69) session create: zone: 1 id: 8589934592 1664139934275 
+2022-09-25 21:05:34.2845 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_Login", "RpcId" : 1, "Account" : "", "Password" : "" }
+2022-09-25 21:05:34.3321 (C2R_LoginHandler.cs:14) gate address: { "_t" : "StartSceneConfig", "InstanceId" : NumberLong(262146), "Type" : 3, "_id" : 2, "Process" : 1, "Zone" : 1, "SceneType" : "Gate", "Name" : "Gate1", "OuterPort" : 10003 }
+2022-09-25 21:05:34.3321 (Session.cs:69) session create: zone: 0 id: 1 1664139934340 
+2022-09-25 21:05:34.3535 (Session.cs:69) session create: zone: 0 id: 8589934592 1664139934353 
+2022-09-25 21:05:34.3535 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginKey", "RpcId" : 1, "Account" : "" }
+2022-09-25 21:05:34.3651 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : -3320970701003945987, "GateId" : 2 }
+2022-09-25 21:05:34.3651 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginKey", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : -3320970701003945987, "GateId" : 2 }
+2022-09-25 21:05:34.3751 (Session.cs:185) zone: 1 { "_t" : "R2C_Login", "RpcId" : 1, "Error" : 0, "Message" : null, "Address" : "127.0.0.1:10003", "Key" : -3320970701003945987, "GateId" : 2 }
+2022-09-25 21:05:34.3934 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:11425
+2022-09-25 21:05:34.3934 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:11425
+2022-09-25 21:05:34.3934 (Session.cs:91) session dispose: 127.0.0.1:11425 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664139934398
+2022-09-25 21:05:34.3934 (Session.cs:69) session create: zone: 1 id: 8589934592 1664139934399 
+2022-09-25 21:05:34.3934 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_LoginGate", "RpcId" : 3, "Key" : -3320970701003945987, "GateId" : 2 }
+2022-09-25 21:05:34.4074 (Session.cs:185) zone: 1 { "_t" : "G2C_LoginGate", "RpcId" : 3, "Error" : 0, "Message" : null, "PlayerId" : 1482676552289288197 }
+2022-09-25 21:05:35.6914 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_EnterMap", "RpcId" : 4 }
+2022-09-25 21:05:35.6914 (Scene.cs:48) scene create: Map GateMap 1590494078393647105 1590494078393647105 1
+2022-09-25 21:05:35.7058 (Session.cs:185) zone: 1 { "_t" : "G2C_EnterMap", "RpcId" : 4, "Error" : 0, "Message" : null, "MyId" : 1482676552289288197 }
+2022-09-25 21:05:35.7058 (Session.cs:195) zone: 0 { "_t" : "M2C_StartSceneChange", "SceneInstanceId" : 262149, "SceneName" : "Map1" }
+2022-09-25 21:05:35.7058 (LocationProxyComponentSystem.cs:39) location proxy lock 1482676552289288197, 1590494078393647109 1664139935711
+2022-09-25 21:05:35.7228 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockRequest", "RpcId" : 2, "Key" : 1482676552289288197, "InstanceId" : 1590494078393647109, "Time" : 60000 }
+2022-09-25 21:05:35.7228 (LocationComponent.cs:66) location lock key: 1482676552289288197 instanceId: 1590494078393647109
+2022-09-25 21:05:35.7228 (Session.cs:195) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-09-25 21:05:35.7378 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-09-25 21:05:35.7946 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferRequest", "Entitys" : [{ "_t" : "NumericComponent", "_id" : 1482676552289288197, "NumericDic" : [[1000, 60000], [1003, 15000]] }, { "_t" : "UnitGateComponent", "_id" : 1482676552289288197, "GateSessionActorId" : 1590494009674170376 }], "RpcId" : 3, "Unit" : { "_id" : 1482676552289288197, "ConfigId" : 1001, "Position" : { "x" : -10.0, "y" : 0.0, "z" : -10.0 }, "Rotation" : { "w" : 0.0, "x" : 0.0, "y" : 0.0, "z" : 0.0 } } }
+2022-09-25 21:05:35.8554 (Session.cs:195) zone: 0 { "_t" : "M2C_CreateMyUnit", "Unit" : { "Ks" : [1000, 1003], "Vs" : [60000, 15000], "UnitId" : 1482676552289288197, "ConfigId" : 1001, "Type" : 1, "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "ForwardX" : 0.0, "ForwardY" : 0.0, "ForwardZ" : 1.0, "MoveInfo" : null } }
+2022-09-25 21:05:35.8649 (Session.cs:195) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "NewInstanceId" : 1590494078393647143 }
+2022-09-25 21:05:35.8775 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 3, "Error" : 0, "Message" : null, "NewInstanceId" : 1590494078393647143 }
+2022-09-25 21:05:35.8775 (LocationProxyComponentSystem.cs:46) location proxy unlock 1482676552289288197, 1590494078393647143 1664139935879
+2022-09-25 21:05:35.8924 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockRequest", "RpcId" : 4, "Key" : 1482676552289288197, "OldInstanceId" : 1590494078393647109, "InstanceId" : 1590494078393647143 }
+2022-09-25 21:05:35.8924 (LocationComponent.cs:95) location unlock key: 1482676552289288197 instanceId: 1590494078393647109 newInstanceId: 1590494078393647143
+2022-09-25 21:05:35.8924 (Session.cs:195) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-09-25 21:05:35.9071 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.2285 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_TransferMap", "RpcId" : 6 }
+2022-09-25 21:05:37.2439 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetRequest", "RpcId" : 6, "Key" : 1482676552289288197 }
+2022-09-25 21:05:37.2439 (LocationComponent.cs:110) location get key: 1482676552289288197 instanceId: 1590494078393647143
+2022-09-25 21:05:37.2498 (Session.cs:195) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "InstanceId" : 1590494078393647143 }
+2022-09-25 21:05:37.2498 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "InstanceId" : 1590494078393647143 }
+2022-09-25 21:05:37.2755 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_TransferMap", "RpcId" : 5 }
+2022-09-25 21:05:37.2755 (Session.cs:195) zone: 0 { "_t" : "M2C_StartSceneChange", "SceneInstanceId" : 262150, "SceneName" : "Map2" }
+2022-09-25 21:05:37.2799 (LocationProxyComponentSystem.cs:39) location proxy lock 1482676552289288197, 1590494078393647143 1664139937279
+2022-09-25 21:05:37.2799 (Session.cs:195) zone: 0 { "_t" : "M2C_TransferMap", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.2799 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockRequest", "RpcId" : 7, "Key" : 1482676552289288197, "InstanceId" : 1590494078393647143, "Time" : 60000 }
+2022-09-25 21:05:37.2799 (LocationComponent.cs:66) location lock key: 1482676552289288197 instanceId: 1590494078393647143
+2022-09-25 21:05:37.2799 (Session.cs:195) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.2799 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2C_TransferMap", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.2799 (Session.cs:185) zone: 1 { "_t" : "M2C_TransferMap", "RpcId" : 6, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.3065 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.3218 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferRequest", "Entitys" : [{ "_t" : "NumericComponent", "_id" : 1482676552289288197, "NumericDic" : [[1000, 60000], [1003, 15000]] }, { "_t" : "UnitGateComponent", "_id" : 1482676552289288197, "GateSessionActorId" : 1590494009674170376 }], "RpcId" : 8, "Unit" : { "_id" : 1482676552289288197, "ConfigId" : 1001, "Position" : { "x" : -10.0, "y" : 0.0, "z" : -10.0 }, "Rotation" : { "w" : 0.0, "x" : 0.0, "y" : 0.0, "z" : 0.0 } } }
+2022-09-25 21:05:37.3218 (Session.cs:195) zone: 0 { "_t" : "M2C_CreateMyUnit", "Unit" : { "Ks" : [1000, 1003], "Vs" : [60000, 15000], "UnitId" : 1482676552289288197, "ConfigId" : 1001, "Type" : 1, "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "ForwardX" : 0.0, "ForwardY" : 0.0, "ForwardZ" : 1.0, "MoveInfo" : null } }
+2022-09-25 21:05:37.3218 (Session.cs:195) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 8, "Error" : 0, "Message" : null, "NewInstanceId" : 1590494215832600587 }
+2022-09-25 21:05:37.3375 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 8, "Error" : 0, "Message" : null, "NewInstanceId" : 1590494215832600587 }
+2022-09-25 21:05:37.3375 (LocationProxyComponentSystem.cs:46) location proxy unlock 1482676552289288197, 1590494215832600587 1664139937338
+2022-09-25 21:05:37.3524 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockRequest", "RpcId" : 9, "Key" : 1482676552289288197, "OldInstanceId" : 1590494078393647143, "InstanceId" : 1590494215832600587 }
+2022-09-25 21:05:37.3524 (LocationComponent.cs:95) location unlock key: 1482676552289288197 instanceId: 1590494078393647143 newInstanceId: 1590494215832600587
+2022-09-25 21:05:37.3524 (Session.cs:195) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2022-09-25 21:05:37.3685 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 9, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.0490 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -8.0104866027832031, "Y" : 0.010000000707805157, "Z" : -22.779823303222656 }
+2022-09-25 21:05:38.0626 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 10, "X" : -8.0104866027832031, "Y" : 0.010000000707805157, "Z" : -22.779823303222656 }
+2022-09-25 21:05:38.0626 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 10, "Error" : 110313, "Message" : null }
+2022-09-25 21:05:38.0954 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 10, "Error" : 110313, "Message" : null }
+2022-09-25 21:05:38.2377 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -11.678401947021484, "Y" : 0.010000000707805157, "Z" : -24.656185150146484 }
+2022-09-25 21:05:38.4266 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -10.104655265808105, "Y" : 0.010000000707805157, "Z" : -26.982742309570312 }
+2022-09-25 21:05:38.6186 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -4.1816163063049316, "Y" : 0.010000000707805157, "Z" : -24.19818115234375 }
+2022-09-25 21:05:38.6186 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetRequest", "RpcId" : 13, "Key" : 1482676552289288197 }
+2022-09-25 21:05:38.6186 (LocationComponent.cs:110) location get key: 1482676552289288197 instanceId: 1590494215832600587
+2022-09-25 21:05:38.6186 (Session.cs:195) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 13, "Error" : 0, "Message" : null, "InstanceId" : 1590494215832600587 }
+2022-09-25 21:05:38.6346 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 13, "Error" : 0, "Message" : null, "InstanceId" : 1590494215832600587 }
+2022-09-25 21:05:38.6496 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 10, "X" : -8.0104866027832031, "Y" : 0.010000000707805157, "Z" : -22.779823303222656 }
+2022-09-25 21:05:38.6496 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 10, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.6583 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.0, -23.5, -23.800003051757812, -23.800003051757812, -23.800003051757812, -21.700004577636719, -14.5, -7.0000038146972656, -6.4000015258789062, -6.4000015258789062, -6.639437198638916], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.0, -18.19999885559082, -20.899999618530273, -26.899999618530273, -29.299999237060547, -29.599998474121094, -29.899999618530273, -29.899999618530273, -29.599998474121094, -27.5, -22.711271286010742], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.6807 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 10, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.6956 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 11, "X" : -11.678401947021484, "Y" : 0.010000000707805157, "Z" : -24.656185150146484 }
+2022-09-25 21:05:38.6956 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.6956 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.0, -10.393427848815918, -19.285987854003906, -19.600006103515625, -19.900001525878906, -19.600006103515625, -17.131277084350586, -11.678401947021484], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.0, -10.336051940917969, -17.931774139404297, -18.19999885559082, -19.399999618530273, -20.599998474121094, -21.864089965820312, -24.656185150146484], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.7108 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 11, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.7266 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 12, "X" : -10.104655265808105, "Y" : 0.010000000707805157, "Z" : -26.982742309570312 }
+2022-09-25 21:05:38.7266 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 12, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.7266 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.169262886047363, -10.551098823547363, -19.287849426269531, -19.600006103515625, -19.900001525878906, -19.600006103515625, -17.33729362487793, -10.555008888244629], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.102811813354492, -10.430654525756836, -17.931982040405273, -18.19999885559082, -19.399999618530273, -20.599998474121094, -22.121608734130859, -26.68250846862793], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.7419 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 12, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.7576 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 14, "X" : -4.1816163063049316, "Y" : 0.010000000707805157, "Z" : -24.19818115234375 }
+2022-09-25 21:05:38.7576 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 14, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.7576 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.24746036529541, -8.5000038146972656, -2.5000038146972656, 4.0999984741210938, 10.399997711181641, 14.581954002380371, 15.799999237060547, 16.099998474121094, 16.099998474121094, 15.59489631652832, 15.462830543518066, 15.04117488861084, 14.299999237060547, 4.3999977111816406, 4.0939188003540039, 3.5011699199676514, 0.73975324630737305, -4.1816163063049316], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.69153213500976562, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.184174537658691, -9.1999969482421875, -9.1999969482421875, -9.1999969482421875, -9.1999969482421875, -11.523305892944336, -12.199996948242188, -13.399997711181641, -16.399997711181641, -20.104080200195312, -21.072565078735352, -24.164703369140625, -29.599998474121094, -29.599998474121094, -29.407333374023438, -29.034217834472656, -27.29600715637207, -24.19818115234375], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.7737 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 14, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.7896 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -14.842443466186523, "Y" : 0.010000000707805157, "Z" : -15.137311935424805 }
+2022-09-25 21:05:38.8057 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 15, "X" : -14.842443466186523, "Y" : 0.010000000707805157, "Z" : -15.137311935424805 }
+2022-09-25 21:05:38.8057 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.8057 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.360867500305176, -10.443978309631348, -14.842443466186523], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.276233673095703, -10.366382598876953, -15.137311935424805], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.8218 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 15, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.9656 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -19.456911087036133, "Y" : 0.010000000707805157, "Z" : -13.347404479980469 }
+2022-09-25 21:05:38.9815 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 16, "X" : -19.456911087036133, "Y" : 0.010000000707805157, "Z" : -13.347404479980469 }
+2022-09-25 21:05:38.9815 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 16, "Error" : 0, "Message" : null }
+2022-09-25 21:05:38.9826 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-10.814247131347656, -11.409377098083496, -19.456911087036133], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.76800537109375, -10.945621490478516, -13.347404479980469], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:38.9826 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 16, "Error" : 0, "Message" : null }
+2022-09-25 21:05:39.1715 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -15.465789794921875, "Y" : 0.010000000707805157, "Z" : -22.779823303222656 }
+2022-09-25 21:05:39.1867 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 17, "X" : -15.465789794921875, "Y" : 0.010000000707805157, "Z" : -22.779823303222656 }
+2022-09-25 21:05:39.1867 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2022-09-25 21:05:39.1867 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-11.449643135070801, -11.491719245910645, -19.299892425537109, -19.600006103515625, -19.900001525878906, -19.600006103515625, -17.152423858642578, -15.465789794921875], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-10.957638740539551, -10.995027542114258, -17.933319091796875, -18.19999885559082, -19.399999618530273, -20.599998474121094, -21.890522003173828, -22.779823303222656], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:39.2028 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 17, "Error" : 0, "Message" : null }
+2022-09-25 21:05:39.3266 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2M_PathfindingResult", "RpcId" : 0, "X" : -6.8055291175842285, "Y" : 0.010000000707805157, "Z" : -24.275123596191406 }
+2022-09-25 21:05:39.3426 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "C2M_PathfindingResult", "RpcId" : 18, "X" : -6.8055291175842285, "Y" : 0.010000000707805157, "Z" : -24.275123596191406 }
+2022-09-25 21:05:39.3426 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 18, "Error" : 0, "Message" : null }
+2022-09-25 21:05:39.3426 (Session.cs:195) zone: 0 { "_t" : "M2C_PathfindingResult", "Xs" : [-11.931489944458008, -23.500015258789062, -23.800003051757812, -23.800003051757812, -23.800003051757812, -21.700004577636719, -14.5, -7.0000038146972656, -6.4000015258789062, -6.4000015258789062, -6.5618538856506348], "Ys" : [0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164, 0.091531991958618164], "Zs" : [-11.385805130004883, -18.200008392333984, -20.899999618530273, -26.899999618530273, -29.299999237060547, -29.599998474121094, -29.899999618530273, -29.899999618530273, -29.599998474121094, -27.5, -24.262939453125], "_id" : 1482676552289288197, "X" : 0.0, "Y" : 0.0, "Z" : 0.0 }
+2022-09-25 21:05:39.3578 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 18, "Error" : 0, "Message" : null }
+2022-09-25 21:05:40.3255 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:11427
+2022-09-25 21:05:40.3255 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:11427
+2022-09-25 21:05:40.3281 (Session.cs:91) session dispose: 127.0.0.1:11427 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664139940328
+2022-09-25 21:05:40.3423 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2M_SessionDisconnect", "RpcId" : 19 }
+2022-09-25 21:05:40.3423 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2022-09-25 21:05:40.3423 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 19, "Error" : 0, "Message" : null }
+2022-09-25 21:11:57.1391 (Scene.cs:33) scene create: Process Process 1590520329233760257 1590520329233760257 0
+2022-09-25 21:11:57.2504 (Program.cs:41) server start........................ 1590520329233760257
+2022-09-25 21:11:57.5890 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-25 21:11:57.6054 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-25 21:11:57.6091 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-25 21:11:57.6091 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-25 21:11:57.6091 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-25 21:11:57.6091 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-25 21:11:57.6091 (Scene.cs:48) scene create: Account Account 7 262151 1

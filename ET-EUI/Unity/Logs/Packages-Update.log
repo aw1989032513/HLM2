@@ -1,0 +1,10 @@
+
+=== Sun Sep 25 21:04:00 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ide.rider from version 3.0.7 to 3.0.14
+  com.unity.ide.visualstudio from version 2.0.11 to 2.0.15
+  com.unity.timeline from version 1.6.2 to 1.6.4
