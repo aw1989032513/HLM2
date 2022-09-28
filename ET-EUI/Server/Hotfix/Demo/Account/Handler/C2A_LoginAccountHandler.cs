@@ -103,6 +103,22 @@ namespace ET
                     }
                     #endregion
 
+                    #region  用户到账号中心登记自己的账号信息
+                    StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(accountSession.DomainZone(), "LoginCenter");
+                    long loginCenterInstanceId = startSceneConfig.InstanceId;
+                    var loginAccountResponse = (L2A_LoginAccountResponse)await ActorMessageSenderComponent.Instance.Call(loginCenterInstanceId, new A2L_LoginAccountRequest() { AccountId = account.Id });
+
+                    if (loginAccountResponse.Error != ErrorCode.ERR_Success)
+                    {
+                        response.Error = loginAccountResponse.Error;
+
+                        reply();
+                        accountSession?.Disconnect().Coroutine();
+                        account?.Dispose();
+                        return;
+                    }
+                    #endregion
+
                     #region 踢别人下线
                     long accountSeesionInstanceId = accountSession.DomainScene().GetComponent<AccountSessionsComponent>().Get(account.InstanceId);
                     Session otherSession=Game.EventSystem.Get(accountSeesionInstanceId) as Session;//由于Session继承Entity

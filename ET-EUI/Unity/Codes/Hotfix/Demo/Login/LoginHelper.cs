@@ -14,7 +14,8 @@ namespace ET
             try
             {
                 serverAccountSession = zonScene.GetComponent<NetKcpComponent>().Create(NetworkHelper.ToIPEndPoint(address));
-                a2C_LoginAccount= (A2C_LoginAccount)await serverAccountSession.Call(new C2A_LoginAccount() { AccountName = account, Password = password });
+                password = MD5Helper.StringMD5(password);
+                a2C_LoginAccount = (A2C_LoginAccount)await serverAccountSession.Call(new C2A_LoginAccount() { AccountName = account, Password = password });
             }
             catch (Exception e)
             {
@@ -30,6 +31,8 @@ namespace ET
             }
             //客户端和服务器Session连接了
             zonScene.AddComponent<SessionComponent>().Session= serverAccountSession;
+            zonScene.GetComponent<SessionComponent>().Session.AddComponent<PingComponent>();
+
             zonScene.GetComponent<AccountInfoComponent>().token = a2C_LoginAccount.Key;
             zonScene.GetComponent<AccountInfoComponent>().accountId = a2C_LoginAccount.AccounId;
             return ErrorCode.ERR_Success;
