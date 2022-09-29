@@ -48,7 +48,7 @@ namespace ET
                 return;
             }
             //密码
-            if (!Regex.IsMatch(request.Password.Trim(), @"^(?=.*[0-9].*)(?=.*[A-Z].*)(?=.*[a-z].*).{6,15}$"))
+            if (!Regex.IsMatch(request.Password.Trim(), @"^[A-Za-z0-9]+$"))
             {
                 response.Error = ErrorCode.ERR_LoginInfoError;
                 reply();//意思就是服务器会向客户端发送一条消息，发送错误码

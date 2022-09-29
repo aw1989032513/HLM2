@@ -11,6 +11,9 @@ namespace ET
     /// </summary>
     public class LoginInfoRecordComponent:Entity,IAwake,IDestroy
     {
+        /// <summary>
+        /// long：账号AccountID，  int：zong区服的ID
+        /// </summary>
         public Dictionary<long, int> AccountLoginInfoDict = new Dictionary<long, int>();
     }
 }

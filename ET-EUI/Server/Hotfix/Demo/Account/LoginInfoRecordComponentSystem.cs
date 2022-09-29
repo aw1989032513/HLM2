@@ -32,7 +32,12 @@ namespace ET
                 self.AccountLoginInfoDict.Remove(key);
             }
         }
-
+        /// <summary>
+        /// 获取到区服ID
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public static int Get(this LoginInfoRecordComponent self, long key)
         {
             if (!self.AccountLoginInfoDict.TryGetValue(key, out int value))

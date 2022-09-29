@@ -24,24 +24,27 @@ namespace ET
 		{
             try
             {
-			 int errorCode=	await LoginHelper.Login(
-							self.DomainScene(),
-							ConstValue.LoginAddress,
-							self.View.E_AccountInputField.GetComponent<InputField>().text,
-							self.View.E_PasswordInputField.GetComponent<InputField>().text);
+                int errorCode = await LoginHelper.Login(
+                               self.DomainScene(),
+                               ConstValue.LoginAddress,
+                               self.View.E_AccountInputField.GetComponent<InputField>().text,
+                               self.View.E_PasswordInputField.GetComponent<InputField>().text);
 
-				if (errorCode != ErrorCode.ERR_Success)
+                if (errorCode != ErrorCode.ERR_Success)
                 {
-					Log.Error(errorCode.ToString());
-					return;
+                    Log.Error(errorCode.ToString());
+                    return;
                 }
-			}
+                self.DomainScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Login);
+                self.DomainScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Lobby);
+
+            }
             catch (Exception e)
             {
-				Log.Error(e.ToString());
-				throw;
+                Log.Error(e.ToString());
+                throw;
             }
-		}
+        }
 		
 		public static void HideWindow(this DlgLogin self)
 		{
