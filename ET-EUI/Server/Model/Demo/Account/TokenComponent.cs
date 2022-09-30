@@ -11,6 +11,9 @@ namespace ET
     /// </summary>
     public class TokenComponent:Entity,IAwake
     {
+        /// <summary>
+        /// long:accountID
+        /// </summary>
         public readonly Dictionary<long ,string> tokenDictionary = new Dictionary<long ,string>();
     }
 }

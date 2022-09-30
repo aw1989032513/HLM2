@@ -135,8 +135,8 @@ namespace ET
                     accountSession.DomainScene().GetComponent<TokenComponent>().Remove(account.Id);
                     accountSession.DomainScene().GetComponent<TokenComponent>().Add(account.Id, token);
 
-                    response.AccounId = account.Id;
-                    response.Key = token;
+                    response.AccountId = account.Id;
+                    response.Token = token;
 
                     reply();
                     account?.Dispose();

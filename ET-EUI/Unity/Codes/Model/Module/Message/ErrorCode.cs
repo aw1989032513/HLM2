@@ -20,6 +20,9 @@ namespace ET
         public const int ERR_PasswordFromError   = 200005;//登录密码格式错误
         public const int ERR_LoginBlackListError = 200006;//黑户
         public const int ERR_PassWordError       = 200007;//密码错误
-        public const int ERR_RequestRepeatedly   = 200008;//重复登录
+        public const int ERR_RequestRepeatedly   = 200008;//重复请求
+        public const int ERR_TokenError          = 200009;//Token错误
+        public const int ERR_RoleNameIsNull      = 200010;//创建Role的名字是空的
+        public const int ERR_RoleNameSame        = 200011;//该区已经有相同名字
     }
 }
