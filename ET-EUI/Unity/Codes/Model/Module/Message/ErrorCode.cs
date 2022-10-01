@@ -22,7 +22,10 @@ namespace ET
         public const int ERR_PassWordError       = 200007;//密码错误
         public const int ERR_RequestRepeatedly   = 200008;//重复请求
         public const int ERR_TokenError          = 200009;//Token错误
+
         public const int ERR_RoleNameIsNull      = 200010;//创建Role的名字是空的
         public const int ERR_RoleNameSame        = 200011;//该区已经有相同名字
+        public const int ERR_RoleNotExist        = 200012;//该区查无此人
+        
     }
 }

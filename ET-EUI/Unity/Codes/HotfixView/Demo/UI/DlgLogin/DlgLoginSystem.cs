@@ -7,6 +7,9 @@ using UnityEngine.UI;
 
 namespace ET
 {
+    /// <summary>
+    /// 此脚本 EUI框架的
+    /// </summary>
 	public static  class DlgLoginSystem
 	{
 
@@ -24,6 +27,7 @@ namespace ET
 		{
             try
             {
+                //登录请求
                 int errorCode = await LoginHelper.Login(
                                self.DomainScene(),
                                ConstValue.LoginAddress,
@@ -35,8 +39,16 @@ namespace ET
                     Log.Error(errorCode.ToString());
                     return;
                 }
+                //获取服务器列表
+                errorCode = await LoginHelper.GetServerInfos(self.ZoneScene());
+                if (errorCode != ErrorCode.ERR_Success)
+                {
+                    Log.Error(errorCode.ToString());
+                    return;
+                }
+
                 self.DomainScene().GetComponent<UIComponent>().HideWindow(WindowID.WindowID_Login);
-                self.DomainScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Lobby);
+                self.DomainScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Server);
 
             }
             catch (Exception e)

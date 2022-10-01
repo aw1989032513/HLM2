@@ -12,5 +12,9 @@ namespace ET
     public class ServerInfosCompontent:Entity,IAwake,IDestroy
     {
         public List<ServerInfo> ServerInfosList=new List<ServerInfo>();
+        /// <summary>
+        /// 进入游戏的服务器ID
+        /// </summary>
+        public int currentServerId=0;
     }
 }

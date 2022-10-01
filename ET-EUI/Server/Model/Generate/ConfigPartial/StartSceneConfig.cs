@@ -7,15 +7,21 @@ namespace ET
     public partial class StartSceneConfigCategory
     {
         public MultiMap<int, StartSceneConfig> Gates = new MultiMap<int, StartSceneConfig>();
-        
+        //Realm 服务器
+        public Dictionary<int, StartSceneConfig> Realms = new Dictionary<int, StartSceneConfig>();
+
         public MultiMap<int, StartSceneConfig> ProcessScenes = new MultiMap<int, StartSceneConfig>();
         
         public Dictionary<long, Dictionary<string, StartSceneConfig>> ZoneScenesByName = new Dictionary<long, Dictionary<string, StartSceneConfig>>();
 
         public StartSceneConfig LocationConfig;
-        
+        //登录中心服务器
+        public StartSceneConfig LoginCenterConfig;
+
         public List<StartSceneConfig> Robots = new List<StartSceneConfig>();
-        
+
+        public Dictionary<int, StartSceneConfig> UnitCaches = new Dictionary<int, StartSceneConfig>();
+
         public List<StartSceneConfig> GetByProcess(int process)
         {
             return this.ProcessScenes[process];
@@ -49,6 +55,15 @@ namespace ET
                     case SceneType.Robot:
                         this.Robots.Add(startSceneConfig);
                         break;
+                    case SceneType.Realm:
+                        this.Realms.Add(startSceneConfig.Zone, startSceneConfig);
+                        break;
+                    case SceneType.LoginCenter:
+                        this.LoginCenterConfig = startSceneConfig;
+                        break;
+                    //case SceneType.UnitCache:
+                    //    this.UnitCaches.Add(startSceneConfig.Zone, startSceneConfig);
+                    //    break;
                 }
             }
         }

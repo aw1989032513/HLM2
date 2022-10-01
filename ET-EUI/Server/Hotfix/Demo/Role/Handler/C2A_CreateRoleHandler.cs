@@ -62,7 +62,7 @@ namespace ET
                     RoleInfo newRoleInfo = clientSession.AddChildWithId<RoleInfo>(IdGenerater.Instance.GenerateUnitId(request.ServerId));
                     newRoleInfo.Name = request.Name;
                     newRoleInfo.ServerId = request.ServerId;
-                    newRoleInfo.State = (int)RoleInfoStatus.Normal;
+                    newRoleInfo.State = (int)RoleInfoState.Normal;
                     newRoleInfo.AccountId = request.AccountId;
                     newRoleInfo.CreateTime = (int)TimeHelper.ServerNow();
                     newRoleInfo.LastLoginTime = 0;

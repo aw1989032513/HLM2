@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-    public enum RoleInfoStatus
+    public enum RoleInfoState
     {
         Normal=0,
         Freeze=1,
