@@ -39,6 +39,7 @@ namespace ET
                     //该服务器上的Realm
                     StartSceneConfig realmStartSceneConfig = RealmGateAddressHelper.GetRealm(request.ServerId);
 
+                    //向Realm请求
                     R2A_GetRealmKey r2A_GetRealmKey = (R2A_GetRealmKey)await MessageHelper.CallActor(realmStartSceneConfig.InstanceId, new A2R_GetRealmKey()
                     {
                         AccountId = request.AccountId,

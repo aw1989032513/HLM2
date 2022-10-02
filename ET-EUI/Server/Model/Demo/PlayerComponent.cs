@@ -3,13 +3,16 @@ using System.Linq;
 
 namespace ET
 {
+	/// <summary>
+	/// 控制player的Add remove Get
+	/// </summary>
 	public class PlayerComponent : Entity, IAwake, IDestroy
 	{
 		private readonly Dictionary<long, Player> idPlayers = new Dictionary<long, Player>();
 		
 		public void Add(Player player)
 		{
-			this.idPlayers.Add(player.Id, player);
+			this.idPlayers.Add(player.AccountId, player);
 		}
 		/// <summary>
 		/// 根据AccountID 获取Player

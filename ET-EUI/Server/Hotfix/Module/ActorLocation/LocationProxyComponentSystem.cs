@@ -33,7 +33,14 @@ namespace ET
             await MessageHelper.CallActor(GetLocationSceneId(key),
                 new ObjectAddRequest() { Key = key, InstanceId = instanceId });
         }
-
+        /// <summary>
+        /// 锁住unit的ID 和InstanceID
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="key"></param>
+        /// <param name="instanceId"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
         public static async ETTask Lock(this LocationProxyComponent self, long key, long instanceId, int time = 60000)
         {
             Log.Info($"location proxy lock {key}, {instanceId} {TimeHelper.ServerNow()}");

@@ -8,11 +8,23 @@ namespace ET
 {
     public static class TokenComponentSystem
     {
+        /// <summary>
+        /// Add
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="key">AccountId</param>
+        /// <param name="token"> token</param>
         public static void Add(this TokenComponent self,long key,string token)
         {
             self.tokenDictionary.Add(key,token);
             TimeOutRemoveToken(self,key,token).Coroutine();
         }
+        /// <summary>
+        /// Get
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="key">AccountId</param>
+        /// <returns></returns>
         public static string Get(this TokenComponent self, long key)
         {
             string value = null;
@@ -30,7 +42,7 @@ namespace ET
         /// 超过十分钟就移除令牌
         /// </summary>
         /// <param name="self"></param>
-        /// <param name="key"></param>
+        /// <param name="key">AccountId</param>
         /// <param name="token"></param>
         /// <returns></returns>
         private static async ETTask TimeOutRemoveToken(this TokenComponent self,long key,string token)

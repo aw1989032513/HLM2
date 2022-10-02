@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ET
 {
     /// <summary>
-    /// 账号服务登记中心   登记  登录服发来的AccountID
+    /// 账号服务登记中心   登记  登录服发来的AccountID  并且踢下线相同账号的人
     /// </summary>
     public class A2L_LoginAccountRequestHandler : AMActorRpcHandler<Scene, A2L_LoginAccountRequest, L2A_LoginAccountResponse>
     {
@@ -27,7 +27,7 @@ namespace ET
                 StartSceneConfig gateConfig = RealmGateAddressHelper.GetGate(zone,accountID);
 
 
-                //账号登记中心，通知Gate网关，T玩家下线
+                //账号登记中心，通知Gate网关，T其他玩家下线
                 var g2lDisconnectGateUnit = (G2L_DisconnectGateUnit)await MessageHelper.CallActor(gateConfig.InstanceId, new L2G_DisconnectGateUnit() { AccountId = accountID });
                 response.Error = g2lDisconnectGateUnit.Error;
 

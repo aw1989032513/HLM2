@@ -12,7 +12,7 @@
             request.Unit = unit;
             foreach (Entity entity in unit.Components.Values)
             {
-                if (entity is ITransfer)
+                if (entity is ITransfer)//是否继承ITransfer这个接口
                 {
                     request.Entitys.Add(entity);
                 }
@@ -25,7 +25,7 @@
             await LocationProxyComponent.Instance.Lock(unit.Id, unit.InstanceId);
             M2M_UnitTransferResponse response = await ActorMessageSenderComponent.Instance.Call(sceneInstanceId, request) as M2M_UnitTransferResponse;
             await LocationProxyComponent.Instance.UnLock(unit.Id, oldInstanceId, response.NewInstanceId);
-            unit.Dispose();
+            unit.Dispose();//unit 断开Gate服务器
         }
     }
 }

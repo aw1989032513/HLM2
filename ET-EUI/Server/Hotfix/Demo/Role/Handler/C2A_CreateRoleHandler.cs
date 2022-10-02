@@ -59,7 +59,7 @@ namespace ET
                         return;
                     }
                     //往数据库添加新的角色信息
-                    RoleInfo newRoleInfo = clientSession.AddChildWithId<RoleInfo>(IdGenerater.Instance.GenerateUnitId(request.ServerId));
+                    RoleInfo newRoleInfo = clientSession.GetComponent<RoleInfosZone>().AddChildWithId<RoleInfo>(IdGenerater.Instance.GenerateUnitId(request.ServerId));
                     newRoleInfo.Name = request.Name;
                     newRoleInfo.ServerId = request.ServerId;
                     newRoleInfo.State = (int)RoleInfoState.Normal;

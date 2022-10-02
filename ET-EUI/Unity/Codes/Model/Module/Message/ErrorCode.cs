@@ -26,6 +26,19 @@ namespace ET
         public const int ERR_RoleNameIsNull      = 200010;//创建Role的名字是空的
         public const int ERR_RoleNameSame        = 200011;//该区已经有相同名字
         public const int ERR_RoleNotExist        = 200012;//该区查无此人
+
+        public const int ERR_ConnectGateKeyError = 200013; //连接Gate的令牌错误
+
+        public const int ERR_RequestSceneTypeError = 200014; //请求的Scene错误
+        public const int ERR_OtherAccountLogin     = 200015; //其他账号在线
+        public const int ERR_SessionPlayerError    = 200016;
+        public const int ERR_NonePlayerError       = 200017;
+        public const int ERR_SessionStateError     = 200018;
+        public const int ERR_EnterGameError        = 200019;
         
+
+
+
+
     }
 }

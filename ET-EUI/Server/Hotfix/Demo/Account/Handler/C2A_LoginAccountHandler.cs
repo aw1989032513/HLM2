@@ -55,6 +55,16 @@ namespace ET
                 accountSession.Disconnect().Coroutine();
                 return;
             }
+            //if (session.GetComponent<AccountsZone>() == null)
+            //{
+            //    session.AddComponent<AccountsZone>();
+            //}
+
+            if (accountSession.GetComponent<RoleInfosZone>() == null)
+            {
+                accountSession.AddComponent<RoleInfosZone>();
+            }
+
 
             //第一次进来会添加这个组件SessionLockingComponent
             using (accountSession.AddComponent<SessionLockingComponent>())
@@ -103,7 +113,7 @@ namespace ET
                     }
                     #endregion
 
-                    #region  用户到账号中心登记自己的账号信息
+                    #region  用户到账号中心登记自己的账号信息，并且T掉相同账号的 
                     StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(accountSession.DomainZone(), "LoginCenter");
                     long loginCenterInstanceId = startSceneConfig.InstanceId;
                     var loginAccountResponse = (L2A_LoginAccountResponse)await ActorMessageSenderComponent.Instance.Call(loginCenterInstanceId, new A2L_LoginAccountRequest() { AccountId = account.Id });

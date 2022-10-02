@@ -6,13 +6,6 @@ using System.Threading.Tasks;
 
 namespace ET
 {
-    public class RoleInfosComponentAwakeSystem : AwakeSystem<RoleInfosComponent>
-    {
-        public override void Awake(RoleInfosComponent self)
-        {
-            throw new NotImplementedException();
-        }
-    }
     public class RoleInfosComponentDestorySystem : DestroySystem<RoleInfosComponent>
     {
         public override void Destroy(RoleInfosComponent self)

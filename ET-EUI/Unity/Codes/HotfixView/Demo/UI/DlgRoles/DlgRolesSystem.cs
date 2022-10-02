@@ -19,6 +19,8 @@ namespace ET
 
 		public static void ShowWindow(this DlgRoles self, Entity contextData = null)
 		{
+			Log.Debug($"当前窗口类型{WindowID.WindowID_Roles}");
+			self.RefreshRoleItems();
 		}
 		public static void OnRoleListRefreshHandler(this DlgRoles self, Transform transform, int index)
 		{
@@ -72,9 +74,11 @@ namespace ET
 		/// <returns></returns>
 		public static async ETTask OnConfirmClickHandler(this DlgRoles self)
         {
-            if (self.ZoneScene().GetComponent<RoleInfosComponent>().currentRoleId == 0)
+		
+
+			if (self.ZoneScene().GetComponent<RoleInfosComponent>().currentRoleId == 0)
             {
-				Log.Error("请选择需要删除的角色");
+				Log.Error("请选择需要进入的角色");
 				return;
 			}
             try
