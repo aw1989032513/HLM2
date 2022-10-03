@@ -1,0 +1,22 @@
+2022-09-28 21:03:17.0830 (Scene.cs:33) scene create: Process Process 1608296683475828737 1608296683475828737 0
+2022-09-28 21:03:17.2321 (Program.cs:41) server start........................ 1608296683475828737
+2022-09-28 21:03:17.5318 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-28 21:03:17.5474 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-28 21:03:17.5474 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-28 21:03:17.5474 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-28 21:03:17.5518 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-28 21:03:17.5518 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-28 21:03:17.5518 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-28 21:03:17.5518 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-28 21:03:28.4693 (Session.cs:69) session create: zone: 1 id: 8589934592 1664399008469 
+2022-09-28 21:03:28.4772 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "123", "Password" : "3F2CF36A0963CF127CE8B5F1EB91A447" }
+2022-09-28 21:03:28.5354 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-28 21:03:28.5610 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:2596
+2022-09-28 21:03:28.5610 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:2596
+2022-09-28 21:03:28.5610 (Session.cs:91) session dispose: 127.0.0.1:2596 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664399008564
+2022-09-28 21:03:37.7961 (Session.cs:69) session create: zone: 1 id: 12884901888 1664399017796 
+2022-09-28 21:03:37.7961 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 2, "AccountName" : "", "Password" : "D41D8CD98F00B204E9800998ECF8427E" }
+2022-09-28 21:03:37.7961 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 2, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-28 21:03:37.8118 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:2610
+2022-09-28 21:03:37.8118 (TChannel.cs:102) channel dispose: 12884901888 127.0.0.1:2610
+2022-09-28 21:03:37.8118 (Session.cs:91) session dispose: 127.0.0.1:2610 zone: 1 id: 12884901888 ErrorCode: 100208, please see ErrorCode.cs! 1664399017812

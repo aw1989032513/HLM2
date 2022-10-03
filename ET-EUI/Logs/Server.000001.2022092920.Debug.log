@@ -1,0 +1,125 @@
+2022-09-29 20:27:01.6693 (Scene.cs:33) scene create: Process Process 1614084512684441601 1614084512684441601 0
+2022-09-29 20:27:01.8752 (Program.cs:41) server start........................ 1614084512684441601
+2022-09-29 20:27:02.3008 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-29 20:27:02.3150 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-29 20:27:02.3150 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-29 20:27:02.3180 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-29 20:27:02.3180 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-29 20:27:02.3180 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-29 20:27:02.3180 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-29 20:27:02.3180 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-29 20:30:32.9867 (Scene.cs:33) scene create: Process Process 1614099012494032897 1614099012494032897 0
+2022-09-29 20:30:33.0906 (Program.cs:41) server start........................ 1614099012494032897
+2022-09-29 20:30:33.5034 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-29 20:30:33.5284 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-29 20:30:33.5284 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-29 20:30:33.5385 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-29 20:30:33.5385 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-29 20:30:33.5385 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-29 20:30:33.5385 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-29 20:30:33.5385 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-29 20:30:59.8346 (Session.cs:69) session create: zone: 1 id: 8589934592 1664483459834 
+2022-09-29 20:30:59.8346 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "123", "Password" : "202CB962AC59075B964B07152D234B70" }
+2022-09-29 20:30:59.9255 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:30:59.9544 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:2543
+2022-09-29 20:30:59.9544 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:2543
+2022-09-29 20:30:59.9578 (Session.cs:91) session dispose: 127.0.0.1:2543 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664483459957
+2022-09-29 20:32:51.1901 (Scene.cs:33) scene create: Process Process 1614108564501299201 1614108564501299201 0
+2022-09-29 20:32:51.2801 (Program.cs:41) server start........................ 1614108564501299201
+2022-09-29 20:32:51.6331 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-29 20:32:51.6467 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-29 20:33:01.2333 (Session.cs:69) session create: zone: 1 id: 8589934592 1664483581233 
+2022-09-29 20:33:01.2411 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "123", "Password" : "202CB962AC59075B964B07152D234B70" }
+2022-09-29 20:33:01.3067 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:33:01.3360 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:2757
+2022-09-29 20:33:01.3360 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:2757
+2022-09-29 20:33:01.3360 (Session.cs:91) session dispose: 127.0.0.1:2757 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664483581339
+2022-09-29 20:41:57.5371 (Scene.cs:33) scene create: Process Process 1614146085335597057 1614146085335597057 0
+2022-09-29 20:41:57.6117 (Program.cs:41) server start........................ 1614146085335597057
+2022-09-29 20:41:57.9677 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-29 20:41:57.9876 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-29 20:41:57.9904 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-29 20:42:06.4226 (Session.cs:69) session create: zone: 1 id: 8589934592 1664484126422 
+2022-09-29 20:42:06.4362 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "123", "Password" : "202CB962AC59075B964B07152D234B70" }
+2022-09-29 20:42:06.5022 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:42:06.5262 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:3982
+2022-09-29 20:42:06.5262 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:3982
+2022-09-29 20:42:06.5262 (Session.cs:91) session dispose: 127.0.0.1:3982 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664484126529
+2022-09-29 20:44:27.3408 (Session.cs:69) session create: zone: 1 id: 12884901888 1664484267340 
+2022-09-29 20:44:27.3556 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-09-29 20:44:28.3850 (Session.cs:69) session create: zone: 0 id: 1 1664484268385 
+2022-09-29 20:44:28.3850 (Session.cs:69) session create: zone: 0 id: 8589934592 1664484268388 
+2022-09-29 20:44:28.3850 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488592165364891648 }
+2022-09-29 20:44:28.3976 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-09-29 20:44:28.3976 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-09-29 20:44:28.4169 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Key" : "16644842684151532066443", "AccounId" : 1488592165364891648 }
+2022-09-29 20:44:35.3190 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4394
+2022-09-29 20:44:35.3190 (TChannel.cs:102) channel dispose: 12884901888 127.0.0.1:4394
+2022-09-29 20:44:35.3190 (Session.cs:91) session dispose: 127.0.0.1:4394 zone: 1 id: 12884901888 ErrorCode: 100208, please see ErrorCode.cs! 1664484275321
+2022-09-29 20:44:42.0838 (Session.cs:69) session create: zone: 1 id: 17179869184 1664484282083 
+2022-09-29 20:44:42.0838 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "123", "Password" : "202CB962AC59075B964B07152D234B70" }
+2022-09-29 20:44:42.0838 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:44:42.1133 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4429
+2022-09-29 20:44:42.1133 (TChannel.cs:102) channel dispose: 17179869184 127.0.0.1:4429
+2022-09-29 20:44:42.1146 (Session.cs:91) session dispose: 127.0.0.1:4429 zone: 1 id: 17179869184 ErrorCode: 100208, please see ErrorCode.cs! 1664484282114
+2022-09-29 20:45:15.9689 (Session.cs:69) session create: zone: 1 id: 21474836480 1664484315968 
+2022-09-29 20:45:15.9836 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "HLM2", "Password" : "8463755C4D70FA5DF58B7AAC2DF2659F" }
+2022-09-29 20:45:15.9836 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:45:15.9984 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4490
+2022-09-29 20:45:15.9984 (TChannel.cs:102) channel dispose: 21474836480 127.0.0.1:4490
+2022-09-29 20:45:15.9984 (Session.cs:91) session dispose: 127.0.0.1:4490 zone: 1 id: 21474836480 ErrorCode: 100208, please see ErrorCode.cs! 1664484315999
+2022-09-29 20:45:30.3357 (Session.cs:69) session create: zone: 1 id: 25769803776 1664484330335 
+2022-09-29 20:45:30.3357 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 2, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-09-29 20:45:30.3804 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 2, "AccountId" : 1488592165364891648 }
+2022-09-29 20:45:30.3804 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-09-29 20:45:30.3954 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-09-29 20:45:30.3954 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 2, "Error" : 0, "Message" : null, "Key" : "16644843303961674813606", "AccounId" : 1488592165364891648 }
+2022-09-29 20:46:32.4177 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4520
+2022-09-29 20:46:32.4177 (TChannel.cs:102) channel dispose: 25769803776 127.0.0.1:4520
+2022-09-29 20:46:32.4177 (Session.cs:91) session dispose: 127.0.0.1:4520 zone: 1 id: 25769803776 ErrorCode: 100208, please see ErrorCode.cs! 1664484392418
+2022-09-29 20:46:44.9906 (Session.cs:69) session create: zone: 1 id: 30064771072 1664484404990 
+2022-09-29 20:46:45.0054 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "HLM2", "Password" : "8463755C4D70FA5DF58B7AAC2DF2659F" }
+2022-09-29 20:46:45.0054 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 200003, "Message" : null, "Key" : null, "AccounId" : 0 }
+2022-09-29 20:46:45.0203 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4652
+2022-09-29 20:46:45.0203 (TChannel.cs:102) channel dispose: 30064771072 127.0.0.1:4652
+2022-09-29 20:46:45.0203 (Session.cs:91) session dispose: 127.0.0.1:4652 zone: 1 id: 30064771072 ErrorCode: 100208, please see ErrorCode.cs! 1664484405021
+2022-09-29 20:48:22.6921 (Session.cs:69) session create: zone: 1 id: 34359738368 1664484502692 
+2022-09-29 20:48:22.6921 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 2, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-09-29 20:48:22.7218 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-09-29 20:48:22.7218 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-09-29 20:48:22.7378 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-09-29 20:48:22.7387 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 2, "Error" : 0, "Message" : null, "Key" : "16644845027381807431640", "AccounId" : 1488596185454280706 }
+2022-09-29 20:49:40.5404 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4856
+2022-09-29 20:49:40.5404 (TChannel.cs:102) channel dispose: 34359738368 127.0.0.1:4856
+2022-09-29 20:49:40.5404 (Session.cs:91) session dispose: 127.0.0.1:4856 zone: 1 id: 34359738368 ErrorCode: 100208, please see ErrorCode.cs! 1664484580541
+2022-09-29 20:49:47.8327 (Session.cs:69) session create: zone: 1 id: 38654705664 1664484587832 
+2022-09-29 20:49:47.8327 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-09-29 20:50:01.0513 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:5000
+2022-09-29 20:50:01.0513 (TChannel.cs:102) channel dispose: 38654705664 127.0.0.1:5000
+2022-09-29 20:50:01.0513 (Session.cs:91) session dispose: 127.0.0.1:5000 zone: 1 id: 38654705664 ErrorCode: 100208, please see ErrorCode.cs! 1664484601052
+2022-09-29 20:50:11.3571 (Scene.cs:33) scene create: Process Process 1614180032757104641 1614180032757104641 0
+2022-09-29 20:50:11.4334 (Program.cs:41) server start........................ 1614180032757104641
+2022-09-29 20:50:11.8068 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-29 20:50:11.8202 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-29 20:50:17.6884 (Session.cs:69) session create: zone: 1 id: 8589934592 1664484617688 
+2022-09-29 20:50:17.6964 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-09-29 20:50:25.2923 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:5059
+2022-09-29 20:50:25.2923 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:5059
+2022-09-29 20:50:25.2923 (Session.cs:91) session dispose: 127.0.0.1:5059 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664484625295

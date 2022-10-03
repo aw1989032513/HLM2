@@ -1,0 +1,402 @@
+2022-10-02 19:01:09.6256 (Scene.cs:33) scene create: Process Process 1631542558310268929 1631542558310268929 0
+2022-10-02 19:01:09.7258 (Program.cs:41) server start........................ 1631542558310268929
+2022-10-02 19:01:10.1210 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:01:10.1410 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:01:10.1410 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:01:10.1458 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:01:10.1458 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:01:10.1458 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:01:10.1458 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:01:11.4764 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:01:27.4148 (Session.cs:69) session create: zone: 1 id: 8589934592 1664737287414 
+2022-10-02 19:01:27.4323 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:01:27.5148 (Session.cs:69) session create: zone: 0 id: 1 1664737287514 
+2022-10-02 19:01:27.5365 (Session.cs:69) session create: zone: 0 id: 8589934592 1664737287536 
+2022-10-02 19:01:27.5365 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:01:27.5365 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:01:27.5660 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:01:27.5793 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664737287574-918135096", "AccountId" : 1488596185454280706 }
+2022-10-02 19:01:27.6166 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664737287574-918135096", "AccountId" : 1488596185454280706 }
+2022-10-02 19:01:27.6166 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:01:31.5648 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "1664737287574-918135096", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:01:31.5991 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:03:42.7437 (Scene.cs:33) scene create: Process Process 1631553072390209537 1631553072390209537 0
+2022-10-02 19:03:42.8207 (Program.cs:41) server start........................ 1631553072390209537
+2022-10-02 19:03:43.1380 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:03:43.1548 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:03:43.7406 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:03:55.8748 (Session.cs:69) session create: zone: 1 id: 8589934592 1664737435874 
+2022-10-02 19:03:55.8825 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:03:55.9752 (Session.cs:69) session create: zone: 0 id: 1 1664737435975 
+2022-10-02 19:03:55.9752 (Session.cs:69) session create: zone: 0 id: 8589934592 1664737435982 
+2022-10-02 19:03:55.9752 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:03:55.9927 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:03:55.9927 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:03:56.0103 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664737436005-317564650", "AccountId" : 1488596185454280706 }
+2022-10-02 19:03:56.0342 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664737436005-317564650", "AccountId" : 1488596185454280706 }
+2022-10-02 19:03:56.0434 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:03:57.9744 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 4, "Token" : "1664737436005-317564650", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:03:58.0070 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }], "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:04:02.4556 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 8, "Token" : "1664737436005-317564650", "AccountId" : 1488596185454280706, "Name" : "werewr", "ServerId" : 1 }
+2022-10-02 19:04:02.5357 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 8, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492941661582458880, "Name" : "werewr", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1709868385, "ServerId" : 1 } }
+2022-10-02 19:04:06.8223 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 11, "Token" : "1664737436005-317564650", "ServerId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:04:06.8364 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1488596185454280706 }
+2022-10-02 19:04:06.8364 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647374468386186024918547242349" }
+2022-10-02 19:04:06.8517 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647374468386186024918547242349" }
+2022-10-02 19:04:06.8517 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 11, "Error" : 0, "Message" : null, "RealmKey" : "16647374468386186024918547242349", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 19:04:06.8674 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:1130
+2022-10-02 19:04:06.8674 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:1130
+2022-10-02 19:04:06.8674 (Session.cs:91) session dispose: 127.0.0.1:1130 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664737446871
+2022-10-02 19:04:06.8823 (Session.cs:69) session create: zone: 1 id: 8589934592 1664737446882 
+2022-10-02 19:04:06.8823 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 12, "AccountId" : 1488596185454280706, "RealmTokenKey" : "16647374468386186024918547242349" }
+2022-10-02 19:04:06.8974 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-10-02 19:04:06.8974 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "42647232411739373591664737446899" }
+2022-10-02 19:04:06.9133 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "42647232411739373591664737446899" }
+2022-10-02 19:04:06.9133 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 12, "Error" : 0, "Message" : null, "GateSessionKey" : "42647232411739373591664737446899", "GateAddress" : "127.0.0.1:10003" }
+2022-10-02 19:04:06.9279 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:1132
+2022-10-02 19:04:06.9279 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:1132
+2022-10-02 19:04:06.9279 (Session.cs:91) session dispose: 127.0.0.1:1132 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664737446928
+2022-10-02 19:04:06.9432 (Session.cs:69) session create: zone: 1 id: 8589934592 1664737446943 
+2022-10-02 19:04:11.9494 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:1133
+2022-10-02 19:04:11.9494 (Session.cs:91) session dispose: 127.0.0.1:1133 zone: 1 id: 8589934592 ErrorCode: 0, please see ErrorCode.cs! 1664737451950
+2022-10-02 19:06:43.0708 (Session.cs:69) session create: zone: 1 id: 12884901888 1664737603070 
+2022-10-02 19:06:43.0873 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:06:43.1155 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 4, "AccountId" : 1488596185454280706 }
+2022-10-02 19:06:43.1155 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:06:43.1305 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:06:43.1305 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664737603131-224634897", "AccountId" : 1488596185454280706 }
+2022-10-02 19:06:43.1615 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664737603131-224634897", "AccountId" : 1488596185454280706 }
+2022-10-02 19:06:43.1615 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:06:45.6805 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "1664737603131-224634897", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:06:45.6965 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }, { "_id" : 1492941661582458880, "Name" : "werewr", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1709868385, "ServerId" : 1 }], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:21:57.5178 (Scene.cs:33) scene create: Process Process 1631628320217235457 1631628320217235457 0
+2022-10-02 19:21:57.6068 (Program.cs:41) server start........................ 1631628320217235457
+2022-10-02 19:21:57.9287 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:21:57.9481 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:21:58.6072 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:24:24.1816 (Scene.cs:33) scene create: Process Process 1631638421980315649 1631638421980315649 0
+2022-10-02 19:24:24.2840 (Program.cs:41) server start........................ 1631638421980315649
+2022-10-02 19:24:24.6576 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:24:24.6725 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:24:24.6725 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:24:24.6775 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:24:24.6775 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:24:24.6775 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:24:24.6775 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:24:25.2106 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:24:38.6889 (Session.cs:69) session create: zone: 1 id: 8589934592 1664738678688 
+2022-10-02 19:24:38.6971 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:24:38.7877 (Session.cs:69) session create: zone: 0 id: 1 1664738678787 
+2022-10-02 19:24:38.8100 (Session.cs:69) session create: zone: 0 id: 8589934592 1664738678810 
+2022-10-02 19:24:38.8100 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:24:38.8199 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:24:38.8199 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:24:38.8357 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "16647386788311432968967", "AccountId" : 1488596185454280706 }
+2022-10-02 19:24:38.8591 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "16647386788311432968967", "AccountId" : 1488596185454280706 }
+2022-10-02 19:24:38.8665 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:24:46.5971 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 7, "Token" : "16647386788311432968967", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:24:46.6311 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }, { "_id" : 1492941661582458880, "Name" : "werewr", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1709868385, "ServerId" : 1 }], "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-10-02 19:28:29.9954 (Scene.cs:33) scene create: Process Process 1631655258252115969 1631655258252115969 0
+2022-10-02 19:28:30.0723 (Program.cs:41) server start........................ 1631655258252115969
+2022-10-02 19:28:30.4701 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:28:30.4908 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:28:31.2867 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:29:25.9411 (Session.cs:69) session create: zone: 1 id: 8589934592 1664738965940 
+2022-10-02 19:29:25.9540 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:29:26.0437 (Session.cs:69) session create: zone: 0 id: 1 1664738966043 
+2022-10-02 19:29:26.0657 (Session.cs:69) session create: zone: 0 id: 8589934592 1664738966065 
+2022-10-02 19:29:26.0689 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:26.0689 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:29:26.0962 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:29:26.1086 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:26.1295 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:26.1295 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:29:29.1341 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:29:29.1671 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }, { "_id" : 1492941661582458880, "Name" : "werewr", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1709868385, "ServerId" : 1 }], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:29:38.2391 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 10, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706, "Name" : "qweqweqwe", "ServerId" : 1 }
+2022-10-02 19:29:38.3180 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 10, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492968049861525504, "Name" : "qweqweqwe", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1708332601, "ServerId" : 1 } }
+2022-10-02 19:29:47.9943 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_DeleteRole", "RpcId" : 16, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706, "RoleInfoId" : 1491472147112067072, "ServerId" : 1 }
+2022-10-02 19:29:48.0095 (Session.cs:185) zone: 1 { "_t" : "A2C_DeleteRole", "RpcId" : 16, "Error" : 0, "Message" : null, "DeletedRoleInfoId" : 1491472147112067072 }
+2022-10-02 19:29:51.4227 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_DeleteRole", "RpcId" : 19, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706, "RoleInfoId" : 1492941661582458880, "ServerId" : 1 }
+2022-10-02 19:29:51.4516 (Session.cs:185) zone: 1 { "_t" : "A2C_DeleteRole", "RpcId" : 19, "Error" : 0, "Message" : null, "DeletedRoleInfoId" : 1492941661582458880 }
+2022-10-02 19:29:54.5295 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_DeleteRole", "RpcId" : 22, "Token" : "16647389661041927736294", "AccountId" : 1488596185454280706, "RoleInfoId" : 1492968049861525504, "ServerId" : 1 }
+2022-10-02 19:29:54.5595 (Session.cs:185) zone: 1 { "_t" : "A2C_DeleteRole", "RpcId" : 22, "Error" : 0, "Message" : null, "DeletedRoleInfoId" : 1492968049861525504 }
+2022-10-02 19:29:59.7496 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 25, "Token" : "16647389661041927736294", "ServerId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:59.7638 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:59.7638 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664738999765-8663888007016886228" }
+2022-10-02 19:29:59.7789 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664738999765-8663888007016886228" }
+2022-10-02 19:29:59.7789 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 25, "Error" : 0, "Message" : null, "RealmKey" : "1664738999765-8663888007016886228", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 19:29:59.7947 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4706
+2022-10-02 19:29:59.7947 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4706
+2022-10-02 19:29:59.7947 (Session.cs:91) session dispose: 127.0.0.1:4706 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664738999798
+2022-10-02 19:29:59.7947 (Session.cs:69) session create: zone: 1 id: 8589934592 1664738999799 
+2022-10-02 19:29:59.8121 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 26, "AccountId" : 1488596185454280706, "RealmTokenKey" : "1664738999765-8663888007016886228" }
+2022-10-02 19:29:59.8267 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-10-02 19:29:59.8267 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "42279294225293428991664738999828" }
+2022-10-02 19:29:59.8428 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "42279294225293428991664738999828" }
+2022-10-02 19:29:59.8428 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 26, "Error" : 0, "Message" : null, "GateSessionKey" : "42279294225293428991664738999828", "GateAddress" : "127.0.0.1:10003" }
+2022-10-02 19:29:59.8584 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4709
+2022-10-02 19:29:59.8584 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4709
+2022-10-02 19:29:59.8584 (Session.cs:91) session dispose: 127.0.0.1:4709 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664738999859
+2022-10-02 19:29:59.8746 (Session.cs:69) session create: zone: 1 id: 8589934592 1664738999874 
+2022-10-02 19:30:04.8875 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4710
+2022-10-02 19:30:04.8875 (Session.cs:91) session dispose: 127.0.0.1:4710 zone: 1 id: 8589934592 ErrorCode: 0, please see ErrorCode.cs! 1664739004889
+2022-10-02 19:34:37.5695 (Scene.cs:33) scene create: Process Process 1631680547019554817 1631680547019554817 0
+2022-10-02 19:34:37.6265 (Program.cs:41) server start........................ 1631680547019554817
+2022-10-02 19:34:37.9380 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:34:37.9544 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:34:37.9544 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:34:37.9600 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:34:37.9600 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:34:37.9600 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:34:37.9600 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:34:38.6658 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:34:52.1702 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739292170 
+2022-10-02 19:34:52.1783 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:34:52.2708 (Session.cs:69) session create: zone: 0 id: 1 1664739292270 
+2022-10-02 19:34:52.2921 (Session.cs:69) session create: zone: 0 id: 8589934592 1664739292292 
+2022-10-02 19:34:52.2921 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:34:52.3020 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:34:52.3020 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:34:52.3201 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "16647392923141215203623", "AccountId" : 1488596185454280706 }
+2022-10-02 19:34:52.3565 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "16647392923141215203623", "AccountId" : 1488596185454280706 }
+2022-10-02 19:34:52.3644 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:34:55.2050 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "16647392923141215203623", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:34:55.2389 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:35:16.5641 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 16, "Token" : "16647392923141215203623", "AccountId" : 1488596185454280706, "Name" : "qwe", "ServerId" : 1 }
+2022-10-02 19:35:16.6439 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 16, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492973856657309696, "Name" : "qwe", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1707994277, "ServerId" : 1 } }
+2022-10-02 19:35:20.8718 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 20, "Token" : "16647392923141215203623", "ServerId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:35:20.8873 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1488596185454280706 }
+2022-10-02 19:35:20.8873 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664739320889-2829032565257900182" }
+2022-10-02 19:35:20.9032 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664739320889-2829032565257900182" }
+2022-10-02 19:35:20.9032 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 20, "Error" : 0, "Message" : null, "RealmKey" : "1664739320889-2829032565257900182", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 19:35:20.9192 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4748
+2022-10-02 19:35:20.9192 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4748
+2022-10-02 19:35:20.9192 (Session.cs:91) session dispose: 127.0.0.1:4748 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664739320922
+2022-10-02 19:35:20.9192 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739320923 
+2022-10-02 19:35:20.9361 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 21, "AccountId" : 1488596185454280706, "RealmTokenKey" : "1664739320889-2829032565257900182" }
+2022-10-02 19:35:20.9512 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-10-02 19:35:20.9512 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "57950265583863509721664739320952" }
+2022-10-02 19:35:20.9661 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "57950265583863509721664739320952" }
+2022-10-02 19:35:20.9661 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 21, "Error" : 0, "Message" : null, "GateSessionKey" : "57950265583863509721664739320952", "GateAddress" : "127.0.0.1:10003" }
+2022-10-02 19:35:20.9771 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4750
+2022-10-02 19:35:20.9771 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4750
+2022-10-02 19:35:20.9771 (Session.cs:91) session dispose: 127.0.0.1:4750 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664739320977
+2022-10-02 19:35:20.9771 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739320978 
+2022-10-02 19:35:25.9790 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4751
+2022-10-02 19:35:25.9790 (Session.cs:91) session dispose: 127.0.0.1:4751 zone: 1 id: 8589934592 ErrorCode: 0, please see ErrorCode.cs! 1664739325980
+2022-10-02 19:36:02.1865 (Scene.cs:33) scene create: Process Process 1631686388175077377 1631686388175077377 0
+2022-10-02 19:36:02.2590 (Program.cs:41) server start........................ 1631686388175077377
+2022-10-02 19:36:02.6054 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:36:02.6238 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:36:02.6238 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:36:02.6300 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:36:02.6300 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:36:02.6300 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:36:02.6300 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:36:03.2094 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:36:16.6399 (Scene.cs:33) scene create: Process Process 1631687350247751681 1631687350247751681 0
+2022-10-02 19:36:16.7207 (Program.cs:41) server start........................ 1631687350247751681
+2022-10-02 19:36:17.0909 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:36:17.1201 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:36:17.7368 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:36:28.3049 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739388304 
+2022-10-02 19:36:28.3049 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 19:36:28.4038 (Session.cs:69) session create: zone: 0 id: 1 1664739388403 
+2022-10-02 19:36:28.4247 (Session.cs:69) session create: zone: 0 id: 8589934592 1664739388424 
+2022-10-02 19:36:28.4268 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:36:28.4268 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:36:28.4268 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:36:28.4509 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664739388446-1917951373", "AccountId" : 1488596185454280706 }
+2022-10-02 19:36:28.4754 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664739388446-1917951373", "AccountId" : 1488596185454280706 }
+2022-10-02 19:36:28.4754 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:36:32.7786 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 6, "Token" : "1664739388446-1917951373", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:36:32.8140 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 }, { "_id" : 1492973856657309696, "Name" : "qwe", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1707994277, "ServerId" : 1 }], "RpcId" : 6, "Error" : 0, "Message" : null }
+2022-10-02 19:36:37.5806 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 9, "Token" : "1664739388446-1917951373", "AccountId" : 1488596185454280706, "Name" : "qwe", "ServerId" : 1 }
+2022-10-02 19:36:37.5953 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 9, "Error" : 200011, "Message" : null, "RoleInfo" : null }
+2022-10-02 19:36:59.3772 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 21, "Token" : "1664739388446-1917951373", "AccountId" : 1488596185454280706, "Name" : "efb", "ServerId" : 1 }
+2022-10-02 19:36:59.4690 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 21, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492975626183835648, "Name" : "efb", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1707891467, "ServerId" : 1 } }
+2022-10-02 19:37:03.0888 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 24, "Token" : "1664739388446-1917951373", "ServerId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 19:37:03.1032 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1488596185454280706 }
+2022-10-02 19:37:03.1032 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647394231042210485896757066444" }
+2022-10-02 19:37:03.1182 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647394231042210485896757066444" }
+2022-10-02 19:37:03.1182 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 24, "Error" : 0, "Message" : null, "RealmKey" : "16647394231042210485896757066444", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 19:37:03.1342 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4777
+2022-10-02 19:37:03.1342 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4777
+2022-10-02 19:37:03.1342 (Session.cs:91) session dispose: 127.0.0.1:4777 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664739423137
+2022-10-02 19:37:03.1342 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739423138 
+2022-10-02 19:37:03.1498 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 25, "AccountId" : 1488596185454280706, "RealmTokenKey" : "16647394231042210485896757066444" }
+2022-10-02 19:37:03.1640 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-10-02 19:37:03.1640 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "50850612806159159341664739423165" }
+2022-10-02 19:37:03.1792 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "50850612806159159341664739423165" }
+2022-10-02 19:37:03.1792 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 25, "Error" : 0, "Message" : null, "GateSessionKey" : "50850612806159159341664739423165", "GateAddress" : "127.0.0.1:10003" }
+2022-10-02 19:37:03.1934 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4781
+2022-10-02 19:37:03.1934 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4781
+2022-10-02 19:37:03.1934 (Session.cs:91) session dispose: 127.0.0.1:4781 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664739423194
+2022-10-02 19:37:03.2088 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739423208 
+2022-10-02 19:37:03.2088 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_LoginGameGate", "RpcId" : 27, "Key" : "50850612806159159341664739423165", "RoleId" : 1492975626183835648, "Account" : 1488596185454280706 }
+2022-10-02 19:37:03.2249 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2L_AddLoginRecord", "RpcId" : 4, "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 19:37:03.2249 (Session.cs:195) zone: 0 { "_t" : "L2G_AddLoginRecord", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.2399 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2G_AddLoginRecord", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.2399 (Session.cs:185) zone: 1 { "_t" : "G2C_LoginGameGate", "RpcId" : 27, "Error" : 0, "Message" : null, "PlayerId" : 0 }
+2022-10-02 19:37:03.2713 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_EnterGame", "RpcId" : 28 }
+2022-10-02 19:37:03.2713 (Scene.cs:48) scene create: Map GateMap 1631690580063158305 1631690580063158305 1
+2022-10-02 19:37:03.2899 (Session.cs:195) zone: 0 { "_t" : "M2C_StartSceneChange", "SceneInstanceId" : 262149, "SceneName" : "Map1" }
+2022-10-02 19:37:03.2899 (LocationProxyComponentSystem.cs:39) location proxy lock 1492975626183835648, 1631690580063158309 1664739423291
+2022-10-02 19:37:03.2899 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockRequest", "RpcId" : 5, "Key" : 1492975626183835648, "InstanceId" : 1631690580063158309, "Time" : 60000 }
+2022-10-02 19:37:03.3041 (LocationComponent.cs:66) location lock key: 1492975626183835648 instanceId: 1631690580063158309
+2022-10-02 19:37:03.3041 (Session.cs:195) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.3041 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.3425 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferRequest", "Entitys" : [{ "_t" : "NumericComponent", "_id" : 1492975626183835648, "NumericDic" : [[1000, 60000], [1003, 15000]] }, { "_t" : "UnitGateComponent", "_id" : 1492975626183835648, "GateSessionActorId" : 1631690580063158287 }], "RpcId" : 6, "Unit" : { "_id" : 1492975626183835648, "ConfigId" : 1001, "Position" : { "x" : -10.0, "y" : 0.0, "z" : -10.0 }, "Rotation" : { "w" : 0.0, "x" : 0.0, "y" : 0.0, "z" : 0.0 } } }
+2022-10-02 19:37:03.3667 (Session.cs:195) zone: 0 { "_t" : "M2C_CreateMyUnit", "Unit" : { "Ks" : [1000, 1003], "Vs" : [60000, 15000], "UnitId" : 1492975626183835648, "ConfigId" : 1001, "Type" : 1, "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "ForwardX" : 0.0, "ForwardY" : 0.0, "ForwardZ" : 1.0, "MoveInfo" : null } }
+2022-10-02 19:37:03.3667 (Session.cs:195) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "NewInstanceId" : 1631690580063158343 }
+2022-10-02 19:37:03.3667 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "NewInstanceId" : 1631690580063158343 }
+2022-10-02 19:37:03.3800 (LocationProxyComponentSystem.cs:46) location proxy unlock 1492975626183835648, 1631690580063158343 1664739423380
+2022-10-02 19:37:03.3800 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockRequest", "RpcId" : 7, "Key" : 1492975626183835648, "OldInstanceId" : 1631690580063158309, "InstanceId" : 1631690580063158343 }
+2022-10-02 19:37:03.3967 (LocationComponent.cs:95) location unlock key: 1492975626183835648 instanceId: 1631690580063158309 newInstanceId: 1631690580063158343
+2022-10-02 19:37:03.3967 (Session.cs:195) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.3967 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-10-02 19:37:03.4121 (Session.cs:185) zone: 1 { "_t" : "G2C_EnterGame", "RpcId" : 28, "Error" : 0, "Message" : null, "MyId" : 1492975626183835648 }
+2022-10-02 19:37:37.3371 (SessionIdleCheckerComponentSystem.cs:51) session timeout: 8589934592 1664739457337 1664739427272 1664739427272 30065 30065
+2022-10-02 19:37:37.3371 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4782
+2022-10-02 19:37:37.3371 (Session.cs:91) session dispose: 127.0.0.1:4782 zone: 1 id: 8589934592 ErrorCode: 110311, please see ErrorCode.cs! 1664739457344
+2022-10-02 19:37:37.3530 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetRequest", "RpcId" : 9, "Key" : 1492975626183835648 }
+2022-10-02 19:37:37.3530 (LocationComponent.cs:110) location get key: 1492975626183835648 instanceId: 1631690580063158343
+2022-10-02 19:37:37.3530 (Session.cs:195) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 9, "Error" : 0, "Message" : null, "InstanceId" : 1631690580063158343 }
+2022-10-02 19:37:37.3686 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 9, "Error" : 0, "Message" : null, "InstanceId" : 1631690580063158343 }
+2022-10-02 19:37:37.3844 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2M_SessionDisconnect", "RpcId" : 8 }
+2022-10-02 19:37:37.3844 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 8, "Error" : 0, "Message" : null }
+2022-10-02 19:37:37.4148 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 8, "Error" : 0, "Message" : null }
+2022-10-02 19:45:54.3127 (Scene.cs:33) scene create: Process Process 1631727070105305089 1631727070105305089 0
+2022-10-02 19:45:54.3979 (Program.cs:41) server start........................ 1631727070105305089
+2022-10-02 19:45:54.7609 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:45:54.7750 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:45:55.3632 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:46:05.4041 (Session.cs:69) session create: zone: 1 id: 8589934592 1664739965403 
+2022-10-02 19:46:05.4234 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uwa123456", "Password" : "89664FF56E50F7792BFA27FBFB2AD926" }
+2022-10-02 19:46:05.6162 (Session.cs:69) session create: zone: 0 id: 1 1664739965616 
+2022-10-02 19:46:05.6162 (Session.cs:69) session create: zone: 0 id: 8589934592 1664739965622 
+2022-10-02 19:46:05.6162 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:05.6310 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:46:05.6310 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:46:05.6458 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664739965641-1722543951", "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:05.6688 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664739965641-1722543951", "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:05.6761 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:46:08.4203 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "1664739965641-1722543951", "AccountId" : 1492985006375632898, "ServerId" : 1 }
+2022-10-02 19:46:08.4441 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:46:33.5519 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4852
+2022-10-02 19:46:33.5519 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4852
+2022-10-02 19:46:33.5519 (Session.cs:91) session dispose: 127.0.0.1:4852 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664739993557
+2022-10-02 19:46:41.7855 (Session.cs:69) session create: zone: 1 id: 12884901888 1664740001785 
+2022-10-02 19:46:41.7861 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uwa123456", "Password" : "89664FF56E50F7792BFA27FBFB2AD926" }
+2022-10-02 19:46:41.8162 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 2, "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:41.8162 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-10-02 19:46:41.8313 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 2, "Error" : 0, "Message" : null }
+2022-10-02 19:46:41.8321 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "16647400018321834753706", "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:41.8634 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "16647400018321834753706", "AccountId" : 1492985006375632898 }
+2022-10-02 19:46:41.8643 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:46:46.4206 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 6, "Token" : "16647400018321834753706", "AccountId" : 1492985006375632898, "ServerId" : 1 }
+2022-10-02 19:46:46.4367 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [], "RpcId" : 6, "Error" : 0, "Message" : null }
+2022-10-02 19:48:05.6289 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4868
+2022-10-02 19:48:05.6289 (TChannel.cs:102) channel dispose: 12884901888 127.0.0.1:4868
+2022-10-02 19:48:05.6303 (Session.cs:91) session dispose: 127.0.0.1:4868 zone: 1 id: 12884901888 ErrorCode: 100208, please see ErrorCode.cs! 1664740085630
+2022-10-02 19:48:28.2995 (Scene.cs:33) scene create: Process Process 1631737652904722433 1631737652904722433 0
+2022-10-02 19:48:28.3613 (Program.cs:41) server start........................ 1631737652904722433
+2022-10-02 19:48:28.6920 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 19:48:28.7103 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 19:48:29.4090 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 19:48:46.0716 (Session.cs:69) session create: zone: 1 id: 8589934592 1664740126071 
+2022-10-02 19:48:46.0716 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uwa123456", "Password" : "89664FF56E50F7792BFA27FBFB2AD926" }
+2022-10-02 19:48:46.1716 (Session.cs:69) session create: zone: 0 id: 1 1664740126171 
+2022-10-02 19:48:46.1945 (Session.cs:69) session create: zone: 0 id: 8589934592 1664740126194 
+2022-10-02 19:48:46.1945 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1492985006375632898 }
+2022-10-02 19:48:46.1945 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:48:46.2093 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 19:48:46.2093 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664740126215-847409214", "AccountId" : 1492985006375632898 }
+2022-10-02 19:48:46.2444 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664740126215-847409214", "AccountId" : 1492985006375632898 }
+2022-10-02 19:48:46.2444 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 19:48:48.8683 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "1664740126215-847409214", "AccountId" : 1492985006375632898, "ServerId" : 1 }
+2022-10-02 19:48:48.9006 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:49:55.9241 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 39, "Token" : "1664740126215-847409214", "AccountId" : 1492985006375632898, "Name" : "jk", "ServerId" : 1 }
+2022-10-02 19:49:56.0168 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 39, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492988957762322432, "Name" : "jk", "State" : 0, "AccountId" : 1492985006375632898, "LastLoginTime" : 0, "CreateTime" : -1707114910, "ServerId" : 1 } }
+2022-10-02 19:50:00.8456 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 42, "Token" : "1664740126215-847409214", "ServerId" : 1, "AccountId" : 1492985006375632898 }
+2022-10-02 19:50:00.8590 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1492985006375632898 }
+2022-10-02 19:50:00.8590 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664740200861382281720706783867" }
+2022-10-02 19:50:00.8740 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "1664740200861382281720706783867" }
+2022-10-02 19:50:00.8740 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 42, "Error" : 0, "Message" : null, "RealmKey" : "1664740200861382281720706783867", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 19:50:00.8890 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4895
+2022-10-02 19:50:00.8890 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4895
+2022-10-02 19:50:00.8890 (Session.cs:91) session dispose: 127.0.0.1:4895 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664740200892
+2022-10-02 19:50:00.8890 (Session.cs:69) session create: zone: 1 id: 8589934592 1664740200893 
+2022-10-02 19:50:00.9058 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 44, "AccountId" : 1492985006375632898, "RealmTokenKey" : "1664740200861382281720706783867" }
+2022-10-02 19:50:00.9199 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1492985006375632898 }
+2022-10-02 19:50:00.9199 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "18240845373348937421664740200921" }
+2022-10-02 19:50:00.9353 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "18240845373348937421664740200921" }
+2022-10-02 19:50:00.9353 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 44, "Error" : 0, "Message" : null, "GateSessionKey" : "18240845373348937421664740200921", "GateAddress" : "127.0.0.1:10003" }
+2022-10-02 19:50:00.9473 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4899
+2022-10-02 19:50:00.9473 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4899
+2022-10-02 19:50:00.9473 (Session.cs:91) session dispose: 127.0.0.1:4899 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664740200948
+2022-10-02 19:50:00.9473 (Session.cs:69) session create: zone: 1 id: 8589934592 1664740200948 
+2022-10-02 19:50:00.9734 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_LoginGameGate", "RpcId" : 46, "Key" : "18240845373348937421664740200921", "RoleId" : 1492988957762322432, "Account" : 1492985006375632898 }
+2022-10-02 19:50:00.9819 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2L_AddLoginRecord", "RpcId" : 4, "AccountId" : 1492985006375632898, "ServerId" : 1 }
+2022-10-02 19:50:00.9819 (Session.cs:195) zone: 0 { "_t" : "L2G_AddLoginRecord", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:50:00.9970 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2G_AddLoginRecord", "RpcId" : 4, "Error" : 0, "Message" : null }
+2022-10-02 19:50:00.9970 (Session.cs:185) zone: 1 { "_t" : "G2C_LoginGameGate", "RpcId" : 46, "Error" : 0, "Message" : null, "PlayerId" : 0 }
+2022-10-02 19:50:01.0135 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2G_EnterGame", "RpcId" : 47 }
+2022-10-02 19:50:01.0135 (Scene.cs:48) scene create: Map GateMap 1631744043816058884 1631744043816058884 1
+2022-10-02 19:50:01.0320 (Session.cs:195) zone: 0 { "_t" : "M2C_StartSceneChange", "SceneInstanceId" : 262149, "SceneName" : "Map1" }
+2022-10-02 19:50:01.0320 (LocationProxyComponentSystem.cs:39) location proxy lock 1492988957762322432, 1631744043816058888 1664740201033
+2022-10-02 19:50:01.0440 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockRequest", "RpcId" : 5, "Key" : 1492988957762322432, "InstanceId" : 1631744043816058888, "Time" : 60000 }
+2022-10-02 19:50:01.0440 (LocationComponent.cs:66) location lock key: 1492988957762322432 instanceId: 1631744043816058888
+2022-10-02 19:50:01.0440 (Session.cs:195) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:50:01.0591 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectLockResponse", "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 19:50:01.0878 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferRequest", "Entitys" : [{ "_t" : "NumericComponent", "_id" : 1492988957762322432, "NumericDic" : [[1000, 60000], [1003, 15000]] }, { "_t" : "UnitGateComponent", "_id" : 1492988957762322432, "GateSessionActorId" : 1631743975096582159 }], "RpcId" : 6, "Unit" : { "_id" : 1492988957762322432, "ConfigId" : 1001, "Position" : { "x" : -10.0, "y" : 0.0, "z" : -10.0 }, "Rotation" : { "w" : 0.0, "x" : 0.0, "y" : 0.0, "z" : 0.0 } } }
+2022-10-02 19:50:01.1103 (Session.cs:195) zone: 0 { "_t" : "M2C_CreateMyUnit", "Unit" : { "Ks" : [1000, 1003], "Vs" : [60000, 15000], "UnitId" : 1492988957762322432, "ConfigId" : 1001, "Type" : 1, "X" : -10.0, "Y" : 0.0, "Z" : -10.0, "ForwardX" : 0.0, "ForwardY" : 0.0, "ForwardZ" : 1.0, "MoveInfo" : null } }
+2022-10-02 19:50:01.1178 (Session.cs:195) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "NewInstanceId" : 1631744043816058922 }
+2022-10-02 19:50:01.1178 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "M2M_UnitTransferResponse", "RpcId" : 6, "Error" : 0, "Message" : null, "NewInstanceId" : 1631744043816058922 }
+2022-10-02 19:50:01.1178 (LocationProxyComponentSystem.cs:46) location proxy unlock 1492988957762322432, 1631744043816058922 1664740201121
+2022-10-02 19:50:01.1360 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockRequest", "RpcId" : 7, "Key" : 1492988957762322432, "OldInstanceId" : 1631744043816058888, "InstanceId" : 1631744043816058922 }
+2022-10-02 19:50:01.1360 (LocationComponent.cs:95) location unlock key: 1492988957762322432 instanceId: 1631744043816058888 newInstanceId: 1631744043816058922
+2022-10-02 19:50:01.1360 (Session.cs:195) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-10-02 19:50:01.1510 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectUnLockResponse", "RpcId" : 7, "Error" : 0, "Message" : null }
+2022-10-02 19:50:01.1510 (Session.cs:185) zone: 1 { "_t" : "G2C_EnterGame", "RpcId" : 47, "Error" : 0, "Message" : null, "MyId" : 1492988957762322432 }
+2022-10-02 19:50:23.8040 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:4900
+2022-10-02 19:50:23.8040 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:4900
+2022-10-02 19:50:23.8040 (Session.cs:91) session dispose: 127.0.0.1:4900 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664740223811
+2022-10-02 19:50:23.8202 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetRequest", "RpcId" : 9, "Key" : 1492988957762322432 }
+2022-10-02 19:50:23.8202 (LocationComponent.cs:110) location get key: 1492988957762322432 instanceId: 1631744043816058922
+2022-10-02 19:50:23.8202 (Session.cs:195) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 9, "Error" : 0, "Message" : null, "InstanceId" : 1631744043816058922 }
+2022-10-02 19:50:23.8353 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ObjectGetResponse", "RpcId" : 9, "Error" : 0, "Message" : null, "InstanceId" : 1631744043816058922 }
+2022-10-02 19:50:23.8502 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2M_SessionDisconnect", "RpcId" : 8 }
+2022-10-02 19:50:23.8502 (Session.cs:195) zone: 0 { "_t" : "ActorResponse", "RpcId" : 8, "Error" : 0, "Message" : null }
+2022-10-02 19:50:23.8804 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "ActorResponse", "RpcId" : 8, "Error" : 0, "Message" : null }

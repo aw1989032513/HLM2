@@ -1,0 +1,20 @@
+2022-09-30 20:57:31.8785 scene create: Process Process 1620147632116858881 1620147632116858881 0
+2022-09-30 20:57:31.9594 server start........................ 1620147632116858881
+2022-09-30 20:57:32.2340 scene create: Realm Realm 1 262145 1
+2022-09-30 20:57:32.2469 scene create: Gate Gate1 2 262146 1
+2022-09-30 20:57:32.2469 scene create: Gate Gate2 3 262147 1
+2022-09-30 20:57:32.2469 scene create: Location Location 4 262148 1
+2022-09-30 20:57:32.2469 scene create: Map Map1 5 262149 1
+2022-09-30 20:57:32.2469 scene create: Map Map2 6 262150 1
+2022-09-30 20:57:32.2469 scene create: Account Account 7 262151 1
+2022-09-30 20:57:32.8657 scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-30 20:59:03.5956 scene create: Process Process 1620153954308718593 1620153954308718593 0
+2022-09-30 20:59:03.6801 server start........................ 1620153954308718593
+2022-09-30 20:59:04.2079 scene create: Realm Realm 1 262145 1
+2022-09-30 20:59:04.2263 scene create: Gate Gate1 2 262146 1
+2022-09-30 20:59:04.2263 scene create: Gate Gate2 3 262147 1
+2022-09-30 20:59:04.2263 scene create: Location Location 4 262148 1
+2022-09-30 20:59:04.2263 scene create: Map Map1 5 262149 1
+2022-09-30 20:59:04.2263 scene create: Map Map2 6 262150 1
+2022-09-30 20:59:04.2263 scene create: Account Account 7 262151 1
+2022-09-30 20:59:04.8742 scene create: LoginCenter LoginCenter 8 262152 1

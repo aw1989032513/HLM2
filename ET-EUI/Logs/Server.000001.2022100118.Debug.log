@@ -1,0 +1,32 @@
+2022-10-01 18:56:08.0949 (Scene.cs:33) scene create: Process Process 1625584510957780993 1625584510957780993 0
+2022-10-01 18:56:08.5206 (Program.cs:41) server start........................ 1625584510957780993
+2022-10-01 18:56:09.3261 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-01 18:56:09.3382 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-01 18:56:10.3601 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-01 18:59:31.8974 (Scene.cs:33) scene create: Process Process 1625598461011558401 1625598461011558401 0
+2022-10-01 18:59:31.9689 (Program.cs:41) server start........................ 1625598461011558401
+2022-10-01 18:59:32.3370 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-01 18:59:32.3594 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-01 18:59:32.3594 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-01 18:59:32.3656 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-01 18:59:32.3656 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-01 18:59:32.3656 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-01 18:59:32.3656 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-01 18:59:33.0022 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-01 18:59:40.0771 (Session.cs:69) session create: zone: 1 id: 8589934592 1664650780076 
+2022-10-01 18:59:40.0841 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-01 18:59:40.2063 (Session.cs:69) session create: zone: 0 id: 1 1664650780206 
+2022-10-01 18:59:40.2277 (Session.cs:69) session create: zone: 0 id: 8589934592 1664650780227 
+2022-10-01 18:59:40.2277 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-01 18:59:40.2277 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-01 18:59:40.2429 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-01 18:59:40.2429 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "1664650780248-1304102175", "AccountId" : 1488596185454280706 }
+2022-10-01 18:59:40.2952 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "1664650780248-1304102175", "AccountId" : 1488596185454280706 }
+2022-10-01 18:59:40.3061 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-01 18:59:52.8269 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 10, "Token" : "1664650780248-1304102175", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-01 18:59:52.8498 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [], "RpcId" : 10, "Error" : 0, "Message" : null }

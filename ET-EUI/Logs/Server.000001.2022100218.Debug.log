@@ -1,0 +1,66 @@
+2022-10-02 18:48:53.4839 (Scene.cs:33) scene create: Process Process 1631491980775391233 1631491980775391233 0
+2022-10-02 18:48:54.0739 (Program.cs:41) server start........................ 1631491980775391233
+2022-10-02 18:48:54.5723 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-10-02 18:48:54.5967 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-10-02 18:48:54.6007 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-10-02 18:48:54.6007 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-10-02 18:48:54.6007 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-10-02 18:48:54.6007 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-10-02 18:48:54.6007 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-10-02 18:48:55.5681 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-10-02 18:49:06.3204 (Session.cs:69) session create: zone: 1 id: 8589934592 1664736546320 
+2022-10-02 18:49:06.3389 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_LoginAccount", "RpcId" : 1, "AccountName" : "Uw123456", "Password" : "B37BDA76468ABCC30E5C45FB31918C3E" }
+2022-10-02 18:49:06.4376 (Session.cs:69) session create: zone: 0 id: 1 1664736546437 
+2022-10-02 18:49:06.4444 (Session.cs:69) session create: zone: 0 id: 8589934592 1664736546444 
+2022-10-02 18:49:06.4444 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2L_LoginAccountRequest", "RpcId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:06.4444 (Session.cs:195) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 18:49:06.4600 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "L2A_LoginAccountResponse", "RpcId" : 1, "Error" : 0, "Message" : null }
+2022-10-02 18:49:06.4600 (Session.cs:185) zone: 1 { "_t" : "A2C_LoginAccount", "RpcId" : 1, "Error" : 0, "Message" : null, "Token" : "16647365464661158253930", "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:06.5092 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetServerInfos", "RpcId" : 3, "Token" : "16647365464661158253930", "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:06.5092 (Session.cs:185) zone: 1 { "_t" : "A2C_GetServerInfos", "ServerInfosList" : [{ "_id" : 1, "Status" : 0, "ServerName" : "游戏一服" }, { "_id" : 2, "Status" : 0, "ServerName" : "游戏二服" }], "RpcId" : 3, "Error" : 0, "Message" : null }
+2022-10-02 18:49:10.3248 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRoles", "RpcId" : 5, "Token" : "16647365464661158253930", "AccountId" : 1488596185454280706, "ServerId" : 1 }
+2022-10-02 18:49:10.3576 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRoles", "RoleInfo" : [{ "_id" : 1491453197716357120, "Name" : "HLM2", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1796508107, "ServerId" : 1 }, { "_id" : 1491472147112067072, "Name" : "HLM23", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1795405163, "ServerId" : 1 }], "RpcId" : 5, "Error" : 0, "Message" : null }
+2022-10-02 18:49:18.4973 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_CreateRole", "RpcId" : 10, "Token" : "16647365464661158253930", "AccountId" : 1488596185454280706, "Name" : "xiaoluozi", "ServerId" : 1 }
+2022-10-02 18:49:18.5896 (Session.cs:185) zone: 1 { "_t" : "A2C_CreateRole", "RpcId" : 10, "Error" : 0, "Message" : null, "RoleInfo" : { "_id" : 1492926474578100224, "Name" : "xiaoluozi", "State" : 0, "AccountId" : 1488596185454280706, "LastLoginTime" : 0, "CreateTime" : -1710752344, "ServerId" : 1 } }
+2022-10-02 18:49:23.3316 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2A_GetRealmKey", "RpcId" : 14, "Token" : "16647365464661158253930", "ServerId" : 1, "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:23.3454 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "A2R_GetRealmKey", "RpcId" : 2, "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:23.3485 (Session.cs:195) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647365633472289373610688465508" }
+2022-10-02 18:49:23.3485 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2A_GetRealmKey", "RpcId" : 2, "Error" : 0, "Message" : null, "RealmKey" : "16647365633472289373610688465508" }
+2022-10-02 18:49:23.3485 (Session.cs:185) zone: 1 { "_t" : "A2C_GetRealmKey", "RpcId" : 14, "Error" : 0, "Message" : null, "RealmKey" : "16647365633472289373610688465508", "RealmAddress" : "127.0.0.1:10002" }
+2022-10-02 18:49:23.3773 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:14981
+2022-10-02 18:49:23.3773 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:14981
+2022-10-02 18:49:23.3807 (Session.cs:91) session dispose: 127.0.0.1:14981 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664736563380
+2022-10-02 18:49:23.3807 (Session.cs:69) session create: zone: 1 id: 8589934592 1664736563381 
+2022-10-02 18:49:23.4004 (SessionStreamDispatcherServerOuter.cs:21) zone: 1 { "_t" : "C2R_LoginRealm", "RpcId" : 15, "AccountId" : 1488596185454280706, "RealmTokenKey" : "16647365633472289373610688465508" }
+2022-10-02 18:49:23.4004 (C2R_LoginRealmHandler.cs:26) realmDomianScene 没有添加TokenComponent 组件
+   at ET.C2R_LoginRealmHandler.Run(Session realmSession, C2R_LoginRealm request, R2C_LoginRealm response, Action reply) in D:\Study\Test\ET-EUI\Server\Hotfix\Demo\Account\Handler\RealmHandler\C2R_LoginRealmHandler.cs:line 26
+   at ET.ETAsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine) in D:\Study\Test\ET-EUI\Unity\Assets\ThirdParty\ETTask\AsyncETTaskMethodBuilder.cs:line 57
+   at ET.C2R_LoginRealmHandler.Run(Session realmSession, C2R_LoginRealm request, R2C_LoginRealm response, Action reply)
+   at ET.AMRpcHandler`2.HandleAsync(Session session, Object message) in D:\Study\Test\ET-EUI\Server\Model\Module\NetworkTCP\AMRpcHandler.cs:line 45
+   at ET.ETAsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine) in D:\Study\Test\ET-EUI\Unity\Assets\ThirdParty\ETTask\AsyncETTaskMethodBuilder.cs:line 57
+   at ET.AMRpcHandler`2.HandleAsync(Session session, Object message)
+   at ET.AMRpcHandler`2.Handle(Session session, Object message) in D:\Study\Test\ET-EUI\Server\Model\Module\NetworkTCP\AMRpcHandler.cs:line 12
+   at ET.MessageDispatcherComponentHelper.Handle(MessageDispatcherComponent self, Session session, UInt16 opcode, Object message) in D:\Study\Test\ET-EUI\Unity\Codes\Hotfix\Module\Message\MessageDispatcherComponentSystem.cs:line 90
+   at ET.SessionStreamDispatcherServerOuter.DispatchAsync(Session session, UInt16 opcode, Object message) in D:\Study\Test\ET-EUI\Server\Hotfix\Demo\Session\SessionStreamDispatcherServerOuter.cs:line 63
+   at ET.ETAsyncTaskMethodBuilder.Start[TStateMachine](TStateMachine& stateMachine) in D:\Study\Test\ET-EUI\Unity\Assets\ThirdParty\ETTask\AsyncETTaskMethodBuilder.cs:line 57
+   at ET.SessionStreamDispatcherServerOuter.DispatchAsync(Session session, UInt16 opcode, Object message)
+   at ET.SessionStreamDispatcherServerOuter.Dispatch(Session session, MemoryStream memoryStream) in D:\Study\Test\ET-EUI\Server\Hotfix\Demo\Session\SessionStreamDispatcherServerOuter.cs:line 23
+   at ET.SessionStreamDispatcherSystem.Dispatch(SessionStreamDispatcher self, Int32 type, Session session, MemoryStream memoryStream) in D:\Study\Test\ET-EUI\Unity\Codes\Hotfix\Module\Message\SessionStreamDispatcherSystem.cs:line 81
+   at ET.NetKcpComponentSystem.OnRead(NetKcpComponent self, Int64 channelId, MemoryStream memoryStream) in D:\Study\Test\ET-EUI\Unity\Codes\Hotfix\Module\Message\NetKcpComponentSystem.cs:line 59
+   at ET.NetKcpComponentAwake1System.<>c__DisplayClass0_0.<Awake>b__1(Int64 channelId, MemoryStream Memory) in D:\Study\Test\ET-EUI\Unity\Codes\Hotfix\Module\Message\NetKcpComponentSystem.cs:line 31
+   at ET.AService.OnRead(Int64 channelId, MemoryStream memoryStream) in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Module\Network\AService.cs:line 53
+   at ET.TChannel.OnRead(MemoryStream memoryStream) in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Module\NetworkTCP\TChannel.cs:line 391
+   at ET.TChannel.HandleRecv(Object o) in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Module\NetworkTCP\TChannel.cs:line 279
+   at ET.TChannel.OnRecvComplete(Object o) in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Module\NetworkTCP\TChannel.cs:line 227
+   at ET.TChannel.<>c__DisplayClass10_0.<OnComplete>b__1() in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Module\NetworkTCP\TChannel.cs:line 37
+   at ET.ThreadSynchronizationContext.Update() in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Core\ThreadSynchronizationContext.cs:line 34
+   at ET.Game.Update() in D:\Study\Test\ET-EUI\Unity\Codes\Model\Core\Entity\Game.cs:line 38
+   at ET.Program.Main(String[] args) in D:\Study\Test\ET-EUI\Server\App\Program.cs:line 50
+
+2022-10-02 18:49:23.4004 (Session.cs:185) zone: 1 { "_t" : "R2C_LoginRealm", "RpcId" : 15, "Error" : 0, "Message" : null, "GateSessionKey" : null, "GateAddress" : null }
+2022-10-02 18:49:23.4244 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "R2G_GetLoginGateKey", "RpcId" : 3, "AccountId" : 1488596185454280706 }
+2022-10-02 18:49:23.4335 (Session.cs:195) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "-52642038085322288841664736563431" }
+2022-10-02 18:49:23.4335 (TChannel.cs:403) TChannel OnError: 100208 127.0.0.1:14983
+2022-10-02 18:49:23.4335 (TChannel.cs:102) channel dispose: 8589934592 127.0.0.1:14983
+2022-10-02 18:49:23.4335 (Session.cs:91) session dispose: 127.0.0.1:14983 zone: 1 id: 8589934592 ErrorCode: 100208, please see ErrorCode.cs! 1664736563435
+2022-10-02 18:49:23.4335 (SessionStreamDispatcherServerInner.cs:57) zone: 0 { "_t" : "G2R_GetLoginGateKey", "RpcId" : 3, "Error" : 0, "Message" : null, "GateSessionKey" : "-52642038085322288841664736563431" }

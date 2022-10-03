@@ -1,0 +1,24 @@
+2022-09-30 21:00:37.2934 (Scene.cs:33) scene create: Process Process 1620160413939531777 1620160413939531777 0
+2022-09-30 21:00:37.3656 (Program.cs:41) server start........................ 1620160413939531777
+2022-09-30 21:00:37.7464 (Scene.cs:48) scene create: Realm Realm 1 262145 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Gate Gate1 2 262146 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Gate Gate2 3 262147 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Location Location 4 262148 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Map Map1 5 262149 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Map Map2 6 262150 1
+2022-09-30 21:00:37.7711 (Scene.cs:48) scene create: Account Account 7 262151 1
+2022-09-30 21:00:38.4400 (Scene.cs:48) scene create: LoginCenter LoginCenter 8 262152 1
+2022-09-30 21:00:38.6214 (ServerInfoManagerComponentSystem.cs:40) serverInfo 数据库是空的
+   at ET.ServerInfoManagerComponentSystem.Awake(ServerInfoManagerComponent self) in D:\Study\Test\ET-EUI\Server\Hotfix\Demo\ServerInfo\ServerInfoManagerComponentSystem.cs:line 40
+   at ET.ETTask`1.SetResult(T result) in D:\Study\Test\ET-EUI\Unity\Assets\ThirdParty\ETTask\ETTask.cs:line 295
+   at ET.ETAsyncTaskMethodBuilder`1.SetResult(T ret) in D:\Study\Test\ET-EUI\Unity\Assets\ThirdParty\ETTask\AsyncETTaskMethodBuilder.cs:line 94
+   at ET.DBComponentSystem.Query[T](DBComponent self, Expression`1 filter, String collection) in D:\Study\Test\ET-EUI\Server\Hotfix\Module\DB\DBComponentSystem.cs:line 0
+   at System.Runtime.CompilerServices.TaskAwaiter.<>c.<OutputWaitEtwEvents>b__12_0(Action innerContinuation, Task innerTask)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.ContinuationWrapper.Invoke()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c__DisplayClass6_0.<GetActionLogDelegate>b__0()
+   at System.Threading.Tasks.SynchronizationContextAwaitTaskContinuation.<>c.<.cctor>b__8_0(Object state)
+   at ET.ThreadSynchronizationContext.<>c__DisplayClass8_0.<Post>b__0() in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Core\ThreadSynchronizationContext.cs:line 45
+   at ET.ThreadSynchronizationContext.Update() in D:\Study\Test\ET-EUI\Unity\Assets\Mono\Core\ThreadSynchronizationContext.cs:line 34
+   at ET.Game.Update() in D:\Study\Test\ET-EUI\Unity\Codes\Model\Core\Entity\Game.cs:line 38
+   at ET.Program.Main(String[] args) in D:\Study\Test\ET-EUI\Server\App\Program.cs:line 50
+
