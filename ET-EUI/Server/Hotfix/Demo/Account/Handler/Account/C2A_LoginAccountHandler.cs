@@ -19,7 +19,7 @@ namespace ET
                 accountSession.Dispose();
                 return;
             }
-            //连接通过，移除该Component，不添加词句，5秒后就断开连接了
+            //连接通过，移除该Component，不添加，5秒后就断开连接了
             accountSession.RemoveComponent<SessionAcceptTimeoutComponent>();
 
             //第二次玩家登录请求，会被阻断，防止玩家疯狂点击登录
@@ -55,10 +55,10 @@ namespace ET
                 accountSession.Disconnect().Coroutine();
                 return;
             }
-            //if (session.GetComponent<AccountsZone>() == null)
-            //{
-            //    session.AddComponent<AccountsZone>();
-            //}
+            if (accountSession.GetComponent<AccountsZone>() == null)
+            {
+                accountSession.AddComponent<AccountsZone>();
+            }
 
             if (accountSession.GetComponent<RoleInfosZone>() == null)
             {
@@ -79,6 +79,7 @@ namespace ET
                     if (accountInfoList.Count > 0 && accountInfoList!=null)//账号存在
                     {
                         account = accountInfoList[0];
+                        accountSession.GetComponent<AccountsZone>().AddChild(account);
                         //已经存在，就不需要Addchild<Account>
                         accountSession.AddChild(account);
                         if (account.accountType == (int)AccountType.BlackList)
@@ -103,7 +104,7 @@ namespace ET
                         ///AddChild
                         ///会创建这个实体，并且让他Awake
                         ///fales 代表没有，需要创建，true 则从对象池拿出这个Entity
-                        account = accountSession.AddChild<Account>(false);
+                        account = accountSession.GetComponent<AccountsZone>().AddChild<Account>(false);
                         account.accountName = request.AccountName.Trim();
                         account.Password = request.Password.Trim();
                         account.CreateTime = TimeHelper.ServerNow();

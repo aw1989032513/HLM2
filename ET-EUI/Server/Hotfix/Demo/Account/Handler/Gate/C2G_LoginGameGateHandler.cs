@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ET
 {
+    /// <summary>
+    /// 客户端通知Gate进入游戏Map
+    /// </summary>
     public class C2G_LoginGameGateHandler : AMRpcHandler<C2G_LoginGameGate, G2C_LoginGameGate>
     {
         protected override async ETTask Run(Session gateSession, C2G_LoginGameGate request, G2C_LoginGameGate response, Action reply)
@@ -42,13 +45,13 @@ namespace ET
             {
                 using (await CoroutineLockComponent.Instance.Wait(CoroutineLockType.LoginGate, request.Account.GetHashCode()))
                 {
-                    //这里害怕协成锁逻辑受到 异步逻辑的影响
+                    //这里防止协成锁逻辑受到 异步逻辑的影响
                     if (instanceId != gateSession.InstanceId)
                     {
                         return;
                     }
 
-                    //通知登录中心服务器，记录本次登录的服务器Zone  ，为了做好顶号准备，顶号断开Gate服
+                    //通知AccountCenter服务器，记录本次登录的服务器Zone  （为了以后顶号做准备，顶号断开Gate服）
                     StartSceneConfig loginCenterConfig = StartSceneConfigCategory.Instance.LoginCenterConfig;
                     L2G_AddLoginRecord l2G_AddLoginRecord = (L2G_AddLoginRecord)await MessageHelper.CallActor(loginCenterConfig.InstanceId, new G2L_AddLoginRecord()
                     {
@@ -74,7 +77,7 @@ namespace ET
                     Player player = scene.GetComponent<PlayerComponent>().Get(request.Account);
                     if (player == null)
                     {
-                        //添加一个心的GateUnit
+                        //添加一个新的GateUnit
                         player = scene.GetComponent<PlayerComponent>().AddChildWithId<Player, long, long>(request.RoleId, request.Account, request.RoleId);
                         player.PlayerState = PlayerState.Gate;
                         scene.GetComponent<PlayerComponent>().Add(player);

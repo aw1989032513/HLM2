@@ -6,10 +6,10 @@ namespace ET
 	[ActorMessageHandler]
 	public class M2M_UnitTransferRequestHandler : AMActorRpcHandler<Scene, M2M_UnitTransferRequest, M2M_UnitTransferResponse>
 	{
-		protected override async ETTask Run(Scene scene, M2M_UnitTransferRequest request, M2M_UnitTransferResponse response, Action reply)
+		protected override async ETTask Run(Scene mapScene, M2M_UnitTransferRequest request, M2M_UnitTransferResponse response, Action reply)
 		{
 			await ETTask.CompletedTask;
-			UnitComponent unitComponent = scene.GetComponent<UnitComponent>();
+			UnitComponent unitComponent = mapScene.GetComponent<UnitComponent>();
 			Unit unit = request.Unit;
 			
 			unitComponent.AddChild(unit);
@@ -22,7 +22,7 @@ namespace ET
 			}
 			
 			unit.AddComponent<MoveComponent>();
-			unit.AddComponent<PathfindingComponent, string>(scene.Name);
+			unit.AddComponent<PathfindingComponent, string>(mapScene.Name);
 			unit.Position = new Vector3(-10, 0, -10);
 			
 			unit.AddComponent<MailBoxComponent>();

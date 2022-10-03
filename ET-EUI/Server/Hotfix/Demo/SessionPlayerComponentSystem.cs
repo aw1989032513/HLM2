@@ -8,9 +8,17 @@ namespace ET
 		{
 			public override void Destroy(SessionPlayerComponent self)
 			{
-				// 发送断线消息
-				ActorLocationSenderComponent.Instance.Send(self.PlayerId, new G2M_SessionDisconnect());
-				self.Domain.GetComponent<PlayerComponent>()?.Remove(self.accountId);
+                // 发送断线消息
+                if (! self.isLoginAgain && self.playerInstanceId !=0)//如果是二次登录
+                {
+					Player player = Game.EventSystem.Get(self.playerInstanceId) as Player;
+					DisconnectHelper.KickPlayer(player).Coroutine();
+                }
+
+				self.accountId = 0;
+				self.playerInstanceId = 0;
+				self.PlayerId = 0;
+				self.isLoginAgain = false;
 			}
 		}
 

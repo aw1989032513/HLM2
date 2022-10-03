@@ -17,7 +17,7 @@
                     request.Entitys.Add(entity);
                 }
             }
-            // 删除Mailbox,让发给Unit的ActorLocation消息重发
+            // 删除Mailbox,因为传送到Map服务器之后，会重新添加上
             unit.RemoveComponent<MailBoxComponent>();
             
             // location加锁

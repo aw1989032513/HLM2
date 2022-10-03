@@ -3,6 +3,9 @@
 
 namespace ET
 {
+	/// <summary>
+	/// 客户端拿到Key和GateID请求登录
+	/// </summary>
 	[MessageHandler]
 	public class C2G_LoginGateHandler : AMRpcHandler<C2G_LoginGate, G2C_LoginGate>
 	{

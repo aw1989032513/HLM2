@@ -3,6 +3,9 @@
 
 namespace ET
 {
+	/// <summary>
+	/// 客户端请求进入地图
+	/// </summary>
 	[MessageHandler]
 	public class C2G_EnterMapHandler : AMRpcHandler<C2G_EnterMap, G2C_EnterMap>
 	{

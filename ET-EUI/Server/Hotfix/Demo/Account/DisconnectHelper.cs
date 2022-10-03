@@ -23,7 +23,7 @@ namespace ET
             self.Dispose();
         }
         /// <summary>
-        /// 
+        /// 踢下线
         /// </summary>
         /// <param name="player"></param>
         /// <param name="isException">是否异常</param>
