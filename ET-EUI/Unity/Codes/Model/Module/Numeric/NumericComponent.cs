@@ -23,7 +23,9 @@ namespace ET
 			self.Awake();
 		}
 	}
-
+	/// <summary>
+	/// 数值组件
+	/// </summary>
 	public class NumericComponent: Entity, IAwake, ITransfer
 	{
 		[BsonDictionaryOptions(DictionaryRepresentation.ArrayOfArrays)]

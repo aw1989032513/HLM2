@@ -31,6 +31,7 @@ namespace ET
                     {
                         gateSession.GetComponent<SessionPlayerComponent>().isLoginAgain = true;
                     }
+                    //给顶号者发送下线消息
                     gateSession.Send(new A2C_Disconnect() { Error = ErrorCode.ERR_OtherAccountLogin });
                     gateSession?.Disconnect().Coroutine();
                 }

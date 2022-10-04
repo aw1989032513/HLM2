@@ -31,7 +31,16 @@ namespace ET
         {
             return this.ZoneScenesByName[zone][name];
         }
-        
+        /// <summary>
+        /// 获取缓存服ID
+        /// </summary>
+        /// <param name="unitId"></param>
+        /// <returns></returns>
+        public StartSceneConfig GetUnitCacheConfig(long unitId)
+        {
+            int zone = UnitIdStruct.GetUnitZone(unitId);
+            return UnitCaches[zone];
+        }
         public override void AfterEndInit()
         {
             foreach (StartSceneConfig startSceneConfig in this.GetAll().Values)
@@ -61,9 +70,9 @@ namespace ET
                     case SceneType.LoginCenter:
                         this.LoginCenterConfig = startSceneConfig;
                         break;
-                    //case SceneType.UnitCache:
-                    //    this.UnitCaches.Add(startSceneConfig.Zone, startSceneConfig);
-                    //    break;
+                    case SceneType.UnitCache:
+                        this.UnitCaches.Add(startSceneConfig.Zone, startSceneConfig);
+                        break;
                 }
             }
         }

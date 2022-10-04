@@ -10,5 +10,6 @@
         WindowID_Helper,   //提示界面
         WindowID_Server,   //服务器显示界面
         WindowID_Roles,    //选人界面
+        WindowID_Main,     //主界面
     }
 }
