@@ -105,12 +105,15 @@ namespace ET
 
                             //给Unit从Gate服务器Scene移动到Map逻辑服务器上
                             long unitId = unit.Id;
-                            StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Game");
-                            await TransferHelper.Transfer(unit, startSceneConfig.InstanceId, startSceneConfig.Name);
-
                             player.UnitId = unitId;
                             response.MyId = unit.Id;
                             reply();
+
+                            StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Game");
+                            await TransferHelper.Transfer(unit, startSceneConfig.InstanceId, startSceneConfig.Name);
+
+                           
+                           
 
                             SessionStateComponent sessionStateComponent = session.GetComponent<SessionStateComponent>();
                             if (sessionStateComponent ==null)

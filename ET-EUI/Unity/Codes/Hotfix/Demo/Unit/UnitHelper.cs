@@ -11,6 +11,8 @@
         
         public static Unit GetMyUnitFromCurrentScene(Scene currentScene)
         {
+            //currentScene.Parent.是CurrentScenesComponent
+            //CurrentScenesComponent 的Parent 是zoneScene
             PlayerComponent playerComponent = currentScene.Parent.Parent.GetComponent<PlayerComponent>();
             return currentScene.GetComponent<UnitComponent>().Get(playerComponent.MyId);
         }

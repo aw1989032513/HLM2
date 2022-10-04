@@ -27,5 +27,10 @@
 		AOIPct = AOI * 10 + 3,
 		AOIFinalAdd = AOI * 10 + 4,
 		AOIFinalPct = AOI * 10 + 5,
+
+		Level =3007,
+		Gold = 3008,
+		Exp = 3009,
+
 	}
 }

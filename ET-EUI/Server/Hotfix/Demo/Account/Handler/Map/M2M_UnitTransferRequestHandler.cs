@@ -21,9 +21,9 @@ namespace ET
 				unit.AddComponent(entity);
 			}
 			
-			unit.AddComponent<MoveComponent>();
-			unit.AddComponent<PathfindingComponent, string>(mapScene.Name);
-			unit.Position = new Vector3(-10, 0, -10);
+			//unit.AddComponent<MoveComponent>();
+			//unit.AddComponent<PathfindingComponent, string>(mapScene.Name);
+			//unit.Position = new Vector3(-10, 0, -10);
 			
 			unit.AddComponent<MailBoxComponent>();
 			

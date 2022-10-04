@@ -20,9 +20,10 @@
             M2C_CreateMyUnit m2CCreateMyUnit = waitCreateMyUnit.Message;
             Unit unit = UnitFactory.Create(currentScene, m2CCreateMyUnit.Unit);
             unitComponent.Add(unit);
-            
-            zoneScene.RemoveComponent<AIComponent>();
-            
+
+            //zoneScene.RemoveComponent<AIComponent>();
+            //2秒的加载界面
+            await TimerComponent.Instance.WaitAsync(2000);
             Game.EventSystem.Publish(new EventType.SceneChangeFinish() {ZoneScene = zoneScene, CurrentScene = currentScene});
 
             // 通知等待场景切换的协程

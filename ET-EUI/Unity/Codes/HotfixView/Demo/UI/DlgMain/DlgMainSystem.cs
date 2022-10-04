@@ -20,6 +20,13 @@ namespace ET
         }
         public static async ETTask Refresh(this DlgMain self)
         {
+            Unit unit = UnitHelper.GetMyUnitFromCurrentScene(self.ZoneScene().CurrentScene());
+            //SceneChangeHelp 的UnityFactory.Create  已经拿到了NumericComponent
+            NumericComponent numericComponent = unit.GetComponent<NumericComponent>();
+
+            self.View.E_RoleLevelText.SetText($"Lv.{numericComponent.GetAsInt((int)NumericType.Level)}");
+            self.View.E_GoldText.SetText(numericComponent.GetAsInt((int)NumericType.Gold).ToString());
+            self.View.E_ExpText.SetText(numericComponent.GetAsInt((int)NumericType.Exp).ToString());
             await ETTask.CompletedTask;
         }
 

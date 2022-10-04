@@ -5,6 +5,11 @@ namespace ET
 {
     public static class UnitHelper
     {
+        /// <summary>
+        /// 创建Unit并且赋值属性
+        /// </summary>
+        /// <param name="unit"></param>
+        /// <returns></returns>
         public static UnitInfo CreateUnitInfo(Unit unit)
         {
             UnitInfo unitInfo = new UnitInfo();
@@ -21,21 +26,21 @@ namespace ET
             unitInfo.ForwardY = forward.y;
             unitInfo.ForwardZ = forward.z;
 
-            MoveComponent moveComponent = unit.GetComponent<MoveComponent>();
-            if (moveComponent != null)
-            {
-                if (!moveComponent.IsArrived())
-                {
-                    unitInfo.MoveInfo = new MoveInfo();
-                    for (int i = moveComponent.N; i < moveComponent.Targets.Count; ++i)
-                    {
-                        Vector3 pos = moveComponent.Targets[i];
-                        unitInfo.MoveInfo.X.Add(pos.x);
-                        unitInfo.MoveInfo.Y.Add(pos.y);
-                        unitInfo.MoveInfo.Z.Add(pos.z);
-                    }
-                }
-            }
+            //MoveComponent moveComponent = unit.GetComponent<MoveComponent>();
+            //if (moveComponent != null)
+            //{
+            //    if (!moveComponent.IsArrived())
+            //    {
+            //        unitInfo.MoveInfo = new MoveInfo();
+            //        for (int i = moveComponent.N; i < moveComponent.Targets.Count; ++i)
+            //        {
+            //            Vector3 pos = moveComponent.Targets[i];
+            //            unitInfo.MoveInfo.X.Add(pos.x);
+            //            unitInfo.MoveInfo.Y.Add(pos.y);
+            //            unitInfo.MoveInfo.Z.Add(pos.z);
+            //        }
+            //    }
+            //}
 
             foreach ((int key, long value) in nc.NumericDic)
             {
