@@ -16,13 +16,25 @@ namespace ET
                         //unit.AddComponent<MoveComponent>();
                         //unit.Position = new Vector3(-10, 0, -10);
 
-                        UnitConfig unitConfig = UnitConfigCategory.Instance.Get(1001);
                         NumericComponent numericComponent = unit.AddComponent<NumericComponent>();
-                        //numericComponent.Set(NumericType.Speed, 6f); // 速度是6米每秒
-                        //numericComponent.Set(NumericType.AOI, 15000); // 视野15米
-                        numericComponent.SetNoEvent((int)NumericType.Position, unitConfig.Position);
-                        numericComponent.SetNoEvent((int)NumericType.Weight, unitConfig.Weight);
-                        numericComponent.SetNoEvent((int)NumericType.Height, unitConfig.Height);
+                        foreach (var config in PlayerNumericConfigCategory.Instance.GetAll())
+                        {
+                            if (config.Value.BaseValue == 0)
+                            {
+                                continue;
+                            }
+                            //如果表的ID 小于3000 代表都有加成属性推导
+                            if (config.Key < 3000)
+                            {
+                                int bas = config.Key * 10 + 1;
+                                numericComponent.SetNoEvent(bas, config.Value.BaseValue);
+                            }
+                            else
+                            {
+                                //大于3000的值直接使用
+                                numericComponent.SetNoEvent(config.Key, config.Value.BaseValue);
+                            }
+                        }
 
 
                         unitComponent.Add(unit);

@@ -596,8 +596,8 @@
     <Compile Include="Codes\Hotfix\Demo\Move\M2C_StopHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Move\MoveComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Move\MoveHelper.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Numeric\Handler\M2C_NoticeUnitNumericHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Numeric\NumericHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Numeric\Handler\M2C_NoticeUnitNumericHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Role\RoleInfosComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Role\RoleInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Scene\CurrentScenesComponentSystem.cs" />

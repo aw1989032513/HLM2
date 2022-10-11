@@ -24,28 +24,33 @@ namespace ET
             }
             return ErrorCode.ERR_Success;
         }
+        /// <summary>
+        /// 属性加点
+        /// </summary>
+        /// <param name="zoneScene"></param>
+        /// <param name="numericType"></param>
+        /// <returns></returns>
 
+        public static async ETTask<int> ReqeustAddAttributePoint(Scene zoneScene, int numericType)
+        {
+            M2C_AddAttributePoint m2CAddAttributePoint = null;
+            try
+            {
+                m2CAddAttributePoint = (M2C_AddAttributePoint)await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2M_AddAttributePoint() { NumericType = numericType });
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+                return ErrorCode.ERR_NetWorkError;
+            }
 
-        //public static async ETTask<int> ReqeustAddAttributePoint(Scene zoneScene, int numericType)
-        //{
-        //    M2C_AddAttributePoint m2CAddAttributePoint = null;
-        //    try
-        //    {
-        //        m2CAddAttributePoint = (M2C_AddAttributePoint)await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2M_AddAttributePoint() { NumericType = numericType });
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e.ToString());
-        //        return ErrorCode.ERR_NetWorkError;
-        //    }
-
-        //    if (m2CAddAttributePoint.Error != ErrorCode.ERR_Success)
-        //    {
-        //        Log.Error(m2CAddAttributePoint.Error.ToString());
-        //        return m2CAddAttributePoint.Error;
-        //    }
-        //    return ErrorCode.ERR_Success;
-        //}
+            if (m2CAddAttributePoint.Error != ErrorCode.ERR_Success)
+            {
+                Log.Error(m2CAddAttributePoint.Error.ToString());
+                return m2CAddAttributePoint.Error;
+            }
+            return ErrorCode.ERR_Success;
+        }
 
 
         //public static async ETTask<int> ReqeustUpRoleLevel(Scene zoneScene)

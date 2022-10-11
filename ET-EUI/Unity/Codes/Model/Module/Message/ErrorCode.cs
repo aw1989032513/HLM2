@@ -35,7 +35,10 @@ namespace ET
         public const int ERR_NonePlayerError       = 200017;
         public const int ERR_SessionStateError     = 200018;
         public const int ERR_EnterGameError        = 200019;
-        
+        public const int ERR_NumericTypeNotExist = 200020;
+        public const int ERR_NumericTypeNotAddPoint = 200021;
+        public const int ERR_AddPointNotEnough = 200022;
+
 
 
 

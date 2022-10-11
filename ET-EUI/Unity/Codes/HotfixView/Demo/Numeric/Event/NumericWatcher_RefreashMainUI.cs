@@ -14,8 +14,6 @@ namespace ET
         public void Run(EventType.NumbericChange args)
         {
            args.Parent.ZoneScene().GetComponent<UIComponent>().GetDlgLogic<DlgMain>()?.Refresh();
-        }
-
-       
+        }     
     }
 }

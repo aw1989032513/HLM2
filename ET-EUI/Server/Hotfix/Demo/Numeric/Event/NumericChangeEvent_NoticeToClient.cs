@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ET
 {
+    
     public class NumericChangeEvent_NoticeToClient : AEvent<EventType.NumbericChange>
     {
         protected override async ETTask Run(NumbericChange a)

@@ -639,7 +639,9 @@
     <Compile Include="Codes\Model\Demo\Unit\Unit.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitType.cs" />
+    <Compile Include="Codes\Model\Generate\ConfigPartial\PlayerNumericConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Config\AIConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\PlayerNumericConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\ServerInfoConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartMachineConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartProcessConfig.cs" />

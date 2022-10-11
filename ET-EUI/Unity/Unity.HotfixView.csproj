@@ -598,9 +598,12 @@
     <Compile Include="Codes\HotfixView\Demo\Scene\SceneChangeStart_AddComponent.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESCommonUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESReuseUISystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\Common\ES_AttributeItemSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\DlgHelperSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\DlgHelperEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\SceneChangeFinish_ShowCurrentSceneUI.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgLoading\DlgLoadingSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgLoading\Event\DlgLoadingEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgLobby\DlgLobbySystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgLobby\Event\DlgLobbyEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgLobby\Event\LoginFinish_CreateLobbyUI.cs" />
@@ -610,6 +613,8 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\Event\DlgMainEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\DlgRedDotSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\Event\DlgRedDotEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\DlgRoleInfoSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\Event\DlgRoleInfoEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoles\DlgRolesSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoles\Event\DlgRolesEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgServer\DlgServerSystem.cs" />
@@ -618,13 +623,20 @@
     <Compile Include="Codes\HotfixView\Demo\UI\UIHelp\UIHelpEvent.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ESCommonUIViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ESReuseUIViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_AttributeItemViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_EquipItemViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_MakeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgHelper\DlgHelperViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLoading\DlgLoadingViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLobby\DlgLobbyViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLogin\DlgLoginViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgMain\DlgMainViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRedDot\DlgRedDotViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoleInfo\DlgRoleInfoViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgServer\DlgServerViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_attributeViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_makeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_roleViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_serverTestViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_testViewSystem.cs" />
@@ -666,6 +678,7 @@
       <Name>Unity.ThirdParty</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

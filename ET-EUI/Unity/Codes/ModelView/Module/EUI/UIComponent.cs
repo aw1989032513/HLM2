@@ -2,6 +2,10 @@
 
 namespace ET
 {
+    public interface IUILogic
+    {
+
+    }
     public class UIComponent : Entity,IAwake,IDestroy
     {
         public HashSet<WindowID> LoadingWindows                = new HashSet<WindowID>();

@@ -1,0 +1,1 @@
+start "" "D:\Study\Test\ET-EUI\Tools\SyncCodesService-main\bb.bat"

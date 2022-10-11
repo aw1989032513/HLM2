@@ -282,7 +282,7 @@ namespace ET
             return null;
         }
         
-        public static T GetDlgLogic<T>(this UIComponent self,bool isNeedShowState = false) where  T : Entity
+        public static T GetDlgLogic<T>(this UIComponent self,bool isNeedShowState = false) where  T : Entity,IUILogic
         {
             WindowID windowsId = self.GetWindowIdByGeneric<T>();
             UIBaseWindow baseWindow = self.GetUIBaseWindow(windowsId);

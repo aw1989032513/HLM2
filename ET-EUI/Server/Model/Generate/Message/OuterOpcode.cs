@@ -56,5 +56,7 @@ namespace ET
 		 public const ushort C2M_TestUnitNumeric = 10053;
 		 public const ushort M2C_TestUnitNumeric = 10054;
 		 public const ushort M2C_NoticeUnitNumeric = 10055;
+		 public const ushort C2M_AddAttributePoint = 10056;
+		 public const ushort M2C_AddAttributePoint = 10057;
 	}
 }
