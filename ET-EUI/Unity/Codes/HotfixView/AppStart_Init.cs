@@ -22,6 +22,7 @@ namespace ET
             Game.Scene.AddComponent<ZoneSceneManagerComponent>();
             
             Game.Scene.AddComponent<GlobalComponent>();
+            //数值变化监听组件
             Game.Scene.AddComponent<NumericWatcherComponent>();
             Game.Scene.AddComponent<AIDispatcherComponent>();
             await ResourcesComponent.Instance.LoadBundleAsync("unit.unity3d");

@@ -1,13 +1,16 @@
-﻿namespace ET
+﻿using ET.EventType;
+
+namespace ET
 {
-	/// <summary>
-	/// 监视hp数值变化，改变血条值
-	/// </summary>
-	[NumericWatcher(NumericType.Hp)]
-	public class NumericWatcher_Hp_ShowUI : INumericWatcher
-	{
-		public void Run(long id, long value)
-		{
-		}
-	}
+    /// <summary>
+    /// 监视hp数值变化，改变血条值
+    /// </summary>
+    [NumericWatcher((int)NumericType.Hp)]
+    public class NumericWatcher_Hp_ShowUI : INumericWatcher
+    {
+        public void Run(NumbericChange args)
+        {
+            throw new System.NotImplementedException();
+        }
+    }
 }

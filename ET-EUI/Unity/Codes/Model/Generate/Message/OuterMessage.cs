@@ -900,4 +900,19 @@ namespace ET
 
 	}
 
+	[Message(OuterOpcode.M2C_NoticeUnitNumeric)]
+	[ProtoContract]
+	public partial class M2C_NoticeUnitNumeric: Object, IActorMessage
+	{
+		[ProtoMember(1)]
+		public long UnitId { get; set; }
+
+		[ProtoMember(2)]
+		public int NumericType { get; set; }
+
+		[ProtoMember(4)]
+		public long NewValue { get; set; }
+
+	}
+
 }

@@ -2,6 +2,7 @@
 {
 	public interface INumericWatcher
 	{
-		void Run(long id, long value);
+		//void Run(long id, long value);
+		void Run(EventType.NumbericChange args);
 	}
 }

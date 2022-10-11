@@ -29,7 +29,7 @@ namespace ET
 	{
 		public static NumericWatcherComponent Instance { get; set; }
 		
-		private Dictionary<NumericType, List<INumericWatcher>> allWatchers;
+		private Dictionary<int, List<INumericWatcher>> allWatchers;
 
 		public void Awake()
 		{
@@ -38,7 +38,7 @@ namespace ET
 
 		public void Load()
 		{
-			this.allWatchers = new Dictionary<NumericType, List<INumericWatcher>>();
+			this.allWatchers = new Dictionary<int, List<INumericWatcher>>();
 
 			HashSet<Type> types = Game.EventSystem.GetTypes(typeof(NumericWatcherAttribute));
 			foreach (Type type in types)
@@ -58,17 +58,31 @@ namespace ET
 			}
 		}
 
-		public void Run(NumericType numericType, long id, long value)
-		{
-			List<INumericWatcher> list;
-			if (!this.allWatchers.TryGetValue(numericType, out list))
-			{
-				return;
-			}
-			foreach (INumericWatcher numericWatcher in list)
-			{
-				numericWatcher.Run(id, value);
-			}
-		}
-	}
+        //public void Run(NumericType numericType, long id, long value)
+        //{
+        //    List<INumericWatcher> list;
+        //    if (!this.allWatchers.TryGetValue(numericType, out list))
+        //    {
+        //        return;
+        //    }
+        //    foreach (INumericWatcher numericWatcher in list)
+        //    {
+        //        numericWatcher.Run(id, value);
+        //    }
+        //}
+
+
+        public void Run(EventType.NumbericChange args)
+        {
+            List<INumericWatcher> list;
+            if (!allWatchers.TryGetValue(args.NumericType, out list))
+            {
+                return;
+            }
+            foreach (INumericWatcher numericWatcher in list)
+            {
+                numericWatcher.Run(args);
+            }
+        }
+    }
 }

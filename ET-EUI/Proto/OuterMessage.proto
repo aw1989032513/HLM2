@@ -449,3 +449,11 @@ message M2C_TestUnitNumeric // IActorLocationResponse
 	int32 Error = 91;
 	string Message = 92;
 }
+
+
+message M2C_NoticeUnitNumeric // IActorMessage
+{
+	int64 UnitId = 1;
+	int32 NumericType = 2;
+	int64 NewValue = 4;
+}
