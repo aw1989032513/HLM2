@@ -82,6 +82,7 @@ namespace ET
             bool isNewUnit = unit == null;
             if (isNewUnit)
             {
+                //创建一个Unit
                 unit = UnitFactory.Create(gateMapComponent.Scene, player.UnitId, UnitType.Player);
                 List<RoleInfo> roleInfos = await DBManagerComponent.Instance.GetZoneDB(player.DomainZone()).Query<RoleInfo>(d => d.Id == player.UnitId);
                 unit.AddComponent(roleInfos[0]); //挂载

@@ -22,6 +22,8 @@ namespace ET
             //连接通过，移除该Component，不添加，5秒后就断开连接了
             accountSession.RemoveComponent<SessionAcceptTimeoutComponent>();
 
+
+
             //第二次玩家登录请求，会被阻断，防止玩家疯狂点击登录
             if (accountSession.GetComponent<SessionLockingComponent>()!=null)
             {

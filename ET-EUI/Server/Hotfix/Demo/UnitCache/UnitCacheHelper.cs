@@ -107,6 +107,8 @@ namespace ET
                 message.EntityTypes.Add(key.FullName);
                 message.EntityBytes.Add(MongoHelper.ToBson(entity));
             }
+
+            MessageHelper.CallActor(StartSceneConfigCategory.Instance.GetUnitCacheConfig(unit.Id).InstanceId, message).Coroutine();
         }
     }
 }

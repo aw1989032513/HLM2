@@ -23,7 +23,7 @@ namespace ET
 	        for (int i = 0; i < unitInfo.Ks.Count; ++i)
 	        {
 				//将服务器发下来的数值，存放到客户端的NumericComponent
-				numericComponent.Set((NumericType)unitInfo.Ks[i], unitInfo.Vs[i]);
+				numericComponent.Set((int)(NumericType)unitInfo.Ks[i], unitInfo.Vs[i]);
 	        }
             #region     MoveComponent
             //unit.AddComponent<MoveComponent>();

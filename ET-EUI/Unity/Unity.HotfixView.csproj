@@ -590,6 +590,7 @@
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigComponent_SetConfigLoader_Awake.cs" />
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigLoader.cs" />
     <Compile Include="Codes\HotfixView\Demo\Global\GlobalComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Numeric\NumericHelper.cs" />
     <Compile Include="Codes\HotfixView\Demo\Opera\OperaComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Scene\AfterCreateCurrentScene_AddComponent.cs" />
     <Compile Include="Codes\HotfixView\Demo\Scene\AfterCreateZoneScene_AddComponent.cs" />

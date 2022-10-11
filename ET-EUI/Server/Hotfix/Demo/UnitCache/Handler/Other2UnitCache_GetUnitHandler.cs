@@ -17,10 +17,12 @@ namespace ET
                 if (request.ComponentNameList.Count == 0)
                 {
                     dictionary.Add(nameof(Unit), null);//加入Unit的名字，值为null  ，，这里因为第一个肯定是Unit的实体Entity，下面才是Unit的身上组件component
-                    foreach (string s in unitCacheComponent.unitCacheKeyList)
-                    {
-                        dictionary.Add(s, null);
-                    }
+
+                        foreach (string s in unitCacheComponent.unitCacheKeyList)
+                        {
+                            dictionary.Add(s, null);
+                        }
+                
                 }
                 else
                 {

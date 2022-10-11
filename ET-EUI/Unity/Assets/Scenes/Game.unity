@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1661980693606008, guid: 52a35ca04bcd42342b797ef69416a3e1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736286243102794, guid: 52a35ca04bcd42342b797ef69416a3e1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1972377153373868, guid: 52a35ca04bcd42342b797ef69416a3e1, type: 3}
       propertyPath: m_Name
       value: SunshineForest

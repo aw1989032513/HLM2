@@ -34,6 +34,7 @@ namespace ET
 		}
 		public static void OnRoleItemClickHandler(this DlgRoles self, long roleId)
 		{
+			Log.Debug($"当前选择的角色ID{roleId}");
 			self.ZoneScene().GetComponent<RoleInfosComponent>().currentRoleId = roleId;
 			self.View.E_RolesLoopVerticalScrollRect.RefillCells();
 		}

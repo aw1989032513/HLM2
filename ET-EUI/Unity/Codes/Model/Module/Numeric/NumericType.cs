@@ -28,9 +28,12 @@
 		AOIFinalAdd = AOI * 10 + 4,
 		AOIFinalPct = AOI * 10 + 5,
 
-		Level =3007,
-		Gold = 3008,
-		Exp = 3009,
+		Level = 1004,
+		Gold =  1005,
+		Exp = 1006,
+		Position = 1007,
+		Height = 1008,
+		Weight = 1009,
 
 	}
 }
