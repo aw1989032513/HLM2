@@ -15,6 +15,8 @@ namespace ET
 			unitComponent.AddChild(unit);
 			unitComponent.Add(unit);
 
+			unit.AddComponent<UnitDBSaveComponent>(); 
+
 			///遍历所有的unit身上 的Entity组件，重新添加
 			foreach (Entity entity in request.Entitys)
 			{
@@ -34,6 +36,8 @@ namespace ET
 
 			// 加入数值变化监听组件
 			unit.AddComponent<NumericNoticeComponent>();
+			//加入延迟存入数据库方法
+			unit.AddComponent<UnitDBSaveComponent>();
 			// 加入aoi
 			unit.AddComponent<AOIEntity, int, Vector3>(9 * 1000, unit.Position);
 

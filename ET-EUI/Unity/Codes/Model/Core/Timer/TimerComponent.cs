@@ -235,7 +235,11 @@ namespace ET
                 this.minTime = tillTime;
             }
         }
-
+        /// <summary>
+        /// 停止定时器任务
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public bool Remove(ref long id)
         {
             long i = id;
@@ -372,7 +376,13 @@ namespace ET
             this.AddTimer(tillTime, timer);
             return timer.Id;
         }
-
+        /// <summary>
+        /// 重复生效的定时任务
+        /// </summary>
+        /// <param name="time"></param>
+        /// <param name="type"></param>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public long NewRepeatedTimer(long time, int type, object args)
         {
             return NewRepeatedTimerInner(time, type, args);
