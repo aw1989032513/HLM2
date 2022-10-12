@@ -585,6 +585,11 @@
     </Reference>
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneFlagComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneManagerComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleReportEvent_RequestEndGameLevel.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleRoundEvent_CalculateDamage.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\SceneChangeFinish_StartAdventure.cs" />
     <Compile Include="Codes\Hotfix\Demo\ConstValue.cs" />
     <Compile Include="Codes\Hotfix\Demo\Account\AccountInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\AI_Attack.cs" />
@@ -614,6 +619,7 @@
     <Compile Include="Codes\Hotfix\Demo\Unit\UnitComponent.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\UnitFactory.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\UnitHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Unit\UnitNumericHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\UnitSystem.cs" />
     <Compile Include="Codes\Hotfix\Module\AI\AIComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Module\AI\AIDispatcherComponentSystem.cs" />

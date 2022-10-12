@@ -29,4 +29,26 @@ namespace ET
 			}
 		}
 	}
+	[Event]
+	public abstract class AEventAsync<A> : IEvent where A : struct
+	{
+		public Type GetEventType()
+		{
+			return typeof(A);
+		}
+
+		protected abstract ETTask Run(A a);
+
+		public async ETTask Handle(A a)
+		{
+			try
+			{
+				await Run(a);
+			}
+			catch (Exception e)
+			{
+				Log.Error(e);
+			}
+		}
+	}
 }

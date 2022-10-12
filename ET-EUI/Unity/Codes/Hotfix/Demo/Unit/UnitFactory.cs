@@ -52,5 +52,23 @@ namespace ET
 	        Game.EventSystem.Publish(new EventType.AfterUnitCreate() {Unit = unit});
             return unit;
         }
+        public static async ETTask<Unit> CreateMonster(Scene currentScene, int configId)
+        {
+            UnitComponent unitComponent = currentScene.GetComponent<UnitComponent>();
+            Unit monsterUnit = unitComponent.AddChildWithId<Unit, int>(IdGenerater.Instance.GenerateId(), configId);
+            unitComponent.Add(monsterUnit);
+
+            //添加数值组件
+            NumericComponent numericComponent = monsterUnit.AddComponent<NumericComponent>();
+            numericComponent.SetNoEvent((int)NumericType.IsAlive, 1);
+            numericComponent.SetNoEvent((int)NumericType.DamageValue, monsterUnit.Config.DamageValue);
+            numericComponent.SetNoEvent((int)NumericType.MaxHp, monsterUnit.Config.MaxHP);
+            numericComponent.SetNoEvent((int)NumericType.Hp, monsterUnit.Config.MaxHP);
+
+            monsterUnit.AddComponent<ObjectWait>();
+
+            await Game.EventSystem.PublishAsync(new EventType.AfterUnitCreate() { Unit = monsterUnit });
+            return monsterUnit;
+        }
     }
 }

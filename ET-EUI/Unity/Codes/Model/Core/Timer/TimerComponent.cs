@@ -301,7 +301,12 @@ namespace ET
         {
             return await WaitAsync(1, cancellationToken);
         }
-
+        /// <summary>
+        /// 等待多久
+        /// </summary>
+        /// <param name="time"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public async ETTask<bool> WaitAsync(long time, ETCancellationToken cancellationToken = null)
         {
             if (time == 0)

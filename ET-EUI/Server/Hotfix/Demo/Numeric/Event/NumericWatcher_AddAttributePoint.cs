@@ -27,7 +27,7 @@ namespace ET
             // 1 点体力 增加1% 生命值
             if (args.NumericType == (int)NumericType.PhysicalStrength)
             {
-                unit.GetComponent<NumericComponent>()[(int)NumericType.HpPct] += 1*10000;  
+                unit.GetComponent<NumericComponent>()[(int)NumericType.MaxHpPct] += 1*10000;  
             }
             //敏捷+1点  闪避概率加0.1%
             if (args.NumericType == (int)NumericType.Agile)

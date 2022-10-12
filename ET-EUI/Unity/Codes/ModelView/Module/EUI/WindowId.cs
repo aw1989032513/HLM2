@@ -13,5 +13,6 @@
         WindowID_Main,     //主界面
         WindowID_Loading,     //加载界面
         WindowID_RoleInfo,
+        WindowID_Adventure,
     }
 }

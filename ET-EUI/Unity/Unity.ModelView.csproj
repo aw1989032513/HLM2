@@ -49,6 +49,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="TextMeshPro">
+      <HintPath>./Temp/bin/Debug/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>./Temp/bin/Debug/DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>./Temp/bin/Debug/UnityEngine.dll</HintPath>
     </Reference>
@@ -590,6 +596,7 @@
     <Compile Include="Codes\ModelView\Demo\Resource\ResourcesComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\Resource\ResourcesLoaderComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\Scene\SceneChangeComponent.cs" />
+    <Compile Include="Codes\ModelView\Demo\UI\DlgAdventure\DlgAdventure.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgHelper\DlgHelper.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgLoading\DlgLoading.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgLobby\DlgLobby.cs" />
@@ -608,6 +615,7 @@
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\CommonUI\ES_AttributeItem.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\CommonUI\ES_EquipItem.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\CommonUI\ES_MakeQueue.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgAdventure\DlgAdventureViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgHelper\DlgHelperViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgLoading\DlgLoadingViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgLobby\DlgLobbyViewComponent.cs" />
@@ -619,6 +627,7 @@
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgServer\DlgServerViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgTest\DlgTestViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_attribute.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_battleLevel.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_makeQueue.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_role.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_serverTest.cs" />

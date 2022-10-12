@@ -95,5 +95,32 @@ namespace ET
         public struct UnitEnterSightRange
         {
         }
+        public struct AdventureRoundReset
+        {
+            public Scene ZoneScene;
+        }
+        public struct AdventureBattleRoundView
+        {
+            public Scene zongScene;
+            public Unit  attackUnit;
+            public Unit  monsterUnit;
+        }
+        /// <summary>
+        /// 战斗结束
+        /// </summary>
+        public struct AdventureBattleOver
+        {
+            public Scene zongScene;
+            public Unit  winUnit;
+        }
+        /// <summary>
+        /// 战报
+        /// </summary>
+        public struct AdventureBattleReport
+        {
+            public Scene zongScene;
+            public BattleRoundResult battleRoundResult;
+            public int round;
+        }
     }
 }

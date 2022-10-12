@@ -109,9 +109,17 @@
 
         Exp = 3009,
 
-        AdventureState = 3010,   //关卡冒险状态
+        /// <summary>
+        /// 关卡冒险状态
+        /// 设置关卡状态AdventureState为levelId，因为关卡状态设为0 表示不在关卡状态
+        /// 同时还能从AdventureState获得正在哪个关卡中
+        /// </summary>
+        AdventureState = 3010,
 
-        DyingState = 3011,      //垂死状态
+        /// <summary>
+        /// 垂死状态
+        /// </summary>
+        DyingState = 3011,      
 
         AdventureStartTime = 3012,   //关卡开始冒险的时间
 
@@ -120,11 +128,19 @@
 
         BattleRandomSeed = 3014,    //战斗随机数种子
 
-        MaxBagCapacity = 3015,   //背包最大负重
+        /// <summary>
+        /// 背包最大负重
+        /// </summary>
+        MaxBagCapacity = 3015,
 
+        /// <summary>
+        /// 铁矿石
+        /// </summary>
+        IronStone = 3016,
 
-        IronStone = 3016, //铁矿石
-
-        Fur = 3017, //皮毛
+        /// <summary>
+        /// 皮毛
+        /// </summary>
+        Fur = 3017, 
     }
 }

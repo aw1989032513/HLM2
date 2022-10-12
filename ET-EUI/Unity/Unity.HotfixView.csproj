@@ -49,6 +49,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="TextMeshPro">
+      <HintPath>./Temp/bin/Debug/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>./Temp/bin/Debug/DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>./Temp/bin/Debug/UnityEngine.dll</HintPath>
     </Reference>
@@ -599,6 +605,12 @@
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESCommonUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESReuseUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ES_AttributeItemSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\DlgAdventureSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\AdventreBattleOverEvent_PlayWinAnimation.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\AdventureBattleRoundView_PlayAnimation.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\AdventureRoundResetEvent_ResetAnimation.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\DlgAdventureEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\NumericWatcher_IsAliveAnimation.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\DlgHelperSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\DlgHelperEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\SceneChangeFinish_ShowCurrentSceneUI.cs" />
@@ -626,6 +638,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_AttributeItemViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_EquipItemViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_MakeQueueViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgAdventure\DlgAdventureViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgHelper\DlgHelperViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLoading\DlgLoadingViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLobby\DlgLobbyViewComponentSystem.cs" />
@@ -636,6 +649,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgServer\DlgServerViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_attributeViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_battleLevelViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_makeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_roleViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_serverTestViewSystem.cs" />

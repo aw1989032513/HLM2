@@ -38,6 +38,7 @@ namespace ET
 			unit.AddComponent<NumericNoticeComponent>();
 			//加入延迟存入数据库方法
 			unit.AddComponent<UnitDBSaveComponent>();
+			unit.AddComponent<AdventureCheckComponent>();
 			// 加入aoi
 			unit.AddComponent<AOIEntity, int, Vector3>(9 * 1000, unit.Position);
 

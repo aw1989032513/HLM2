@@ -35,13 +35,16 @@ namespace ET
         public const int ERR_NonePlayerError       = 200017;
         public const int ERR_SessionStateError     = 200018;
         public const int ERR_EnterGameError        = 200019;
-        public const int ERR_NumericTypeNotExist = 200020;
+        public const int ERR_NumericTypeNotExist   = 200020;
         public const int ERR_NumericTypeNotAddPoint = 200021;
-        public const int ERR_AddPointNotEnough = 200022;
-
-
-
-
-
+        public const int ERR_AddPointNotEnough     = 200022;
+        public const int ERR_AlreadyAdventureState = 2000023; //已经在关卡中了
+        public const int ERR_AdventureInDying      = 2000024; //角色濒死状态
+        public const int ERR_AdventureErrorLevel   = 2000025; //配置表没有该关卡配置
+        public const int ERR_AdventureLevelNotEnough = 2000026;//进入该关卡登记不够
+        public const int ERR_AdventureLevelIdError = 2000027;
+        public const int ERR_AdventureRoundError = 2000028;//回合数不正常
+        public const int ERR_AdventureResultError = 2000029;//战斗结果失败
+        public const int ERR_AdventureWinResultError = 2000030;//战斗结果异常
     }
 }

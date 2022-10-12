@@ -584,6 +584,7 @@
       <HintPath>./Temp/bin/Debug/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Compile Include="Codes\Model\Core\ETCancelationTokenHelper.cs" />
+    <Compile Include="Codes\Model\Core\Helper\SRandom.cs" />
     <Compile Include="Codes\Model\Core\ObjectWait.cs" />
     <Compile Include="Codes\Model\Core\PoolHelper.cs" />
     <Compile Include="Codes\Model\Core\ProtobufHelper.cs" />
@@ -621,6 +622,8 @@
     <Compile Include="Codes\Model\Core\Timer\TimerAttribute.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerComponent.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerType.cs" />
+    <Compile Include="Codes\Model\Demo\Adventure\AdventureComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Adventure\BattleRoundResult.cs" />
     <Compile Include="Codes\Model\Demo\EventType.cs" />
     <Compile Include="Codes\Model\Demo\SessionStreamDispatcherType.cs" />
     <Compile Include="Codes\Model\Demo\TimerType.cs" />
@@ -639,8 +642,9 @@
     <Compile Include="Codes\Model\Demo\Unit\Unit.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitType.cs" />
-    <Compile Include="Codes\Model\Generate\ConfigPartial\PlayerNumericConfigCategory.cs" />
+    <Compile Include="Codes\Model\Generate\ConfigPartial\BattleLevelConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Config\AIConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\BattleLevelConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\PlayerNumericConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\ServerInfoConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartMachineConfig.cs" />
@@ -648,6 +652,7 @@
     <Compile Include="Codes\Model\Generate\Config\StartSceneConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartZoneConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\UnitConfig.cs" />
+    <Compile Include="Codes\Model\Generate\ConfigPartial\PlayerNumericConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Message\OuterMessage.cs" />
     <Compile Include="Codes\Model\Generate\Message\OuterOpcode.cs" />
     <Compile Include="Codes\Model\Module\Actor\IActorMessage.cs" />

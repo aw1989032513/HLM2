@@ -11,7 +11,9 @@
             currentScenesComponent.Scene?.Dispose(); // 删除之前的CurrentScene，创建新的
             Scene currentScene = SceneFactory.CreateCurrentScene(sceneInstanceId, zoneScene.Zone, sceneName, currentScenesComponent);
             UnitComponent unitComponent = currentScene.AddComponent<UnitComponent>();
-         
+            currentScene.AddComponent<AdventureComponent>();
+
+
             // 可以订阅这个事件中创建Loading界面
             Game.EventSystem.Publish(new EventType.SceneChangeStart() {ZoneScene = zoneScene});
 
@@ -21,9 +23,8 @@
             Unit unit = UnitFactory.Create(currentScene, m2CCreateMyUnit.Unit);
             unitComponent.Add(unit);
 
-            //zoneScene.RemoveComponent<AIComponent>();
-            //2秒的加载界面
-            await TimerComponent.Instance.WaitAsync(2000);
+            //1秒的加载界面
+            await TimerComponent.Instance.WaitAsync(1000);
             Game.EventSystem.Publish(new EventType.SceneChangeFinish() {ZoneScene = zoneScene, CurrentScene = currentScene});
 
             // 通知等待场景切换的协程

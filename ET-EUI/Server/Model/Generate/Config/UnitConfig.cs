@@ -78,11 +78,11 @@ namespace ET
 		[ProtoMember(5)]
 		public string Desc { get; set; }
 		[ProtoMember(6)]
-		public int Position { get; set; }
+		public int MaxHP { get; set; }
 		[ProtoMember(7)]
-		public int Height { get; set; }
+		public int DamageValue { get; set; }
 		[ProtoMember(8)]
-		public int Weight { get; set; }
+		public string PrefabName { get; set; }
 
 	}
 }
