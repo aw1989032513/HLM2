@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ET
 {
+    /// <summary>
+    /// 开始战斗
+    /// </summary>
     public class C2M_StartGameLevelHandler : AMActorLocationRpcHandler<Unit, C2M_StartGameLevel, M2C_StartGameLevel>
     {
         protected override async ETTask Run(Unit unit, C2M_StartGameLevel request, M2C_StartGameLevel response, Action reply)

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ET
 {
+    /// <summary>
+    /// 关卡结束战报处理
+    /// </summary>
     public class C2M_EndGameLevelHandler : AMActorLocationRpcHandler<Unit, C2M_EndGameLevel, M2C_EndGameLevel>
     {
         protected override async ETTask Run(Unit unit, C2M_EndGameLevel request, M2C_EndGameLevel response, Action reply)
@@ -55,6 +58,9 @@ namespace ET
             reply();
 
             //下发奖励todo
+
+            //增加经验
+            numericComponent[(int)NumericType.Exp] += BattleLevelConfigCategory.Instance.Get(levelId).RewardExp;
             await ETTask.CompletedTask;
         }
     }

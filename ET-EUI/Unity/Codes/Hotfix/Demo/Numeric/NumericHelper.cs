@@ -52,27 +52,31 @@ namespace ET
             return ErrorCode.ERR_Success;
         }
 
+        /// <summary>
+        /// 升级角色等级
+        /// </summary>
+        /// <param name="zoneScene"></param>
+        /// <returns></returns>
+        public static async ETTask<int> ReqeustUpRoleLevel(Scene zoneScene)
+        {
+            M2C_UpRoleLevel m2CUpRoleLevel = null;
+            try
+            {
+                m2CUpRoleLevel = (M2C_UpRoleLevel)await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2M_UpRoleLevel() { });
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+                return ErrorCode.ERR_NetWorkError;
+            }
 
-        //public static async ETTask<int> ReqeustUpRoleLevel(Scene zoneScene)
-        //{
-        //    M2C_UpRoleLevel m2CUpRoleLevel = null;
-        //    try
-        //    {
-        //        m2CUpRoleLevel = (M2C_UpRoleLevel)await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2M_UpRoleLevel() { });
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e.ToString());
-        //        return ErrorCode.ERR_NetWorkError;
-        //    }
-
-        //    if (m2CUpRoleLevel.Error != ErrorCode.ERR_Success)
-        //    {
-        //        Log.Error(m2CUpRoleLevel.Error.ToString());
-        //        return m2CUpRoleLevel.Error;
-        //    }
-        //    return ErrorCode.ERR_Success;
-        //}
+            if (m2CUpRoleLevel.Error != ErrorCode.ERR_Success)
+            {
+                Log.Error(m2CUpRoleLevel.Error.ToString());
+                return m2CUpRoleLevel.Error;
+            }
+            return ErrorCode.ERR_Success;
+        }
 
     }
 }

@@ -15,12 +15,31 @@ namespace ET
     }
     public static class AdventureComponentSystem
     {
+        /// <summary>
+        /// 随机数种子
+        /// </summary>
+        /// <param name="self"></param>
+        public static void SetBattleRandomSeed(this AdventureComponent self)
+        {
+            uint seed = (uint)UnitHelper.GetMyUnitFromCurrentScene(self.ZoneScene().CurrentScene()).GetComponent<NumericComponent>().GetAsInt((int)NumericType.BattleRandomSeed); ;
+            if (self.random == null)
+            {
+                self.random = new SRandom(seed);
+            }
+            else
+            {
+                self.random.SetRandomSeed(seed);
+            }
+        }
+
+
         public static async ETTask StartAdventure(this AdventureComponent self)
         {
             self.ResetAdventure();
             await self.CreateAdventureEnemy();
+            self.ShowAdventureHpBarInfo(true);
             //0.5秒后，启动战斗，只会执行一次
-            self.battleTimer = TimerComponent.Instance.NewOnceTimer(500, TimerType.BattleRound, self);
+            self.battleTimer = TimerComponent.Instance.NewOnceTimer(TimeHelper.ServerNow()+ 500, TimerType.BattleRound, self);
         }
         /// <summary>
         /// 创建关卡敌人
@@ -30,15 +49,25 @@ namespace ET
         public static async ETTask CreateAdventureEnemy(this AdventureComponent self)
         {
             //拿到任务当前的关卡levelId
-            Unit unit = UnitHelper.GetMyUnitFromCurrentScene(self.DomainScene().CurrentScene());
+            Unit unit = UnitHelper.GetMyUnitFromCurrentScene(self.ZoneScene().CurrentScene());
             int levelId = unit.GetComponent<NumericComponent>().GetAsInt((int)NumericType.AdventureState);
 
             BattleLevelConfig battleLevelConfig = BattleLevelConfigCategory.Instance.Get(levelId);
             for (int i = 0; i < battleLevelConfig.MonsterIds.Length; i++)
             {
-                Unit monsterUnit = await UnitFactory.CreateMonster(self.DomainScene().CurrentScene(), battleLevelConfig.MonsterIds[i]);
-                monsterUnit.Position = new Vector3(1.5f, -2 + i, 0);
+                Unit monsterUnit = await UnitFactory.CreateMonster(self.ZoneScene().CurrentScene(), battleLevelConfig.MonsterIds[i]);
+                monsterUnit.Position = new Vector3(1.5f, -2 + i, 7);
                 self.enemyIdList.Add(monsterUnit.Id);
+            }
+        }
+        public static void ShowAdventureHpBarInfo(this AdventureComponent self,bool isShow)
+        {
+            Unit unit = UnitHelper.GetMyUnitFromCurrentScene(self.ZoneScene().CurrentScene());
+            Game.EventSystem.PublishAsync(new EventType.ShowAdventureHpBar() { unit = unit, isShow = isShow }).Coroutine();
+            for (int i = 0; i < self.enemyIdList.Count; i++)
+            {
+                Unit monsterUnit = self.ZoneScene().CurrentScene().GetComponent<UnitComponent>().Get(self.enemyIdList[i]);
+                Game.EventSystem.PublishAsync(new EventType.ShowAdventureHpBar() { unit = monsterUnit, isShow = isShow }).Coroutine();
             }
         }
         /// <summary>
@@ -79,16 +108,16 @@ namespace ET
                 Unit monsterUnit = self.GetTargetMonsterUnit();
                 Game.EventSystem.PublishAsync(new EventType.AdventureBattleRoundView()
                 {
-                    zongScene = self.ZoneScene().CurrentScene(),
+                    zongScene = self.ZoneScene(),
                     attackUnit = unit,
                     monsterUnit = monsterUnit
                 }).Coroutine();
-                //await Game.EventSystem.PublishAsync(new EventType.AdventureBattleRound()
-                //{
-                //    ZoneScene = self.ZoneScene(),
-                //    AttackUnit = unit,
-                //    TargetUnit = monsterUnit
-                //});
+                await Game.EventSystem.PublishAsync(new EventType.AdventureBattleRound()
+                {
+                    zongScene = self.ZoneScene(),
+                    attackUnit = unit,
+                    monsterUnit = monsterUnit
+                });
                 await TimerComponent.Instance.WaitAsync(1000);
             }
             else
@@ -115,12 +144,12 @@ namespace ET
                         monsterUnit = unit
                     }).Coroutine();
 
-                    //await Game.EventSystem.PublishAsync(new EventType.AdventureBattleRound()
-                    //{
-                    //    ZoneScene = self.ZoneScene(),
-                    //    AttackUnit = monsterUnit,
-                    //    TargetUnit = unit
-                    //});
+                    await Game.EventSystem.PublishAsync(new EventType.AdventureBattleRound()
+                    {
+                        zongScene = self.ZoneScene(),
+                        attackUnit = monsterUnit,
+                        monsterUnit = unit
+                    });
 
                     await TimerComponent.Instance.WaitAsync(1000);
                 }

@@ -19,8 +19,10 @@ namespace ET
             //是否在关卡状态
             if (unit.GetComponent<NumericComponent>().GetAsInt((int)NumericType.AdventureState) == 0)
             {
+                Log.Debug("角色不在关卡中");
                 return;
             }
+            Log.Debug("角色正在关卡中");
             await TimerComponent.Instance.WaitAsync(3000);
 
             args.CurrentScene.GetComponent<AdventureComponent>().StartAdventure().Coroutine();

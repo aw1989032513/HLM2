@@ -46,5 +46,6 @@ namespace ET
         public const int ERR_AdventureRoundError = 2000028;//回合数不正常
         public const int ERR_AdventureResultError = 2000029;//战斗结果失败
         public const int ERR_AdventureWinResultError = 2000030;//战斗结果异常
+        public const int ERR_ExpNotEnughError = 2000030;//战斗结果异常
     }
 }

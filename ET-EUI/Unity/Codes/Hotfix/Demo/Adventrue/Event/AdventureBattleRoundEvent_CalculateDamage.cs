@@ -10,27 +10,37 @@ namespace ET
     /// <summary>
     /// 逻辑层处理攻击
     /// </summary>
-    public class AdventureBattleRoundEvent_CalculateDamage : AEventAsync<EventType.AdventureBattleRoundView>
+    public class AdventureBattleRoundEvent_CalculateDamage : AEventAsync<EventType.AdventureBattleRound>
     {
-        protected override async ETTask Run(AdventureBattleRoundView args)
+        protected override async ETTask Run(AdventureBattleRound args)
         {
             if (!args.attackUnit.IsAlive() || !args.monsterUnit.IsAlive())
             {
                 return;
             }
-            int damage = args.attackUnit.GetComponent<NumericComponent>().GetAsInt((int)NumericType.DamageValue);
-            int hp = args.monsterUnit.GetComponent<NumericComponent>().GetAsInt((int)NumericType.Hp);
+            SRandom random = args.zongScene.CurrentScene().GetComponent<AdventureComponent>().random;
 
-            hp -= damage;
+            int damage = DamageCalcuateHelper.CalcuateDamageValue(args.attackUnit, args.monsterUnit, ref random);
+            int hp = args.monsterUnit.GetComponent<NumericComponent>().GetAsInt((int)NumericType.Hp) - damage;
+
 
             if (hp <=0)
             {
+                hp = 0;
                 args.monsterUnit.SetAlive(false);
             }
             args.monsterUnit.GetComponent<NumericComponent>().Set((int)NumericType.Hp, hp);
-
-            Log.Debug($"***********************{args.attackUnit.Type}攻击造成伤害：{damage}***********************");
             Log.Debug($"***********************{args.monsterUnit.Type}剩余血量：{hp}***********************");
+
+            Game.EventSystem.PublishAsync(new EventType.ShowDamageValueView()
+            {
+                zongScene = args.zongScene,
+                targetUnit = args.monsterUnit,
+                damageValue = damage
+            }).Coroutine();
+
+
+      
             await ETTask.CompletedTask;
         }
     }

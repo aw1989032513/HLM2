@@ -9,7 +9,7 @@ using UnityEngine;
 namespace ET
 {
     /// <summary>
-    /// 战斗回合中显示层逻辑
+    /// 显示层逻辑层处理攻击
     /// </summary>
     internal class AdventureBattleRoundView_PlayAnimation : AEventAsync<EventType.AdventureBattleRoundView>
     {

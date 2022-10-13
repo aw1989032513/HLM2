@@ -501,3 +501,16 @@ message M2C_EndGameLevel // IActorLocationResponse
 	int32 Error = 91;
 	string Message = 92;
 }
+
+//ResponseType M2C_UpRoleLevel
+message C2M_UpRoleLevel // IActorLocationRequest
+{
+	int32 RpcId = 90;
+}
+
+message M2C_UpRoleLevel // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}

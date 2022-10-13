@@ -15,7 +15,7 @@ namespace ET
 			unitComponent.AddChild(unit);
 			unitComponent.Add(unit);
 
-			unit.AddComponent<UnitDBSaveComponent>(); 
+	
 
 			///遍历所有的unit身上 的Entity组件，重新添加
 			foreach (Entity entity in request.Entitys)

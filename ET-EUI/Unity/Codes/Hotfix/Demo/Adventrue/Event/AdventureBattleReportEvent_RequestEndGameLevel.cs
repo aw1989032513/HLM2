@@ -26,7 +26,7 @@ namespace ET
 
             await TimerComponent.Instance.WaitAsync(3000);
 
-           // args.zongScene?.CurrentScene()?.GetComponent<AdventureComponent>()?.ShowAdventureHpBarInfo(false);
+            args.zongScene?.CurrentScene()?.GetComponent<AdventureComponent>()?.ShowAdventureHpBarInfo(false);
             args.zongScene?.CurrentScene()?.GetComponent<AdventureComponent>()?.ResetAdventure();
 
             await ETTask.CompletedTask;

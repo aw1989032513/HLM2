@@ -10,7 +10,7 @@ namespace ET
     {
         public void Run(NumbericChange args)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

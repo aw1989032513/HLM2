@@ -633,7 +633,9 @@
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_serverTest.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_test.cs" />
     <Compile Include="Codes\ModelView\Demo\Unit\AnimatorComponent.cs" />
+    <Compile Include="Codes\ModelView\Demo\Unit\FlyDamageValueViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\Unit\GameObjectComponent.cs" />
+    <Compile Include="Codes\ModelView\Demo\Unit\HeadHpViewComponent.cs" />
     <Compile Include="Codes\ModelView\Module\AssetPathHelper.cs" />
     <Compile Include="Codes\ModelView\Module\EUI\AUIEventAttribute.cs" />
     <Compile Include="Codes\ModelView\Module\EUI\IAUIEventHandler.cs" />

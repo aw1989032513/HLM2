@@ -105,6 +105,12 @@ namespace ET
             public Unit  attackUnit;
             public Unit  monsterUnit;
         }
+        public struct AdventureBattleRound
+        {
+            public Scene zongScene;
+            public Unit attackUnit;
+            public Unit monsterUnit;
+        }
         /// <summary>
         /// 战斗结束
         /// </summary>
@@ -121,6 +127,23 @@ namespace ET
             public Scene zongScene;
             public BattleRoundResult battleRoundResult;
             public int round;
+        }
+        /// <summary>
+        /// 显示血条
+        /// </summary>
+        public struct ShowAdventureHpBar
+        {
+            public Unit unit;
+            public bool isShow;
+        }
+        /// <summary>
+        /// 伤害值显示
+        /// </summary>
+        public struct ShowDamageValueView
+        {
+            public Scene zongScene;
+            public Unit targetUnit;
+            public long damageValue;
         }
     }
 }

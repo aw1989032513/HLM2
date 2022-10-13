@@ -49,12 +49,16 @@ namespace ET
 
 	       // unit.AddComponent<XunLuoPathComponent>();
 	        
-	        Game.EventSystem.Publish(new EventType.AfterUnitCreate() {Unit = unit});
+	        Game.EventSystem.PublishAsync(new EventType.AfterUnitCreate() {Unit = unit}).Coroutine();
             return unit;
         }
         public static async ETTask<Unit> CreateMonster(Scene currentScene, int configId)
         {
             UnitComponent unitComponent = currentScene.GetComponent<UnitComponent>();
+            if (unitComponent == null)
+            {
+                Log.Error("UnitComponent is null");
+            }
             Unit monsterUnit = unitComponent.AddChildWithId<Unit, int>(IdGenerater.Instance.GenerateId(), configId);
             unitComponent.Add(monsterUnit);
 

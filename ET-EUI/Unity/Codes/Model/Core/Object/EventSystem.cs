@@ -629,7 +629,7 @@ namespace ET
             {
                 foreach (object obj in iEvents)
                 {
-                    if (!(obj is AEvent<T> aEvent))
+                    if (!(obj is AEventAsync<T> aEvent))
                     {
                         Log.Error($"event error: {obj.GetType().Name}");
                         continue;

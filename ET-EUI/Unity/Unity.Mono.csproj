@@ -148,6 +148,7 @@
     <Compile Include="Assets\Mono\ILRuntime\Generate\ET_ListComponent_1_Task_Binding.cs" />
     <Compile Include="Assets\Mono\ILRuntime\Generate\ET_TService_Binding.cs" />
     <Compile Include="Assets\Mono\Core\ThreadSynchronizationContext.cs" />
+    <Compile Include="Assets\Mono\Core\Helper\ForeachHelper.cs" />
     <Compile Include="Assets\Mono\ILRuntime\Generate\System_Collections_Generic_IEnumerator_1_KeyValuePair_2_Type_Int32_Bi.cs" />
     <Compile Include="Assets\Mono\ILRuntime\Generate\ET_JsonHelper_Binding.cs" />
     <Compile Include="Assets\Mono\ILRuntime\Generate\System_Linq_Enumerable_Binding.cs" />

@@ -29,6 +29,7 @@ namespace ET
 			}
 		}
 	}
+
 	[Event]
 	public abstract class AEventAsync<A> : IEvent where A : struct
 	{

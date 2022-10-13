@@ -585,13 +585,15 @@
     </Reference>
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneFlagComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneManagerComponentSystem.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureComponentSystem.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureHelper.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleReportEvent_RequestEndGameLevel.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleRoundEvent_CalculateDamage.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\SceneChangeFinish_StartAdventure.cs" />
     <Compile Include="Codes\Hotfix\Demo\ConstValue.cs" />
     <Compile Include="Codes\Hotfix\Demo\Account\AccountInfoSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\DamageCalcuateHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleReportEvent_RequestEndGameLevel.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\AdventureBattleRoundEvent_CalculateDamage.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\NumericWatcher_BattleRandomSeed.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Adventrue\Event\SceneChangeFinish_StartAdventure.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\AI_Attack.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\AI_XunLuo.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\XunLuoPathComponentSystem.cs" />

@@ -593,6 +593,8 @@
       <HintPath>./Temp/bin/Debug/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Compile Include="Codes\HotfixView\AppStart_Init.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Adventure\Event\ShowAdventureHpBarEvent_ShowHeadHpInfo.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Adventure\Event\ShowDamageValueViewEvent_RefreshHp.cs" />
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigComponent_SetConfigLoader_Awake.cs" />
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigLoader.cs" />
     <Compile Include="Codes\HotfixView\Demo\Global\GlobalComponentSystem.cs" />
@@ -602,6 +604,7 @@
     <Compile Include="Codes\HotfixView\Demo\Scene\AfterCreateZoneScene_AddComponent.cs" />
     <Compile Include="Codes\HotfixView\Demo\Scene\SceneChangeComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Scene\SceneChangeStart_AddComponent.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Scene\SceneChangeStart_CreateRedDotLogic.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESCommonUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESReuseUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ES_AttributeItemSystem.cs" />
@@ -627,6 +630,7 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\Event\DlgRedDotEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\DlgRoleInfoSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\Event\DlgRoleInfoEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\Event\NumericWatcher_AddExp.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoles\DlgRolesSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoles\Event\DlgRolesEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgServer\DlgServerSystem.cs" />
@@ -658,7 +662,9 @@
     <Compile Include="Codes\HotfixView\Demo\Unit\AnimatorComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Unit\ChangePosition_SyncGameObjectPos.cs" />
     <Compile Include="Codes\HotfixView\Demo\Unit\ChangeRotation_SyncGameObjectRotation.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Unit\FlyDamageValueViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Unit\GameObjectComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Unit\HeadHpViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Module\EUI\EUIHelper.cs" />
     <Compile Include="Codes\HotfixView\Module\EUI\EUIRootHelper.cs" />
     <Compile Include="Codes\HotfixView\Module\EUI\IconHelper.cs" />

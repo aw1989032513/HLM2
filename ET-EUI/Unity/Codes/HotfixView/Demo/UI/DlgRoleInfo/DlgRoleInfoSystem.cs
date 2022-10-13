@@ -17,9 +17,23 @@ namespace ET
             self.View.ES_AttributeItem2.RegisterEvent((int)NumericType.Agile);
             self.View.ES_AttributeItem3.RegisterEvent((int)NumericType.Spirit);
             self.View.E_AttributesLoopVerticalScrollRect.AddItemRefreshListener((Transform transform, int index) =>
-            { self.OnAttributeItemRefreshHandler(transform, index); });
-        }
+            { 
+                self.OnAttributeItemRefreshHandler(transform, index);
+            });
 
+            self.View.E_UpLevelButton.AddListenerAsync(self.OnUpRoleLevelHandler);
+
+            RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "UpLevelButton", self.View.E_UpLevelButton.gameObject, Vector3.one, new Vector3(115f, 10f, 0));
+            RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "AddAttribute", self.View.E_AttributePointText.gameObject, new Vector3(0.5f, 0.5f, 1), new Vector3(-17, 10f, 0));
+        }
+        public static void OnUnLoadWindow(this DlgRoleInfo self)
+        {
+            RedDotMonoView redDotMonoView = self.View.E_UpLevelButton.gameObject.GetComponent<RedDotMonoView>();
+            RedDotHelper.RemoveRedDotView(self.ZoneScene(), "UpLevelButton", out redDotMonoView);
+
+            redDotMonoView = self.View.E_AttributePointText.gameObject.GetComponent<RedDotMonoView>();
+            RedDotHelper.RemoveRedDotView(self.ZoneScene(), "AddAttribute", out redDotMonoView);
+        }
         public static void ShowWindow(this DlgRoleInfo self, Entity contextData = null)
         {
             self.Refresh();
@@ -52,5 +66,20 @@ namespace ET
             self.View.E_AttributesLoopVerticalScrollRect.SetVisible(true, count);
         }
 
+        public static async ETTask OnUpRoleLevelHandler(this DlgRoleInfo self)
+        {
+            try
+            {
+                int errorCode = await NumericHelper.ReqeustUpRoleLevel(self.ZoneScene());
+                if (errorCode != ErrorCode.ERR_Success)
+                {
+                    return;
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+            }
+        }
     }
 }

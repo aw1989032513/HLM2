@@ -10,7 +10,7 @@ namespace ET
     /// <summary>
     /// 回合数重置
     /// </summary>
-    public class AdventureRoundResetEvent_ResetAnimation : AEvent<EventType.AdventureRoundReset>
+    public class AdventureRoundResetEvent_ResetAnimation : AEventAsync<EventType.AdventureRoundReset>
     {
         protected override async ETTask Run(AdventureRoundReset args)
         {
