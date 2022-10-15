@@ -2,6 +2,9 @@
 
 namespace ET
 {
+	/// <summary>
+	/// 反序列化
+	/// </summary>
 	public interface IDeserialize
 	{
 	}

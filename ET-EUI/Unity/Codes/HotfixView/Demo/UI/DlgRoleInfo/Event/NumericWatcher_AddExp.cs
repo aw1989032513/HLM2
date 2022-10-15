@@ -1,9 +1,5 @@
-﻿using ET.EventType;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using ET.EventType;
 
 namespace ET
 {
@@ -17,17 +13,19 @@ namespace ET
             {
                 return;
             }
-
             unit = args.Parent as Unit;
 
             if (args.NumericType == (int)NumericType.Exp)
             {
                 NumericComponent numericComponent = unit.GetComponent<NumericComponent>();
-                int level = numericComponent.GetAsInt((int)NumericType.Level);
-                if (PlayerLevelConfigCategory.Instance.Contain(level))
+
+                int unitLevel = numericComponent.GetAsInt((int)NumericType.Level);
+
+                if (PlayerLevelConfigCategory.Instance.Contain(unitLevel))
                 {
-                    long needXp = PlayerLevelConfigCategory.Instance.Get(level).NeedExp;
-                    if (args.New >= needXp)
+                    long needExp = PlayerLevelConfigCategory.Instance.Get(unitLevel).NeedExp;
+
+                    if (args.New >= needExp)
                     {
                         RedDotHelper.ShowRedDotNode(unit.ZoneScene(), "UpLevelButton");
                     }
@@ -39,10 +37,8 @@ namespace ET
                         }
                     }
                 }
-
-
-
             }
+
             if (args.NumericType == (int)NumericType.AttributePoint)
             {
                 if (args.New > 0)
@@ -58,8 +54,9 @@ namespace ET
                 }
             }
 
-            //刷新界面
             unit.ZoneScene().GetComponent<UIComponent>().GetDlgLogic<DlgRoleInfo>()?.Refresh();
+
         }
     }
+
 }

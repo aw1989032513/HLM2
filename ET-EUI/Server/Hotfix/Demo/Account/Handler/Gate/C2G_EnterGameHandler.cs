@@ -51,7 +51,7 @@ namespace ET
                         reply();
                         return;
                     }
-                                                                                                            //如果已经在游戏中了
+                                                    //如果Session已经在游戏中了  就Return                                          
                     if (session.GetComponent<SessionStateComponent>() !=null && session.GetComponent<SessionStateComponent>().state == SessionState.Game)
                     {
                         response.Error = ErrorCode.ERR_SessionStateError;

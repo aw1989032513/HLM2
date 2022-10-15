@@ -46,6 +46,11 @@ namespace ET
         public const int ERR_AdventureRoundError = 2000028;//回合数不正常
         public const int ERR_AdventureResultError = 2000029;//战斗结果失败
         public const int ERR_AdventureWinResultError = 2000030;//战斗结果异常
-        public const int ERR_ExpNotEnughError = 2000030;//战斗结果异常
+        public const int ERR_ExpNotEnughError       = 2000030;//战斗结果异常
+        public const int ERR_ItemNotExist           = 2000031;
+        public const int ERR_AddBagItemError        = 2000032;
+        public const int ERR_EquipItemError         = 2000033;
+        public const int ERR_BagMaxLoad             = 2000034;//背包满了
+        public const int ERR_UnLoadItemNotExist     = 2000035;//人物身上装备处没装备
     }
 }

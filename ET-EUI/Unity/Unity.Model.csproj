@@ -630,7 +630,15 @@
     <Compile Include="Codes\Model\Demo\Adventure\AdventureComponent.cs" />
     <Compile Include="Codes\Model\Demo\Adventure\BattleRoundResult.cs" />
     <Compile Include="Codes\Model\Demo\AI\XunLuoPathComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Bag\BagComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Equipment\EquipmentsComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Equipment\EquipPosition.cs" />
     <Compile Include="Codes\Model\Demo\Helper\PositionHelper.cs" />
+    <Compile Include="Codes\Model\Demo\Item\AttributeEntry.cs" />
+    <Compile Include="Codes\Model\Demo\Item\EquipInfoComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Item\Item.cs" />
+    <Compile Include="Codes\Model\Demo\Item\ItemQuality.cs" />
+    <Compile Include="Codes\Model\Demo\Item\ItemType.cs" />
     <Compile Include="Codes\Model\Demo\Move\MoveComponent.cs" />
     <Compile Include="Codes\Model\Demo\Role\RoleInfo.cs" />
     <Compile Include="Codes\Model\Demo\Role\RoleInfosComponent.cs" />
@@ -644,6 +652,9 @@
     <Compile Include="Codes\Model\Demo\Unit\UnitType.cs" />
     <Compile Include="Codes\Model\Generate\Config\AIConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\BattleLevelConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\EntryConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\EntryRandomConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\ItemConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\PlayerLevelConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\PlayerNumericConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\ServerInfoConfig.cs" />

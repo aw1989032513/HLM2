@@ -70,6 +70,9 @@ namespace ET
 		[ProtoMember(1)]
 		public int RpcId { get; set; }
 
+		[ProtoMember(2)]
+		public string MapName { get; set; }
+
 	}
 
 	[Message(OuterOpcode.G2C_EnterMap)]
@@ -1015,6 +1018,182 @@ namespace ET
 	[Message(OuterOpcode.M2C_UpRoleLevel)]
 	[ProtoContract]
 	public partial class M2C_UpRoleLevel: Object, IActorLocationResponse
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(91)]
+		public int Error { get; set; }
+
+		[ProtoMember(92)]
+		public string Message { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_ItemUpdateOpInfo)]
+	[ProtoContract]
+	public partial class M2C_ItemUpdateOpInfo: Object, IActorMessage
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public ItemInfo ItemInfo { get; set; }
+
+//操作类型
+		[ProtoMember(2)]
+		public int Op { get; set; }
+
+//背包类型
+		[ProtoMember(3)]
+		public int ContainerType { get; set; }
+
+	}
+
+	[Message(OuterOpcode.ItemInfo)]
+	[ProtoContract]
+	public partial class ItemInfo: Object
+	{
+		[ProtoMember(1)]
+		public long ItemId { get; set; }
+
+		[ProtoMember(2)]
+		public int ItemConfigId { get; set; }
+
+		[ProtoMember(3)]
+		public int ItemQuality { get; set; }
+
+		[ProtoMember(4)]
+		public EquipInfoProto EquipInfo { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_AllItemsList)]
+	[ProtoContract]
+	public partial class M2C_AllItemsList: Object, IActorMessage
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public List<ItemInfo> ItemInfoList = new List<ItemInfo>();
+
+//背包类型
+		[ProtoMember(2)]
+		public int ContainerType { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_SellItem))]
+	[Message(OuterOpcode.C2M_SellItem)]
+	[ProtoContract]
+	public partial class C2M_SellItem: Object, IActorLocationRequest
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public long ItemId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_SellItem)]
+	[ProtoContract]
+	public partial class M2C_SellItem: Object, IActorLocationResponse
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(91)]
+		public int Error { get; set; }
+
+		[ProtoMember(92)]
+		public string Message { get; set; }
+
+	}
+
+	[Message(OuterOpcode.EquipInfoProto)]
+	[ProtoContract]
+	public partial class EquipInfoProto: Object
+	{
+		[ProtoMember(1)]
+		public long Id { get; set; }
+
+//评分
+		[ProtoMember(2)]
+		public int Score { get; set; }
+
+//属性词条
+		[ProtoMember(3)]
+		public List<AttributeEntryProto> AttributeEntryProtoList = new List<AttributeEntryProto>();
+
+	}
+
+//装备属性词条
+	[Message(OuterOpcode.AttributeEntryProto)]
+	[ProtoContract]
+	public partial class AttributeEntryProto: Object
+	{
+		[ProtoMember(1)]
+		public long Id { get; set; }
+
+//key 代表类型
+		[ProtoMember(2)]
+		public int Key { get; set; }
+
+		[ProtoMember(3)]
+		public long Value { get; set; }
+
+// 普通 / 特殊
+		[ProtoMember(4)]
+		public int EntryType { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_EquipItem))]
+	[Message(OuterOpcode.C2M_EquipItem)]
+	[ProtoContract]
+	public partial class C2M_EquipItem: Object, IActorLocationRequest
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public long ItemId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_EquipItem)]
+	[ProtoContract]
+	public partial class M2C_EquipItem: Object, IActorLocationResponse
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(91)]
+		public int Error { get; set; }
+
+		[ProtoMember(92)]
+		public string Message { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_UnloadEquipItem))]
+	[Message(OuterOpcode.C2M_UnloadEquipItem)]
+	[ProtoContract]
+	public partial class C2M_UnloadEquipItem: Object, IActorLocationRequest
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public long EquipPosition { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_UnloadEquipItem)]
+	[ProtoContract]
+	public partial class M2C_UnloadEquipItem: Object, IActorLocationResponse
 	{
 		[ProtoMember(90)]
 		public int RpcId { get; set; }

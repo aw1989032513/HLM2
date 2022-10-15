@@ -33,7 +33,6 @@
 		{
 			uiBaseWindow.GetComponent<DlgRoleInfo>().OnUnLoadWindow();
 		}
+
 	}
-
 }
-

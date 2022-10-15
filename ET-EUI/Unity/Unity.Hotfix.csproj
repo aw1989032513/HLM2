@@ -597,6 +597,16 @@
     <Compile Include="Codes\Hotfix\Demo\AI\AI_Attack.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\AI_XunLuo.cs" />
     <Compile Include="Codes\Hotfix\Demo\AI\XunLuoPathComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Bag\BagComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Bag\M2C_AllItemsListHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Bag\M2C_ItemUpdateOpInfoHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Equipment\EquipmentsComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\AttributeEntrySystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\EquipInfoComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\ItemApplyHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\ItemFactory.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\ItemHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Item\ItemSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Login\EnterMapHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Login\LoginHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Move\M2C_PathfindingResultHandler.cs" />

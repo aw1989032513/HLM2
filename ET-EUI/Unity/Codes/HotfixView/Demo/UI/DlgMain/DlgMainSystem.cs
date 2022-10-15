@@ -13,6 +13,7 @@ namespace ET
         {
             self.View.E_RoleButton.AddListenerAsync(() => { return self.OnRoleBtnClickHandler(); });
             self.View.E_BattleButton.AddListener(self.OnBattleButtonClickHandler);
+            self.View.E_BagButton.AddListener(self.OnBagButtonClickHandler);
             RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Role", self.View.E_RoleButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
             //RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Forge", self.View.E_MakeButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
             //RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Task", self.View.E_TaskButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
@@ -52,6 +53,10 @@ namespace ET
             {
                 Log.Error(e.ToString());
             }
+        }
+        public static void OnBagButtonClickHandler(this DlgMain self)
+        {
+            self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Bag);
         }
 
     }

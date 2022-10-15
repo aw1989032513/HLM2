@@ -34,6 +34,7 @@ message Actor_TransferResponse // IActorLocationResponse
 message C2G_EnterMap // IRequest
 {
 	int32 RpcId = 1;
+      string MapName = 2;
 }
 
 message G2C_EnterMap // IResponse
@@ -509,6 +510,92 @@ message C2M_UpRoleLevel // IActorLocationRequest
 }
 
 message M2C_UpRoleLevel // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+message M2C_ItemUpdateOpInfo // IActorMessage
+{
+	int32 RpcId = 90;
+	ItemInfo ItemInfo = 1;
+	//操作类型
+	int32 Op = 2;
+	//背包类型
+	int32 ContainerType = 3;
+}
+message ItemInfo
+{
+	int64 ItemId = 1;
+	int32 ItemConfigId = 2;
+	int32 ItemQuality = 3;
+
+	EquipInfoProto EquipInfo = 4;
+}
+
+message M2C_AllItemsList // IActorMessage
+{
+	int32 RpcId = 90;
+	repeated ItemInfo ItemInfoList = 1;
+	//背包类型
+	int32 ContainerType = 2;
+}
+
+//ResponseType M2C_SellItem
+message C2M_SellItem // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int64 ItemId = 1;
+}
+
+message M2C_SellItem // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+message EquipInfoProto
+{
+	int64 Id = 1;
+	//评分
+	int32 Score = 2;
+	//属性词条
+	repeated AttributeEntryProto AttributeEntryProtoList = 3;
+}
+//装备属性词条
+message AttributeEntryProto
+{
+	int64 Id = 1;
+	//key 代表类型
+	int32 Key = 2;
+	int64 Value = 3;
+	// 普通 / 特殊
+	int32 EntryType = 4;
+}
+
+//ResponseType M2C_EquipItem
+message C2M_EquipItem // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int64 ItemId = 1;
+}
+
+message M2C_EquipItem // IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+//ResponseType M2C_UnloadEquipItem
+message C2M_UnloadEquipItem // IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int64 EquipPosition = 1;
+}
+
+message M2C_UnloadEquipItem // IActorLocationResponse
 {
 	int32 RpcId = 90;
 	int32 Error = 91;

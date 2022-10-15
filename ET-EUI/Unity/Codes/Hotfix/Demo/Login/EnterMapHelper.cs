@@ -5,11 +5,11 @@ namespace ET
 {
     public static class EnterMapHelper
     {
-        public static async ETTask EnterMapAsync(Scene zoneScene)
+        public static async ETTask EnterMapAsync(Scene zoneScene,string  mapName)
         {
             try
             {
-                G2C_EnterMap g2CEnterMap = await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2G_EnterMap()) as G2C_EnterMap;
+                G2C_EnterMap g2CEnterMap = await zoneScene.GetComponent<SessionComponent>().Session.Call(new C2G_EnterMap() { MapName =mapName}) as G2C_EnterMap;
                 zoneScene.GetComponent<PlayerComponent>().MyId = g2CEnterMap.MyId;
                 
                 // 等待场景切换完成

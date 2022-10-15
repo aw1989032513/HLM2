@@ -22,8 +22,8 @@ namespace ET
 			// 这里可以从DB中加载Unit
 			Unit unit = UnitFactory.Create(scene, player.Id, UnitType.Player);
 			unit.AddComponent<UnitGateComponent, long>(session.InstanceId);
-			
-			StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Map1");
+			//拿到地图名字MapName
+			StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), request.MapName);
 			response.MyId = player.Id;
 			reply();
 			

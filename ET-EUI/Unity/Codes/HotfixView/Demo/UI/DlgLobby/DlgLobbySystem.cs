@@ -25,7 +25,7 @@ namespace ET
 		
 		public static async ETTask OnEnterMapClickHandler(this DlgLobby self)
 		{
-			await EnterMapHelper.EnterMapAsync(self.ZoneScene());
+			await EnterMapHelper.EnterMapAsync(self.ZoneScene(),"Map1");
 		}
 	}
 }

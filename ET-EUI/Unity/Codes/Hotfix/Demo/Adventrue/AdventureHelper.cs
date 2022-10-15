@@ -10,6 +10,9 @@ namespace ET
     {
         public static async ETTask<int> RequestStartGameLevel(Scene zoneScene, int levelId)
         {
+            //这里可以请求加载游戏地图。发送C2G_EnterMapHandler
+
+
             M2C_StartGameLevel m2C_StartGameLevel = null;
             try
             {

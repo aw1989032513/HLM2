@@ -11,6 +11,9 @@ namespace ET
             zoneScene.AddComponent<ObjectWait>();
             zoneScene.AddComponent<PlayerComponent>();
 
+            zoneScene.AddComponent<BagComponent>();
+            zoneScene.AddComponent<EquipmentsComponent>();
+
             zoneScene.AddComponent<AccountInfoComponent>();
             zoneScene.AddComponent<ServerInfosCompontent>();
             zoneScene.AddComponent<RoleInfosComponent>();

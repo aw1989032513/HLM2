@@ -14,5 +14,7 @@
         WindowID_Loading,     //加载界面
         WindowID_RoleInfo,
         WindowID_Adventure,
+        WindowID_Bag,
+        WindowID_ItemPopUp,
     }
 }

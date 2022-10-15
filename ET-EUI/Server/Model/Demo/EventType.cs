@@ -40,6 +40,11 @@ namespace ET
 			public AOIEntity A;
 			public AOIEntity B;
 		}
-	
+		public struct ChangeEquipItem
+		{
+			public Unit unit;
+			public Item item;
+			public EquipOp equipOp;
+		}
 	}
 }

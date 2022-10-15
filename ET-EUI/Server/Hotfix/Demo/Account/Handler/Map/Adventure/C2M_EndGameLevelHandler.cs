@@ -58,7 +58,14 @@ namespace ET
             reply();
 
             //下发奖励todo
-
+            //模拟下发装备
+            for (int i = 0; i < 30; i++)
+            {
+                if (!BagHelper.AddItemByConfigId(unit,RandomHelper.RandomNumber(1002,1018)))
+                {
+                    Log.Error("增加背包物品失败");
+                }
+            }
             //增加经验
             numericComponent[(int)NumericType.Exp] += BattleLevelConfigCategory.Instance.Get(levelId).RewardExp;
             await ETTask.CompletedTask;
