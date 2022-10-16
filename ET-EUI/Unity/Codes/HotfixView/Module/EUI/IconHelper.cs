@@ -13,7 +13,7 @@ namespace ET
         /// <summary>
         /// 同步加载图集图片资源
         /// </summary>
-        /// <OtherParam name="spriteName"></OtherParam>
+        /// <OtherParam name="spriteName">图集名字</OtherParam>
         /// <returns></returns>
         public static Sprite LoadIconSprite(string atlasName,  string spriteName)
         {

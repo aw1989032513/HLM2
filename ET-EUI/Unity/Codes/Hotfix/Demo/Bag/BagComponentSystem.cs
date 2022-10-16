@@ -6,8 +6,33 @@ using System.Threading.Tasks;
 
 namespace ET
 {
+    public class BagComponentDestorySystem : DestroySystem<BagComponent>
+    {
+        public override void Destroy(BagComponent self)
+        {
+            self.Clear();
+        }
+    }
     public static class BagComponentSystem
     {
+        /// <summary>
+        /// 背包最大数量
+        /// </summary>
+        /// <param name="self"></param>
+        /// <returns></returns>
+        public static bool IsMaxLoad(this BagComponent self)
+        {
+            NumericComponent numericComponent = UnitHelper.GetMyUnitNumericComponent(self.ZoneScene().CurrentScene());
+            if (self.ItemsDict.Count >= numericComponent.GetAsInt((int)NumericType.MaxBagCapacity))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static Item GetItemById(this BagComponent self, long itemId)
         {
             if (self.ItemsDict.TryGetValue(itemId, out Item item))

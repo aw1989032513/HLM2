@@ -15,6 +15,7 @@ namespace ET
                 Log.Error($"当前所创建的物品id 不存在: {configId}");
                 return null;
             }
+            //创建Item实体Entity
             Item item = parent.AddChild<Item, int>(configId);
             //场景物品掉落
             item.RandomQuality();

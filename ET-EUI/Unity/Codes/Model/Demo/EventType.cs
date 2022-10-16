@@ -145,5 +145,12 @@ namespace ET
             public Unit targetUnit;
             public long damageValue;
         }
+        /// <summary>
+        /// 制作队列
+        /// </summary>
+        public struct MakeQueueOver
+        {
+            public Scene zongScene;
+        }
     }
 }

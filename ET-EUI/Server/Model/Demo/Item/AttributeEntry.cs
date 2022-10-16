@@ -27,7 +27,7 @@ namespace ET
         public long Value;
 
         /// <summary>
-        /// 词条类型
+        /// 词条类型 1 普通 2 特殊
         /// </summary>
         public EntryType Type;
     }

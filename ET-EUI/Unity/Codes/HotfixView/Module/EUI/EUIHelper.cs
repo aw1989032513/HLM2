@@ -72,7 +72,26 @@ namespace ET
             loopScrollRect.RefillCells();
         }
 
+        public static void SetVisible(this Transform transform, bool isVisible)
+        {
+            if (null == transform)
+            {
+                Log.Error("uibehaviour is null!");
+                return;
+            }
 
+            if (null == transform.gameObject)
+            {
+                Log.Error("uiBehaviour gameObject is null!");
+                return;
+            }
+
+            if (transform.gameObject.activeSelf == isVisible)
+            {
+                return;
+            }
+            transform.gameObject.SetActive(isVisible);
+        }
 
         public  static void SetTogglesInteractable(this ToggleGroup toggleGroup, bool isEnable)
         {

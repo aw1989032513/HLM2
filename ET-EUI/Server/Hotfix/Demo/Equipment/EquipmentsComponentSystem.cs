@@ -55,6 +55,7 @@ namespace ET
             {
                 self.AddChild(item);
                 self.EquipItemsDic.Add(item.config.EquipPosition, item);
+                //装备Item之后，Numericnum数值发生变化
                 Game.EventSystem.Publish(new EventType.ChangeEquipItem()
                 {
                     unit = self.GetParent<Unit>(),

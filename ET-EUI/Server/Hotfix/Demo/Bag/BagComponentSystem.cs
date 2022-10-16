@@ -99,7 +99,7 @@ namespace ET
                 Log.Error("bag is IsMaxLoad!");
                 return false;
             }
-            if (!self.AddContainer(item))
+            if (!self.AddContainer(item))//添加到字典中
             {
                 Log.Error("Add Container is Error!");
                 return false;
@@ -121,8 +121,16 @@ namespace ET
         /// <returns></returns>
         public static bool IsMaxLoad(this BagComponent self)
         {
-            //return self.ItemsDict.Count == self.GetParent<Unit>().GetComponent<NumericComponent>()[(int)NumericType.MaxBagCapacity];
-            return self.ItemsDict.Count == self.GetParent<Unit>().GetComponent<NumericComponent>().GetAsInt((int)NumericType.MaxBagCapacity);
+            return self.ItemsDict.Count == self.GetParent<Unit>().GetComponent<NumericComponent>()[(int)NumericType.MaxBagCapacity];
+            //int temp = self.GetParent<Unit>().GetComponent<NumericComponent>().GetAsInt((int)NumericType.MaxBagCapacity);
+            //if (self.ItemsDict.Count >= temp)
+            //{
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
         }
         /// <summary>
         /// 添加到字典中

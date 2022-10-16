@@ -19,6 +19,7 @@ namespace ET
         /// <param name="message"></param>
         public static void SyncAddItem(Unit unit,Item item , M2C_ItemUpdateOpInfo message)
         {
+            //打包Item 
             message.ItemInfo = item.ToMessageItemInfo();
             message.Op = (int)ItemOp.Add;
             MessageHelper.SendToClient(unit, message);

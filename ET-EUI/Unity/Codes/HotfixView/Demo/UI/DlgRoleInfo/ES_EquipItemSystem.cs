@@ -10,7 +10,11 @@ namespace ET
             self.E_SelecteButton.AddListenerWithId(self.OnSelectedHandler, (int)equipPosition);
         }
 
-
+        /// <summary>
+        /// 装备按钮
+        /// </summary>
+        /// <param name="self"></param>
+        /// <param name="equipPosition"></param>
         public static void OnSelectedHandler(this ES_EquipItem self, int equipPosition)
         {
             Item item = self.ZoneScene().GetComponent<EquipmentsComponent>().GetItemByPosition((EquipPosition)equipPosition);

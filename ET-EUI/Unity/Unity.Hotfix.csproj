@@ -601,6 +601,10 @@
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_AllItemsListHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_ItemUpdateOpInfoHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Equipment\EquipmentsComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Forge\ForgeComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Forge\ForgeHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Forge\Handler\M2C_AllProductionListHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Forge\ProductionSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\AttributeEntrySystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\EquipInfoComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\ItemApplyHelper.cs" />

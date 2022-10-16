@@ -46,5 +46,10 @@ namespace ET
 			public Item item;
 			public EquipOp equipOp;
 		}
+		public struct MakeProdutionOver
+        {
+			public Unit unit;
+			public int productionConfigId;
+		}
 	}
 }

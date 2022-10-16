@@ -18,7 +18,7 @@ namespace ET
 			self.View.ES_AttributeItem3.RegisterEvent((int)NumericType.Spirit);
 			self.View.E_AttributesLoopVerticalScrollRect.AddItemRefreshListener((Transform transform, int index) => { self.OnAttributeItemRefreshHandler(transform, index); });
 			self.View.E_UpLevelButton.AddListenerAsync(self.OnUpRoleLevelHandler);
-
+			//图标按钮
             self.View.ES_EquipItem_Head.RegisterEventHandler(EquipPosition.Head);
             self.View.ES_EquipItem_Clothes.RegisterEventHandler(EquipPosition.Clothes);
             self.View.ES_EquipItem_Shoes.RegisterEventHandler(EquipPosition.Shoes);

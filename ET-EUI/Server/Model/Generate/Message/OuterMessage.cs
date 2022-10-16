@@ -1206,4 +1206,98 @@ namespace ET
 
 	}
 
+	[ResponseType(nameof(M2C_StartProduction))]
+	[Message(OuterOpcode.C2M_StartProduction)]
+	[ProtoContract]
+	public partial class C2M_StartProduction: Object, IActorLocationRequest
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public int ConfigId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_StartProduction)]
+	[ProtoContract]
+	public partial class M2C_StartProduction: Object, IActorLocationResponse
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(91)]
+		public int Error { get; set; }
+
+		[ProtoMember(92)]
+		public string Message { get; set; }
+
+		[ProtoMember(1)]
+		public ProductionProto ProductionProto { get; set; }
+
+	}
+
+	[Message(OuterOpcode.ProductionProto)]
+	[ProtoContract]
+	public partial class ProductionProto: Object
+	{
+		[ProtoMember(1)]
+		public long Id { get; set; }
+
+		[ProtoMember(2)]
+		public int ConfigId { get; set; }
+
+//结束时间
+		[ProtoMember(3)]
+		public long TargetTime { get; set; }
+
+		[ProtoMember(4)]
+		public long StartTime { get; set; }
+
+		[ProtoMember(5)]
+		public int ProductionState { get; set; }
+
+	}
+
+	[ResponseType(nameof(M2C_ReceiveProduction))]
+	[Message(OuterOpcode.C2M_ReceiveProduction)]
+	[ProtoContract]
+	public partial class C2M_ReceiveProduction: Object, IActorLocationRequest
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(1)]
+		public long ProductionId { get; set; }
+
+	}
+
+	[Message(OuterOpcode.M2C_ReceiveProduction)]
+	[ProtoContract]
+	public partial class M2C_ReceiveProduction: Object, IActorLocationResponse
+	{
+		[ProtoMember(90)]
+		public int RpcId { get; set; }
+
+		[ProtoMember(91)]
+		public int Error { get; set; }
+
+		[ProtoMember(92)]
+		public string Message { get; set; }
+
+		[ProtoMember(1)]
+		public ProductionProto ProductionProto { get; set; }
+
+	}
+
+///将服务器的production所有信息推送给客户端
+	[Message(OuterOpcode.M2C_AllProductionList)]
+	[ProtoContract]
+	public partial class M2C_AllProductionList: Object, IActorMessage
+	{
+		[ProtoMember(1)]
+		public List<ProductionProto> ProductionProto = new List<ProductionProto>();
+
+	}
+
 }

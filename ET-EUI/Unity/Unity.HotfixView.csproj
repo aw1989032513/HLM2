@@ -597,6 +597,7 @@
     <Compile Include="Codes\HotfixView\Demo\Adventure\Event\ShowDamageValueViewEvent_RefreshHp.cs" />
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigComponent_SetConfigLoader_Awake.cs" />
     <Compile Include="Codes\HotfixView\Demo\Config\ConfigLoader.cs" />
+    <Compile Include="Codes\HotfixView\Demo\Forge\MakeQueueOverEvent_ShowRedDot.cs" />
     <Compile Include="Codes\HotfixView\Demo\Global\GlobalComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Item\ItemViewHelper.cs" />
     <Compile Include="Codes\HotfixView\Demo\Numeric\Event\NumericWatcher_RefreashMainUI.cs" />
@@ -609,6 +610,7 @@
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESCommonUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ESReuseUISystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\Common\ES_AttributeItemSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\Common\ES_MakeQueueSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\DlgAdventureSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\AdventreBattleOverEvent_PlayWinAnimation.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgAdventure\Event\AdventureBattleRoundView_PlayAnimation.cs" />
@@ -618,6 +620,8 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\DlgBagSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\Event\DlgBagEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\Item\Scroll_Item_bagItemSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgForge\DlgForgeSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgForge\Event\DlgForgeEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\DlgHelperSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\DlgHelperEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\Event\SceneChangeFinish_ShowCurrentSceneUI.cs" />
@@ -651,6 +655,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_MakeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgAdventure\DlgAdventureViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgBag\DlgBagViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgForge\DlgForgeViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgHelper\DlgHelperViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgItemPopUp\DlgItemPopUpViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLoading\DlgLoadingViewComponentSystem.cs" />
@@ -666,6 +671,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_battleLevelViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_entryViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_makeQueueViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_productionViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_roleViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_serverTestViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_testViewSystem.cs" />

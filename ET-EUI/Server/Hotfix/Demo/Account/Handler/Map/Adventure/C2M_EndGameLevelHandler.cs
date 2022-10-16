@@ -68,6 +68,8 @@ namespace ET
             }
             //增加经验
             numericComponent[(int)NumericType.Exp] += BattleLevelConfigCategory.Instance.Get(levelId).RewardExp;
+            numericComponent[(int)NumericType.IronStone] += 3600;
+            numericComponent[(int)NumericType.Fur] += 3600;
             await ETTask.CompletedTask;
         }
     }

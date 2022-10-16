@@ -623,6 +623,8 @@
     <Compile Include="Codes\Model\Core\Timer\TimerComponent.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerType.cs" />
     <Compile Include="Codes\Model\Demo\EventType.cs" />
+    <Compile Include="Codes\Model\Demo\Forge\ForgeComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Forge\Production.cs" />
     <Compile Include="Codes\Model\Demo\SessionStreamDispatcherType.cs" />
     <Compile Include="Codes\Model\Demo\TimerType.cs" />
     <Compile Include="Codes\Model\Demo\WaitType.cs" />
@@ -650,10 +652,12 @@
     <Compile Include="Codes\Model\Demo\Unit\Unit.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitType.cs" />
+    <Compile Include="Codes\Model\Generate\ConfigPartial\ForgeProductionConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Config\AIConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\BattleLevelConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\EntryConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\EntryRandomConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\ForgeProductionConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\ItemConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\PlayerLevelConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\PlayerNumericConfig.cs" />
@@ -727,7 +731,9 @@
       <Name>Unity.ThirdParty</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Codes\Model\Demo\Forge\NewFolder1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -11,5 +11,7 @@
         public const int PlayerOfflineOutTime = 1005;
         public const int SaveChangeDBData = 1006;
         public const int BattleRound = 1007;
+        public const int MakeQueueOver = 1008;//生产队列
+        public const int MakeQueueUI = 1009;
     }
 }

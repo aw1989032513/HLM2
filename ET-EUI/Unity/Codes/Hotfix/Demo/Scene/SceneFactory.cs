@@ -10,9 +10,11 @@ namespace ET
 			zoneScene.AddComponent<CurrentScenesComponent>();
             zoneScene.AddComponent<ObjectWait>();
             zoneScene.AddComponent<PlayerComponent>();
-
+            //±³°ü
             zoneScene.AddComponent<BagComponent>();
             zoneScene.AddComponent<EquipmentsComponent>();
+            //´òÔì
+            zoneScene.AddComponent<ForgeComponent>();
 
             zoneScene.AddComponent<AccountInfoComponent>();
             zoneScene.AddComponent<ServerInfosCompontent>();

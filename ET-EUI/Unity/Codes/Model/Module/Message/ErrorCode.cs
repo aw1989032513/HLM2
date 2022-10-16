@@ -52,5 +52,9 @@ namespace ET
         public const int ERR_EquipItemError         = 2000033;
         public const int ERR_BagMaxLoad             = 2000034;//背包满了
         public const int ERR_UnLoadItemNotExist     = 2000035;//人物身上装备处没装备
+        public const int ERR_ProductionConfigIdNotExit = 2000036;//成产材料不存在
+        public const int ERR_MaterailCountLess          = 2000037;//要成产的材料不足
+        public const int ERR_NoMakeFreeQueue         = 2000038;//空闲的生产队列
+        public const int ERR_NoMakeQueueOver         = 2000039; //还在生产中
     }
 }

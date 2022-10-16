@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 namespace ET
@@ -57,7 +58,9 @@ namespace ET
      		}
      	}
 
-		public UnityEngine.UI.Text E_MakeTimeText
+
+
+        public UnityEngine.UI.Text E_MakeTimeText
      	{
      		get
      		{

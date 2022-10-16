@@ -14,9 +14,14 @@ namespace ET
             self.View.E_RoleButton.AddListenerAsync(() => { return self.OnRoleBtnClickHandler(); });
             self.View.E_BattleButton.AddListener(self.OnBattleButtonClickHandler);
             self.View.E_BagButton.AddListener(self.OnBagButtonClickHandler);
+            self.View.E_MakeButton.AddListener(self.OnMakeButtonClickHandler);
             RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Role", self.View.E_RoleButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
-            //RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Forge", self.View.E_MakeButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
+            RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Forge", self.View.E_MakeButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
             //RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Task", self.View.E_TaskButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
+        }
+        public static void OnMakeButtonClickHandler(this DlgMain self)
+        {
+            self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Forge);
         }
         public static void OnBattleButtonClickHandler(this DlgMain self)
         {

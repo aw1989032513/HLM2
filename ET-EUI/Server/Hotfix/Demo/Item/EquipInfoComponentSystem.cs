@@ -41,6 +41,11 @@ namespace ET
     }
     public static class EquipInfoComponentSystem
     {
+        /// <summary>
+        /// 属性词条
+        /// </summary>
+        /// <param name="self"></param>
+        /// <returns></returns>
         public static EquipInfoProto ToMessageEquipInfoProto(this EquipInfoComponent self)
         {
             EquipInfoProto equipInfoProto = new EquipInfoProto();
