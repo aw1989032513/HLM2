@@ -15,11 +15,12 @@ namespace ET
 
     public enum ProductionState
     {
+        None = -1,
         Received = 0, //已领取
         Making = 1, //正在制造
     }
 #if SERVER
-    public class Production : Entity, IAwake, IDestroy, ISerializeToEntity
+    public class Production : Entity, IAwake, IAwake<int>, IDestroy, ISerializeToEntity
 #else
     public class Production:Entity,IAwake,IDestroy
 #endif

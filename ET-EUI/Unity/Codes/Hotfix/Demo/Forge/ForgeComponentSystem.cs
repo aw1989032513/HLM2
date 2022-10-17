@@ -50,7 +50,7 @@ namespace ET
             Production production = self.GetProductionById(productionProto.Id);
             if (production == null)
             {
-                production = self.AddChild<Production>();
+                production = self.AddChild<Production,int>(productionProto.ConfigId);
                 self.ProductionsList.Add(production);
             }
             //拆解

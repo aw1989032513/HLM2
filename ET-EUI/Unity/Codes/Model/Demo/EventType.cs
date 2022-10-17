@@ -152,5 +152,12 @@ namespace ET
         {
             public Scene zongScene;
         }
+        /// <summary>
+        /// 任务
+        /// </summary>
+        public struct UpdateTaskInfo
+        {
+            public Scene zongScene;
+        }
     }
 }

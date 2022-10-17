@@ -609,6 +609,7 @@
     <Compile Include="Codes\ModelView\Demo\UI\DlgRoleInfo\DlgRoleInfo.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgRoles\DlgRoles.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgServer\DlgServer.cs" />
+    <Compile Include="Codes\ModelView\Demo\UI\DlgTask\DlgTask.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\UIHelp\UIHelpComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\UILoading\UILoadingComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\UILobby\UILobbyComponent.cs" />
@@ -631,6 +632,7 @@
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRoleInfo\DlgRoleInfoViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgServer\DlgServerViewComponent.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgTask\DlgTaskViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgTest\DlgTestViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_attribute.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_bagItem.cs" />
@@ -640,6 +642,7 @@
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_production.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_role.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_serverTest.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_task.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_test.cs" />
     <Compile Include="Codes\ModelView\Demo\Unit\AnimatorComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\Unit\FlyDamageValueViewComponent.cs" />

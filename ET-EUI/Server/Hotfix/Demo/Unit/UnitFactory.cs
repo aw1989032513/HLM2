@@ -39,6 +39,7 @@ namespace ET
                         unit.AddComponent<BagComponent>();
                         unit.AddComponent<EquipmentsComponent>();
                         unit.AddComponent<ForgeComponent>();
+                        unit.AddComponent<TasksComponent>();
                         unitComponent.Add(unit);
                         // 加入aoi
                         //  unit.AddComponent<AOIEntity, int, Vector3>(9 * 1000, unit.Position);

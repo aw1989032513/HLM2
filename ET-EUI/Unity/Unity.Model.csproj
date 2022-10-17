@@ -623,8 +623,6 @@
     <Compile Include="Codes\Model\Core\Timer\TimerComponent.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerType.cs" />
     <Compile Include="Codes\Model\Demo\EventType.cs" />
-    <Compile Include="Codes\Model\Demo\Forge\ForgeComponent.cs" />
-    <Compile Include="Codes\Model\Demo\Forge\Production.cs" />
     <Compile Include="Codes\Model\Demo\SessionStreamDispatcherType.cs" />
     <Compile Include="Codes\Model\Demo\TimerType.cs" />
     <Compile Include="Codes\Model\Demo\WaitType.cs" />
@@ -635,6 +633,8 @@
     <Compile Include="Codes\Model\Demo\Bag\BagComponent.cs" />
     <Compile Include="Codes\Model\Demo\Equipment\EquipmentsComponent.cs" />
     <Compile Include="Codes\Model\Demo\Equipment\EquipPosition.cs" />
+    <Compile Include="Codes\Model\Demo\Forge\ForgeComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Forge\Production.cs" />
     <Compile Include="Codes\Model\Demo\Helper\PositionHelper.cs" />
     <Compile Include="Codes\Model\Demo\Item\AttributeEntry.cs" />
     <Compile Include="Codes\Model\Demo\Item\EquipInfoComponent.cs" />
@@ -648,11 +648,12 @@
     <Compile Include="Codes\Model\Demo\Session\SessionComponent.cs" />
     <Compile Include="Codes\Model\Demo\SeverInfo\ServerInfo.cs" />
     <Compile Include="Codes\Model\Demo\SeverInfo\ServerInfosCompontent.cs" />
+    <Compile Include="Codes\Model\Demo\Task\TaskInfo.cs" />
+    <Compile Include="Codes\Model\Demo\Task\TasksComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\PlayerComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\Unit.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitComponent.cs" />
     <Compile Include="Codes\Model\Demo\Unit\UnitType.cs" />
-    <Compile Include="Codes\Model\Generate\ConfigPartial\ForgeProductionConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Config\AIConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\BattleLevelConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\EntryConfig.cs" />
@@ -666,8 +667,10 @@
     <Compile Include="Codes\Model\Generate\Config\StartProcessConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartSceneConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartZoneConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\TaskConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\UnitConfig.cs" />
     <Compile Include="Codes\Model\Generate\ConfigPartial\BattleLevelConfigCategory.cs" />
+    <Compile Include="Codes\Model\Generate\ConfigPartial\ForgeProductionConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\ConfigPartial\PlayerNumericConfigCategory.cs" />
     <Compile Include="Codes\Model\Generate\Message\OuterMessage.cs" />
     <Compile Include="Codes\Model\Generate\Message\OuterOpcode.cs" />

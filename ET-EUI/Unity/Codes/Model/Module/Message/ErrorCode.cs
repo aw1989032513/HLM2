@@ -56,5 +56,12 @@ namespace ET
         public const int ERR_MaterailCountLess          = 2000037;//要成产的材料不足
         public const int ERR_NoMakeFreeQueue         = 2000038;//空闲的生产队列
         public const int ERR_NoMakeQueueOver         = 2000039; //还在生产中
+        public const int ERR_NoClientTaskInfoExist   = 2000040;//客户端这里没有任务
+        public const int ERR_TaskClientNoCompleted = 2000041;//客户端任务没完成
+        public const int ERR_NoTaskConfigExist      = 2000042;//配置表不存在
+        public const int ERR_NoTaskInfoNoExist       = 2000043;//TaskInfo不存在
+        public const int ERR_BeforeTaskNoOver       = 2000044;//前置任务没有领取奖励
+        public const int ERR_TaskRewarded = 2000045;//该任务奖励已经被领取了
+        public const int ERR_TaskNoCompleted = 2000046;//该任务没完成
     }
 }

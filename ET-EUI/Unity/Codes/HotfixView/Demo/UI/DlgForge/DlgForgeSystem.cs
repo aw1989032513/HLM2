@@ -77,8 +77,10 @@ namespace ET
 		private static void RefreshMaterailCount(this DlgForge self)
 		{
 			NumericComponent numericComponent = UnitHelper.GetMyUnitNumericComponent(self.ZoneScene().CurrentScene());
-			self.View.E_IronStoneCountText.SetText(numericComponent.GetAsInt((int)NumericType.IronStone).ToString());
-			self.View.E_FurCountText.SetText(numericComponent.GetAsInt((int)NumericType.Fur).ToString());
+			int tempIronStone = numericComponent.GetAsInt((int)NumericType.IronStone);
+			self.View.E_IronStoneCountText.SetText((tempIronStone >0 ? tempIronStone : 0).ToString());
+			int tempFru = numericComponent.GetAsInt((int)NumericType.Fur);
+			self.View.E_FurCountText.SetText((tempFru > 0 ?tempFru:0).ToString());
 		}
 		/// <summary>
 		/// 刷新列表

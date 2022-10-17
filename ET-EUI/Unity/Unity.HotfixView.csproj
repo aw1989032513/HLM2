@@ -636,6 +636,7 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgLogin\Event\DlgLoginEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\DlgMainSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\Event\DlgMainEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\Event\UpdateTaskInfoEvent_ShowRedDot.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\DlgRedDotSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\Event\DlgRedDotEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\DlgRoleInfoSystem.cs" />
@@ -646,6 +647,8 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoles\Event\DlgRolesEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgServer\DlgServerSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgServer\Event\DlgServerEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgTask\DlgTaskSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgTask\Event\DlgTaskEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\UIHelp\SceneChangeFinishEvent_CreateUIHelp.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\UIHelp\UIHelpEvent.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ESCommonUIViewSystem.cs" />
@@ -666,6 +669,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoleInfo\DlgRoleInfoViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgServer\DlgServerViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgTask\DlgTaskViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_attributeViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_bagItemViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_battleLevelViewSystem.cs" />
@@ -674,6 +678,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_productionViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_roleViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_serverTestViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_taskViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_testViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\Unit\AfterUnitCreate_CreateUnitView.cs" />
     <Compile Include="Codes\HotfixView\Demo\Unit\AnimatorComponentSystem.cs" />

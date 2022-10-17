@@ -39,6 +39,8 @@ namespace ET
 			ItemUpdateNoticeHelper.SyncAllEquipItems(unit);
 			//通知客户端同步下打造
 			ForgeHelper.SyncAllProduction(unit);
+			//通知客户端同步下任务
+			TaskNoticeHelper.SyncAllTaskInfo(unit);
 
 			// 加入数值变化监听组件
 			unit.AddComponent<NumericNoticeComponent>();

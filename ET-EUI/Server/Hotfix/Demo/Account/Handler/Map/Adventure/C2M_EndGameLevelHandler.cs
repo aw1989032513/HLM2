@@ -56,6 +56,8 @@ namespace ET
             }
             numericComponent.Set((int)NumericType.AdventureState, 0);
             reply();
+            //触发任务进度
+            Game.EventSystem.PublishAsync(new EventType.BattleWin() { unit = unit, levelId = levelId }).Coroutine();
 
             //下发奖励todo
             //模拟下发装备

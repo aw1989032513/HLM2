@@ -603,8 +603,8 @@
     <Compile Include="Codes\Hotfix\Demo\Equipment\EquipmentsComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeHelper.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Forge\Handler\M2C_AllProductionListHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ProductionSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Forge\Handler\M2C_AllProductionListHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\AttributeEntrySystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\EquipInfoComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Item\ItemApplyHelper.cs" />
@@ -629,6 +629,11 @@
     <Compile Include="Codes\Hotfix\Demo\ServerInfo\SeverInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Session\SessionComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Session\SessionStreamDispatcherClientOuter.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_AllTaskInfoListHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_UpdateTaskInfoHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\TaskHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\TaskInfoSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\TasksComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_CreateMyUnitHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_CreateUnitsHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_RemoveUnitsHandler.cs" />

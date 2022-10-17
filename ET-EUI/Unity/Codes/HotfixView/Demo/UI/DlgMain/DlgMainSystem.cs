@@ -15,9 +15,18 @@ namespace ET
             self.View.E_BattleButton.AddListener(self.OnBattleButtonClickHandler);
             self.View.E_BagButton.AddListener(self.OnBagButtonClickHandler);
             self.View.E_MakeButton.AddListener(self.OnMakeButtonClickHandler);
+            self.View.E_TaskButton.AddListener(self.OnTaskButtonClickHandler);
             RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Role", self.View.E_RoleButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
             RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Forge", self.View.E_MakeButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
-            //RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Task", self.View.E_TaskButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
+            RedDotHelper.AddRedDotNodeView(self.ZoneScene(), "Task", self.View.E_TaskButton.gameObject, Vector3.one, new Vector3(75, 55, 0));
+        }
+        /// <summary>
+        /// 任务按钮
+        /// </summary>
+        /// <param name="self"></param>
+        public static void OnTaskButtonClickHandler(this DlgMain self)
+        {
+            self.ZoneScene().GetComponent<UIComponent>().ShowWindow(WindowID.WindowID_Task);
         }
         public static void OnMakeButtonClickHandler(this DlgMain self)
         {

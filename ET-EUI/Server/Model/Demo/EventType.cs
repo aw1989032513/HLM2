@@ -51,5 +51,13 @@ namespace ET
 			public Unit unit;
 			public int productionConfigId;
 		}
+		public struct BattleWin
+		{
+			public Unit unit;
+			/// <summary>
+			/// 关卡ID
+			/// </summary>
+			public int levelId;
+		}
 	}
 }
