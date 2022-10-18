@@ -18,5 +18,7 @@
         WindowID_ItemPopUp,
         WindowID_Forge,//打造系统
         WindowID_Task,
+        WindowID_Rank,//排行榜
+        WindowID_Chat,
     }
 }

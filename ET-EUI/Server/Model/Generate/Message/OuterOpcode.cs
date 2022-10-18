@@ -86,5 +86,8 @@ namespace ET
 		 public const ushort M2C_AllTaskInfoList = 10083;
 		 public const ushort C2M_ReceiveTaskReward = 10084;
 		 public const ushort M2C_ReceiveTaskReward = 10085;
+		 public const ushort C2Rank_GetRanksInfo = 10086;
+		 public const ushort Rank2C_GetRanksInfo = 10087;
+		 public const ushort RankInfoProto = 10088;
 	}
 }

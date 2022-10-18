@@ -600,6 +600,9 @@
     <Compile Include="Codes\Hotfix\Demo\Bag\BagComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_AllItemsListHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_ItemUpdateOpInfoHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Equipment\EquipmentsComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeHelper.cs" />
@@ -629,11 +632,11 @@
     <Compile Include="Codes\Hotfix\Demo\ServerInfo\SeverInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Session\SessionComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Session\SessionStreamDispatcherClientOuter.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_AllTaskInfoListHandler.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_UpdateTaskInfoHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Task\TaskHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Task\TaskInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Task\TasksComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_AllTaskInfoListHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Task\Handler\M2C_UpdateTaskInfoHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_CreateMyUnitHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_CreateUnitsHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Unit\M2C_RemoveUnitsHandler.cs" />

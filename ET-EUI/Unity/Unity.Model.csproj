@@ -622,6 +622,8 @@
     <Compile Include="Codes\Model\Core\Timer\TimerAttribute.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerComponent.cs" />
     <Compile Include="Codes\Model\Core\Timer\TimerType.cs" />
+    <Compile Include="Codes\Model\Demo\Rank\RankComponent.cs" />
+    <Compile Include="Codes\Model\Demo\Rank\RankInfo.cs" />
     <Compile Include="Codes\Model\Demo\EventType.cs" />
     <Compile Include="Codes\Model\Demo\SessionStreamDispatcherType.cs" />
     <Compile Include="Codes\Model\Demo\TimerType.cs" />
@@ -667,6 +669,7 @@
     <Compile Include="Codes\Model\Generate\Config\StartProcessConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartSceneConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\StartZoneConfig.cs" />
+    <Compile Include="Codes\Model\Generate\Config\TaskActionConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\TaskConfig.cs" />
     <Compile Include="Codes\Model\Generate\Config\UnitConfig.cs" />
     <Compile Include="Codes\Model\Generate\ConfigPartial\BattleLevelConfigCategory.cs" />
@@ -677,6 +680,7 @@
     <Compile Include="Codes\Model\Module\Actor\IActorMessage.cs" />
     <Compile Include="Codes\Model\Module\ActorLocation\ActorResponse.cs" />
     <Compile Include="Codes\Model\Module\ActorLocation\IActorLocationMessage.cs" />
+    <Compile Include="Codes\Model\Module\Actor\IActorRankInfoMessage.cs" />
     <Compile Include="Codes\Model\Module\AI\AAIHandler.cs" />
     <Compile Include="Codes\Model\Module\AI\AIComponent.cs" />
     <Compile Include="Codes\Model\Module\AI\AIConfig.cs" />

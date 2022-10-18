@@ -65,12 +65,12 @@ namespace ET
             {
                 return;
             }
-            foreach (var taskConfigId in taskConfigIdList)
+            foreach (var newTaskConfigId in taskConfigIdList)
             {
-                self.CurrentTaskSet.Add(taskConfigId);//1，8,15三个任务
+                self.CurrentTaskSet.Add(newTaskConfigId);//1，8,15三个任务
                 //任务初始进度值
-                int count = self.GetTaskInitProgressCount(taskConfigId);
-                self.AddOrUpdateTaskInfo(taskConfigId, count, isNoticeClient);
+                int count = self.GetTaskInitProgressCount(newTaskConfigId);
+                self.AddOrUpdateTaskInfo(newTaskConfigId, count, isNoticeClient);
             }
         }
       /// <summary>

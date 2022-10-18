@@ -637,6 +637,8 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\DlgMainSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\Event\DlgMainEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgMain\Event\UpdateTaskInfoEvent_ShowRedDot.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgRank\DlgRankSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgRank\Event\DlgRankEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\DlgRedDotSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRedDot\Event\DlgRedDotEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgRoleInfo\DlgRoleInfoSystem.cs" />
@@ -665,6 +667,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLobby\DlgLobbyViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgLogin\DlgLoginViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgMain\DlgMainViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRank\DlgRankViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRedDot\DlgRedDotViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoleInfo\DlgRoleInfoViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponentSystem.cs" />
@@ -676,6 +679,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_entryViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_makeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_productionViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_rankViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_roleViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_serverTestViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_taskViewSystem.cs" />

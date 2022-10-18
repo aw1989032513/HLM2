@@ -48,6 +48,34 @@ namespace ET
                     ActorLocationSenderComponent.Instance.Send(unitId, actorLocationMessage);
                     break;
                 }
+                //另一个进程Rank 服务器进程
+                //IActorRankInfoMessage(不需要返回类型),IActorRankInfoRequest   IActorRankInfoResponse
+                case IActorRankInfoMessage actorRankInfoMessage:
+                    {
+                        long rankInstanceId = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Rank").InstanceId;
+
+                        ActorMessageSenderComponent.Instance.Send(rankInstanceId, actorRankInfoMessage);
+                        break;
+                    }
+                case IActorRankInfoRequest actorRankInfoRequest:
+                    {
+                        long rankInstanceId = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Rank").InstanceId;
+
+                        int rpcId = actorRankInfoRequest.RpcId;
+
+                        long instanceId = session.InstanceId;
+
+                        IResponse response = await ActorMessageSenderComponent.Instance.Call(rankInstanceId, actorRankInfoRequest);
+
+                        response.RpcId = rpcId;
+
+                        // session可能已经断开了，所以这里需要判断
+                        if (session.InstanceId == instanceId)
+                        {
+                            session.Reply(response);
+                        }
+                        break;
+                    }
                 case IActorRequest actorRequest:  // 分发IActorRequest消息，目前没有用到，需要的自己添加
                 {
                     break;
@@ -56,7 +84,7 @@ namespace ET
                 {
                     break;
                 }
-				
+             
                 default:
                 {
                     // 非Actor消息

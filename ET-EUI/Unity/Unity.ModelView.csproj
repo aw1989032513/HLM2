@@ -605,6 +605,7 @@
     <Compile Include="Codes\ModelView\Demo\UI\DlgLobby\DlgLobby.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgLogin\DlgLogin.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgMain\DlgMain.cs" />
+    <Compile Include="Codes\ModelView\Demo\UI\DlgRank\DlgRank.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgRedDot\DlgRedDot.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgRoleInfo\DlgRoleInfo.cs" />
     <Compile Include="Codes\ModelView\Demo\UI\DlgRoles\DlgRoles.cs" />
@@ -628,6 +629,7 @@
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgLobby\DlgLobbyViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgLogin\DlgLoginViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgMain\DlgMainViewComponent.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRank\DlgRankViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRedDot\DlgRedDotViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRoleInfo\DlgRoleInfoViewComponent.cs" />
     <Compile Include="Codes\ModelView\Demo\UIBehaviour\DlgRoles\DlgRolesViewComponent.cs" />
@@ -640,6 +642,7 @@
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_entry.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_makeQueue.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_production.cs" />
+    <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_rank.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_role.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_serverTest.cs" />
     <Compile Include="Codes\ModelView\Demo\UIItemBehaviour\Item_task.cs" />

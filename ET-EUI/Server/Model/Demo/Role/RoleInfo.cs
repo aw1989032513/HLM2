@@ -11,7 +11,11 @@ namespace ET
         Normal=0,
         Freeze=1,
     }
-    public class RoleInfo:Entity,IAwake
+#if SERVER
+    public class RoleInfo:Entity,IAwake,ITransfer,IUnitCache
+ #else
+        public class RoleInfo : Entity, IAwake
+#endif
     {
         public string Name { get; set; }
         public int  ServerId { get; set; }

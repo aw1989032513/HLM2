@@ -13,5 +13,6 @@
         public const int BattleRound = 1007;
         public const int MakeQueueOver = 1008;//生产队列
         public const int MakeQueueUI = 1009;
+        public const int RankUI = 1010;//刷新排行榜
     }
 }

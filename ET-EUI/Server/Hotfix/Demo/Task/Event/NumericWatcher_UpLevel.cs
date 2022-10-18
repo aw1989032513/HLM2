@@ -19,7 +19,8 @@ namespace ET
             unit = args.Parent as Unit;
             //触发任务行为
             unit.GetComponent<TasksComponent>().TriggerTaskAction(TaskActionType.UpLevel, (int)args.New);
-           // RankHelper.AddOrUpdateLevelRank(unit);
+            //排行榜
+            RankHelper.AddOrUpdateLevelRank(unit);
         }
     }
 }

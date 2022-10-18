@@ -139,11 +139,11 @@ namespace ET
         }
         
         
-        public static void AddUIScrollItems<T>(this Entity self, ref Dictionary<int, T> dictionary, int count)  where T : Entity,IAwake
+        public static void AddUIScrollItems<T>(this Entity self, ref Dictionary<int, T> prefabDictionary, int count)  where T : Entity,IAwake
         {
-            if (dictionary == null)
+            if (prefabDictionary == null)
             {
-                dictionary = new Dictionary<int, T>();
+                prefabDictionary = new Dictionary<int, T>();
             }
             
             if (count <= 0)
@@ -151,15 +151,15 @@ namespace ET
                 return;
             }
             
-            foreach (var item in dictionary)
+            foreach (var item in prefabDictionary)
             {
                 item.Value.Dispose();
             }
-            dictionary.Clear();
+            prefabDictionary.Clear();
             for (int i = 0; i <= count; i++)
             {
                 T itemServer = self.AddChild<T>(true);
-                dictionary.Add(i , itemServer);
+                prefabDictionary.Add(i , itemServer);
             }
         }
         

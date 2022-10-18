@@ -17,6 +17,8 @@ namespace ET
             zoneScene.AddComponent<ForgeComponent>();
             //хннЯ
             zoneScene.AddComponent<TasksComponent>();
+            //еепп
+            zoneScene.AddComponent<RankComponent>();
             zoneScene.AddComponent<AccountInfoComponent>();
             zoneScene.AddComponent<ServerInfosCompontent>();
             zoneScene.AddComponent<RoleInfosComponent>();

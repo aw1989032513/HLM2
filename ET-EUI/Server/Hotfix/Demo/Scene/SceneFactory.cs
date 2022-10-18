@@ -50,6 +50,10 @@ namespace ET
                 case SceneType.UnitCache:
                     scene.AddComponent<UnitCacheComponent>();
                     break;
+                case SceneType.Rank:
+                    //操作数据库，从数据库获得排行榜信息
+                     await scene.AddComponent<RankComponent>().LoadRankInfo();
+                    break;
             }
 
             return scene;
