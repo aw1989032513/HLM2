@@ -61,7 +61,8 @@ namespace ET
         public const int ERR_NoTaskConfigExist      = 2000042;//配置表不存在
         public const int ERR_NoTaskInfoNoExist       = 2000043;//TaskInfo不存在
         public const int ERR_BeforeTaskNoOver       = 2000044;//前置任务没有领取奖励
-        public const int ERR_TaskRewarded = 2000045;//该任务奖励已经被领取了
-        public const int ERR_TaskNoCompleted = 2000046;//该任务没完成
+        public const int ERR_TaskRewarded           = 2000045;//该任务奖励已经被领取了
+        public const int ERR_TaskNoCompleted        = 2000046;//该任务没完成
+        public const int ERR_ChatMessageEmpty       = 2000047;//发送聊天信息是空的
     }
 }

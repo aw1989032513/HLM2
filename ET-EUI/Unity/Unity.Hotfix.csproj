@@ -585,6 +585,7 @@
     </Reference>
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneFlagComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Core\Scene\ZoneSceneManagerComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Chat\Handler\Chat2C_NoticeChatInfoHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\ConstValue.cs" />
     <Compile Include="Codes\Hotfix\Demo\Account\AccountInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Adventrue\AdventureComponentSystem.cs" />
@@ -600,9 +601,9 @@
     <Compile Include="Codes\Hotfix\Demo\Bag\BagComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_AllItemsListHandler.cs" />
     <Compile Include="Codes\Hotfix\Demo\Bag\M2C_ItemUpdateOpInfoHandler.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Rank\RankComponentSystem.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Rank\RankHelper.cs" />
-    <Compile Include="Codes\Hotfix\Demo\Rank\RankInfoSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Chat\ChatComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Chat\ChatHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Chat\ChatInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Equipment\EquipmentsComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Forge\ForgeHelper.cs" />
@@ -622,6 +623,9 @@
     <Compile Include="Codes\Hotfix\Demo\Move\MoveHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Numeric\NumericHelper.cs" />
     <Compile Include="Codes\Hotfix\Demo\Numeric\Handler\M2C_NoticeUnitNumericHandler.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankComponentSystem.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankHelper.cs" />
+    <Compile Include="Codes\Hotfix\Demo\Rank\RankInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Role\RoleInfosComponentSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Role\RoleInfoSystem.cs" />
     <Compile Include="Codes\Hotfix\Demo\Scene\CurrentScenesComponentSystem.cs" />

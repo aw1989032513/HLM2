@@ -19,7 +19,7 @@ namespace ET
                 gateSession.Dispose();  
                 return;
             }
-            //移除它
+            //移除它,不然就自动断开了
             gateSession.RemoveComponent<SessionAcceptTimeoutComponent>();
             if (gateSession.GetComponent<SessionLockingComponent>() != null)
             {

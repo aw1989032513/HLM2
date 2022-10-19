@@ -99,7 +99,10 @@ namespace ET
                             (bool isNewPlayer,Unit unit) = await UnitHelper.LoadUnit(player);
                           
                             unit.AddComponent<UnitGateComponent, long>(player.InstanceId);
-                           
+
+                            //登录聊天服
+                            player.ChatInfoInstanceId = await this.EnterWorldChatServer(unit);
+
                             //玩家Unit上线后的初始化操作
                             await UnitHelper.InitUnit(unit, isNewPlayer);
 
@@ -110,6 +113,7 @@ namespace ET
                             reply();
 
                             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Game");
+                            //地图传送
                             await TransferHelper.Transfer(unit, startSceneConfig.InstanceId, startSceneConfig.Name);
 
                            
@@ -139,6 +143,40 @@ namespace ET
             }
                     await ETTask.CompletedTask;
 
+        }
+        /// <summary>
+        /// 将Gate网关的GateSession的GateSessionActorId发过去到聊天服，等聊天服创建完影子ChatInfo 之后再把自身的 InstanceId发给Gate
+        /// </summary>
+        /// <param name="unit"></param>
+        /// <returns></returns>
+        private async ETTask<long> EnterWorldChatServer(Unit unit)
+        {
+            Chat2G_EnterChat chat2G_EnterChat = null;
+            StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(unit.DomainZone(), "ChatInfo");
+            try
+            {
+                 chat2G_EnterChat = (Chat2G_EnterChat)await MessageHelper.CallActor(startSceneConfig.InstanceId, new G2Chat_EnterChat()
+                {
+                    UnitId = unit.Id,
+                    Name = unit.GetComponent<RoleInfo>().Name,
+                    GateSessionActorId = unit.GetComponent<UnitGateComponent>().GateSessionActorId
+                });
+            }
+            catch (Exception e)
+            {
+                Log.Error(e.ToString());
+                return ErrorCode.ERR_NetWorkError;
+            }
+
+            if (chat2G_EnterChat.Error != ErrorCode.ERR_Success)
+            {
+                Log.Error(chat2G_EnterChat.Error.ToString());
+                return chat2G_EnterChat.Error;
+            }
+            else
+            {
+                return chat2G_EnterChat.ChatInfoUnitInstanceId;
+            }
         }
     }
 }

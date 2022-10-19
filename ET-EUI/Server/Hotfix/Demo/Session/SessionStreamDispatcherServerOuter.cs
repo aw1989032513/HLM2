@@ -60,7 +60,7 @@ namespace ET
                 case IActorRankInfoRequest actorRankInfoRequest:
                     {
                         long rankInstanceId = StartSceneConfigCategory.Instance.GetBySceneName(session.DomainZone(), "Rank").InstanceId;
-
+                        #region 固定不变的
                         int rpcId = actorRankInfoRequest.RpcId;
 
                         long instanceId = session.InstanceId;
@@ -74,6 +74,39 @@ namespace ET
                         {
                             session.Reply(response);
                         }
+                        break;
+                        #endregion
+                    }
+
+                //聊天服
+                case IActorChatInfoRequest actorChatInfoRequest:
+                    {
+                        Player player = Game.EventSystem.Get(session.GetComponent<SessionPlayerComponent>().playerInstanceId) as Player;
+                        if (player == null || player.IsDisposed || player.ChatInfoInstanceId == 0)
+                        {
+                            break;
+                        }
+
+                        int rpcId = actorChatInfoRequest.RpcId; // 这里要保存客户端的rpcId
+                        long instanceId = session.InstanceId;
+                        IResponse response = await ActorMessageSenderComponent.Instance.Call(player.ChatInfoInstanceId, actorChatInfoRequest);
+                        response.RpcId = rpcId;
+                        // session可能已经断开了，所以这里需要判断
+                        if (session.InstanceId == instanceId)
+                        {
+                            session.Reply(response);
+                        }
+                        break;
+                    }
+                case IActorChatInfoMessage actorChatInfoMessage:
+                    {
+                        Player player = Game.EventSystem.Get(session.GetComponent<SessionPlayerComponent>().playerInstanceId) as Player;
+                        if (player == null || player.IsDisposed || player.ChatInfoInstanceId == 0)
+                        {
+                            break;
+                        }
+
+                        ActorMessageSenderComponent.Instance.Send(player.ChatInfoInstanceId, actorChatInfoMessage);
                         break;
                     }
                 case IActorRequest actorRequest:  // 分发IActorRequest消息，目前没有用到，需要的自己添加

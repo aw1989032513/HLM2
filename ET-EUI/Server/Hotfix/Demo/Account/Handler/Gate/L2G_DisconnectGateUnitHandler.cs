@@ -35,7 +35,6 @@ namespace ET
                     gateSession.Send(new A2C_Disconnect() { Error = ErrorCode.ERR_OtherAccountLogin });
                     gateSession?.Disconnect().Coroutine();
                 }
-                player.SessionInstanceId = 0;
                 ///倒计时下线
                 player.AddComponent<PlayerOfflineOutTimeComponent>();
             }

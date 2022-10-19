@@ -620,6 +620,9 @@
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\DlgBagSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\Event\DlgBagEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgBag\Item\Scroll_Item_bagItemSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgChat\DlgChatSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgChat\Event\DlgChatEventHandler.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UI\DlgChat\Event\UpdateChatInfoEvent_RefreshUI.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgForge\DlgForgeSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgForge\Event\DlgForgeEventHandler.cs" />
     <Compile Include="Codes\HotfixView\Demo\UI\DlgHelper\DlgHelperSystem.cs" />
@@ -660,6 +663,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\CommonUI\ES_MakeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgAdventure\DlgAdventureViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgBag\DlgBagViewComponentSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgChat\DlgChatViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgForge\DlgForgeViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgHelper\DlgHelperViewComponentSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIBehaviour\DlgItemPopUp\DlgItemPopUpViewComponentSystem.cs" />
@@ -676,6 +680,7 @@
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_attributeViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_bagItemViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_battleLevelViewSystem.cs" />
+    <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_chatViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_entryViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_makeQueueViewSystem.cs" />
     <Compile Include="Codes\HotfixView\Demo\UIItemBehaviour\Item_productionViewSystem.cs" />

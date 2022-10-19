@@ -61,6 +61,8 @@ namespace ET
                                     AccountId = player.AccountId,
                                     ServerId = player.DomainZone()
                                 }) ;
+                            //聊天服下线Unit
+                            var chat2GRequestExitChat = (Chat2G_RequestExitChat)await MessageHelper.CallActor(player.ChatInfoInstanceId, new G2Chat_RequestExitChat());
                             break;
                         default:
                             break;

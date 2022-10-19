@@ -13,6 +13,7 @@
 		LoginCenter= 8,
 		UnitCache= 9,
 		Rank = 10,
+		ChatInfo = 11,
 
 		// 客户端Model层
 		Client = 30,

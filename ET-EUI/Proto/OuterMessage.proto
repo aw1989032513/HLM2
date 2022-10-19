@@ -696,3 +696,23 @@ message RankInfoProto
 	string Name = 3;
 	int32 Count = 4;
 }
+    
+
+//ResponseType Chat2C_SendChatInfo
+message C2Chat_SendChatInfo // IActorChatInfoRequest
+{
+	int32 RpcId = 90;
+	string ChatMessage = 1;
+}
+
+message Chat2C_SendChatInfo // IActorChatInfoResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+message Chat2C_NoticeChatInfo // IActorMessage
+{
+	string Name = 1;
+	string ChatMessage = 2;
+}

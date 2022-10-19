@@ -93,7 +93,8 @@ namespace ET
                 //创建一个Unit
                 unit = UnitFactory.Create(gateMapComponent.Scene, player.UnitId, UnitType.Player);
                 List<RoleInfo> roleInfos = await DBManagerComponent.Instance.GetZoneDB(player.DomainZone()).Query<RoleInfo>(d => d.Id == player.UnitId);
-                unit.AddComponent(roleInfos[0]); //挂载
+                //挂载RoleInfo
+                unit.AddComponent(roleInfos[0]); 
 
                 UnitCacheHelper.AddOrUpdateUnitAllCache(unit);
             }
@@ -102,7 +103,7 @@ namespace ET
 
         public static async ETTask InitUnit(Unit unit,bool isNew)
         {
-            //unit.GetComponent<NumericComponent>().SetNoEvent(NumericType.BattleRandomSeed, TimeHelper.ServerNow());
+            unit.GetComponent<NumericComponent>().SetNoEvent((int)NumericType.BattleRandomSeed, TimeHelper.ServerNow());
             await ETTask.CompletedTask;
         }
     }

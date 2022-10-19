@@ -54,6 +54,9 @@ namespace ET
                     //操作数据库，从数据库获得排行榜信息
                      await scene.AddComponent<RankComponent>().LoadRankInfo();
                     break;
+                case SceneType.ChatInfo:                   
+                     scene.AddComponent<ChatComponent>();
+                    break;
             }
 
             return scene;

@@ -159,5 +159,9 @@ namespace ET
         {
             public Scene zongScene;
         }
+        public struct UpdateChatInfo
+        {
+            public Scene zongScene;
+        }
     }
 }

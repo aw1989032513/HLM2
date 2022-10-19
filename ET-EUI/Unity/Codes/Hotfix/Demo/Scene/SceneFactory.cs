@@ -19,6 +19,8 @@ namespace ET
             zoneScene.AddComponent<TasksComponent>();
             //еепп
             zoneScene.AddComponent<RankComponent>();
+            //адлЛ
+            zoneScene.AddComponent<ChatComponent>();
             zoneScene.AddComponent<AccountInfoComponent>();
             zoneScene.AddComponent<ServerInfosCompontent>();
             zoneScene.AddComponent<RoleInfosComponent>();
